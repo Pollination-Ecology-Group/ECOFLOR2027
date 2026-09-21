@@ -195,7 +195,7 @@ h6 {
   font-family: $headingFont !important;
   font-size: 17px !important;
   color: $white !important;
-  padding: 10px 0 !important;
+  padding: 4px 0 !important;
   a {
     color: rgba(255,255,255,0.92) !important;
     text-decoration: none !important;
@@ -210,7 +210,9 @@ h6 {
 }
 
 .navbar-logo {
-  max-height: 70px;
+  height: 65px !important;
+  max-height: 65px !important;
+  width: auto !important;
 }
 
 .navbar-nav .nav-link.active {
