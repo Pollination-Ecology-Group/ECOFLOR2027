@@ -175,7 +175,7 @@ The conference excursion will take place on **Saturday 6th February 2027**. We w
 
 The Milovice reserve is one of Central Europe's most exciting rewilding projects — a former military training area that has been transformed into a haven for large herbivores and grassland biodiversity. The project is run by the [**European Wildlife Foundation**](https://www.european-wildlife.eu/) and serves as a flagship example of large-scale rewilding in Central Europe.
 
-From the perspective of floral ecology, the reserve is a remarkable case study: the grazing and browsing by large herbivores shapes plant communities, floral diversity, and pollinator habitats across the steppe grasslands. This excursion offers a unique opportunity to observe plant–herbivore–pollinator dynamics in a rewilded system.
+From the perspective of floral ecology, the reserve is a remarkable case study: the grazing and browsing by large herbivores shapes plant communities, floral diversity, and pollinator habitats across the steppe grasslands.
 
 ::: {style="text-align: center;"}
 🦬 Further details (transport, timing, costs) will be provided to registered participants.
@@ -210,20 +210,21 @@ The 24th edition of EcoFlor takes place at the **[Přírodovědecká fakulta UK]
 The specific lecture hall will be announced to registered participants. Oral presentations (including plenary talks) and poster sessions will both be held within the faculty building.
 
 ::: {style="text-align: center;"}
-### How to get there
+### Transportation
 :::
 
 **By plane:** Prague's [Václav Havel Airport](https://www.prg.aero/en) is well connected to major European cities. From the airport, take **Bus 119** to the metro terminus *Nádraží Veleslavín* (line A, green), then take the metro to *Náměstí Míru* (about 20 minutes total). From there it is a short walk to Viničná 7.
 
-Alternatively, take the **Airport Express bus** to *Praha Hlavní nádraží* (Central Station), then metro line C (red) to *I. P. Pavlova* — a short walk to the faculty.
+> ⚠️ **Avoid the Airport Express bus** — it is significantly overpriced for what it offers and offers no real advantage over the standard public transport connection, which is fast, frequent, and cheap. **Taxis and ride-hailing services from the airport are also notoriously expensive** — Prague's public transport will get you to the venue faster and for a fraction of the cost.
 
 **By train:** Prague's main station (*Praha Hlavní nádraží*) has excellent connections from across Central Europe (Vienna, Budapest, Berlin, Warsaw). From the station, take metro line C (red) direction *Háje*, alight at *I. P. Pavlova* — the faculty is a 5-minute walk.
 
 **By metro:** The closest metro stops are:
+
 - 🟢 **Náměstí Míru** (Line A, green) – 7 min walk
 - 🔴 **I. P. Pavlova** (Line C, red) – 7 min walk
 
-Prague's **public transport** is excellent, affordable (24-hour ticket: ~120 CZK / ~5 EUR), and runs 24 hours. Tickets can be bought from machines at metro stations, in the PID Lítačka mobile app, or by SMS.
+**Tickets — use the Lítačka app:** Prague's public transport (operated by [PID](https://pid.cz/en/)) is excellent, affordable, and runs 24 hours. The easiest way to buy tickets is the **[PID Lítačka](https://app.pidlitacka.cz/)** mobile app (available for [Android](https://play.google.com/store/apps/details?id=cz.dpp.praguepublictransport) and [iOS](https://apps.apple.com/cz/app/pid-l%C3%ADta%C4%8Dka/id1140104120)). You can buy single-ride tickets, time passes, and airport zone supplements directly in the app and activate them instantly — no need to find a ticket machine. A **24-hour ticket** costs ~120 CZK (~5 EUR) and is valid on all metro, tram, and bus lines. Tickets can also be purchased from machines at metro stations or by SMS.
 
 ```{=html}
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.2!2d14.4265!3d50.0737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e6d86c3a3d%3A0x1f8d8d5a1b6c7e90!2sPr%C3%ADrodov%C4%9Bdeck%C3%A1%20fakulta%20UK!5e0!3m2!1sen!2scz!4v1695000000000" width="100%" height="420" style="border:0; border-radius:12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
