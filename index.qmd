@@ -345,13 +345,13 @@ The 24th edition of EcoFlor is organised by researchers based at the **[Faculty 
 \
 
 :::::: columns
-::: {.column width="50%" style="text-align: center;"}
+::: {.column .org-col width="50%"}
 [![](images/logos/cspe_logo.svg){width="200" fig-alt="Česká společnost pro ekologii (ČSPE)"}](https://www.cspe.cz/)
 
 **[ČSPE](https://www.cspe.cz/)** — Česká společnost pro ekologii is an independent civic association uniting scientists, academics, students, and other professionals working in ecology in the Czech Republic.
 :::
 
-::: {.column width="50%" style="text-align: center;"}
+::: {.column .org-col width="50%"}
 [![](images/logos/AEET.png){width="200" fig-alt="Asociación Española de Ecología Terrestre (AEET)"}](https://www.aeet.org/)
 
 **[AEET](https://www.aeet.org/)** — The Asociación Española de Ecología Terrestre is the Spanish scientific society for terrestrial ecology, promoting ecological research, education, and international collaboration across the Iberian Peninsula and beyond.
