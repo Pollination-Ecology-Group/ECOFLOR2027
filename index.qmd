@@ -129,19 +129,19 @@ Posters will be displayed throughout the conference. Poster sessions will take p
 :::
 
 :::::: {.speaker-card}
-![](images/people/robert_tropek.png){.speaker-photo fig-alt="Prof. Robert Tropek"}
+![](images/people/robert_tropek.png){.speaker-photo fig-alt="doc. Robert Tropek"}
 
 :::: {style="text-align: center;"}
 #### doc. Robert Tropek [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?user=YOUR_ID)
 
-#### Floral ecology and pollination in disturbed landscapes
+#### *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
 ::::
 
 ::: {style="text-align: justify;"}
-Robert Tropek is a Professor at the [**Institute of Entomology, Czech Academy of Sciences**](https://www.entu.cas.cz/en/) and at the [**Faculty of Science, Charles University in Prague**](https://www.natur.cuni.cz/eng). His research focuses on the ecology and conservation of insects in disturbed habitats, including post-industrial areas, post-mining sites, and post-fire landscapes. He is particularly interested in how disturbance and succession drive plant–pollinator interactions and biodiversity in Central European landscapes. Robert has published extensively on pollinator conservation, habitat management, and the underestimated value of "novel ecosystems" for biodiversity.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
 
 ::: {.placeholder-notice}
-📝 **Placeholder bio** — Full bio and talk title to be confirmed.
+📝 **Placeholder** — Full bio and talk title to be confirmed.
 :::
 :::
 ::::::
@@ -152,14 +152,14 @@ Robert Tropek is a Professor at the [**Institute of Entomology, Czech Academy of
 :::: {style="text-align: center;"}
 #### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?user=YOUR_ID)
 
-#### Urban pollinators: patterns, drivers and conservation
+#### *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
 ::::
 
 ::: {style="text-align: justify;"}
-Katherine Baldock is a researcher at the [**University of Bristol**](https://www.bristol.ac.uk/), UK, specialising in urban ecology and pollination biology. Her landmark research — including the [UK National Pollinator Monitoring Scheme](https://www.ukpoms.org.uk/) and multiple urban flower resource assessments — has fundamentally shaped our understanding of how cities can support wild bee and pollinator communities. She investigates the role of urban green spaces, street verges, gardens, and parks in providing floral resources and supporting healthy pollinator populations across urban gradients.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
 
 ::: {.placeholder-notice}
-📝 **Placeholder bio** — Full bio and talk title to be confirmed.
+📝 **Placeholder** — Full bio and talk title to be confirmed.
 :::
 :::
 ::::::
