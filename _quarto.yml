@@ -65,10 +65,9 @@ format:
     fontsize: 1.1rem
     monofont: Fira Code
     highlight-style: arrow
-    css: [custom_theme.scss]
     toc: true
     smooth-scroll: true
     code-overflow: scroll
     linkcolor: "#2A8A8A"
     background: "#F8FAFA"
-    theme: cosmo
+    theme: [cosmo, custom_theme.scss]
