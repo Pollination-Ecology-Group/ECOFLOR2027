@@ -1,0 +1,84 @@
+project:
+  output-dir: ./docs
+  type: website
+  render:
+    - "*.qmd"
+    - "!archive/"
+  resources:
+    - "images/bluesky.svg"
+    - "documents"
+  post-render:
+    - cp googleb16326ba55692535.html docs/googleb16326ba55692535.html
+  
+website:
+  page-navigation: true
+  navbar:
+    logo: "./images/logo_without_bakground_small.png"
+    logo-alt: "ECOFLOR 2026"
+    background: rgb(255,244,224)
+    left:
+      - href: index.qmd#about
+        text: "About" 
+      - href: index.qmd#registration
+        text: "Registration"     
+      - href: index.qmd#programme
+        text: "Programme"
+      - href: index.qmd#venue
+        text: "Venue" 
+      - href: index.qmd#organisation
+        text: "Organisation committee"  
+      - href: index.qmd#acknowledgements
+        text: "Acknowledgements"  
+      - href: Ecoflor_2026_Book_of_abstracts.qmd
+        text: "Book of abstracts"  
+        
+      - href: index.qmd#contact
+        text: "Contact"
+    right:
+      - icon: github
+        href: https://github.com/Pollination-Ecology-Group/ECOFLOR2026
+      - icon: discord 
+        href: https://discord.gg/Ser2GRXgns  
+      - icon: whatsapp
+        href: https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t
+      - icon: instagram
+        href: https://www.instagram.com/ecoflor2026/      
+      - text: '<img src="images/bluesky.svg" width="20" height="20" style="vertical-align: middle; padding-bottom: 2px;">'
+        href: https://bsky.app/profile/ecoflor.bsky.social
+      - icon: envelope
+        href: mailto:ecoflor2026@gmail.com
+      - icon: book
+        href: Ecoflor_2026_Book_of_abstracts.pdf
+              
+  page-footer: 
+    left: "Made by Jakub Štenc" 
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: discord 
+        href: https://discord.gg/Ser2GRXgns
+      - icon: instagram
+        href: https://www.instagram.com/ecoflor2026/
+      - icon: whatsapp
+        href: https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t
+  announcement:
+    icon: info-circle
+    dismissable: true
+    content: "Dowland the book of abstract in PDF [here](https://pollination-ecology-group.github.io/ECOFLOR2026/Ecoflor_2026_Book_of_abstracts.pdf)."
+    type: light
+    position: below-navbar
+  back-to-top-navigation: true
+  cookie-consent: true
+
+format:
+  html:
+    fontsize: 1.15rem
+    monofont: Fira Code
+    highlight-style: arrow
+    css: [custom_theme.scss]
+    toc: true
+    smooth-scroll: true
+    code-overflow: scroll
+    linkcolor: rgb(97,30,30)
+    background: rgb(255,244,224)
+    theme: cosmo

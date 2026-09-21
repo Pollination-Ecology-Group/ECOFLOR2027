@@ -1,0 +1,513 @@
+---
+title: "ECOFLOR 2026: Book of Abstracts"
+format:
+  html:
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+    keep-tex: true
+    pdf-engine: xelatex
+    # mainfont: "Roboto"
+    # sansfont: "Lato"
+    # monofont: "Fira Code"
+    linkcolor: "primaryorange"
+    filecolor: "primaryorange"
+    citecolor: "primaryorange"
+    urlcolor: "primaryorange"
+    include-in-header:
+      text: |
+        \usepackage{sectsty}
+        \usepackage{xcolor}
+        \definecolor{primaryorange}{HTML}{E06E53}
+        \definecolor{secondaryorange}{HTML}{B8573E}
+        \sectionfont{\color{primaryorange}\sffamily}
+        \subsectionfont{\color{secondaryorange}\sffamily}
+        \subsubsectionfont{\color{secondaryorange}\sffamily}
+        \let\maketitle\relax
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(knitr)
+library(googlesheets4)
+
+# 1. AUTHENTICATE
+gs4_deauth()
+
+# 2. READ DATA
+sheet_url <- "https://docs.google.com/spreadsheets/d/1zsfhYz32GoeKz8qzaHgDKsc-InRxitIsdnc9JWG-4OU/edit?usp=sharing"
+
+# Read as text to avoid errors
+data_raw <- read_sheet(sheet_url, col_types = "c")
+
+# 3. SELECT & RENAME
+# Mapping your specific columns to the variables the script needs
+sorted_data <- data_raw %>%
+    select(
+        # --- MANUAL SORTING COLUMNS (You must have these!) ---
+        Session_ID = `Session_ID`,
+        Session_Name = `Session_Name`,
+        Talk_Order = `Talk_Order`,
+
+        # --- CONTENT COLUMNS (Based on your list) ---
+        Title = `Presentation_title`,
+        Presenter = `Names`,
+        Authors = `Authors`,
+        Affiliation = `Affiliated Institution`,
+        Affiliations_co_authors_oral = `Affiliations_co_authors_oral`,
+        Affiliations_co_authors_poster = `Affiliations_co_authors_posters`,
+        Abstract_Text_Poster = `Abstract_text_posters`,
+        Abstract_Text_Presentation = `Abstract_presentations_text`,
+        Presentation_type = `Presentation`,
+        Presentation_title_poster = `Presentation title poster`, # Column does not exist
+        Authors_poster = `Authors  poster`, # Column does not exist
+
+        # Filter column
+        Attending = `Attending`,
+
+
+        # The new column where you pasted the text
+        Abstract_Text_Presentation = `Abstract_presentations_text`
+    ) %>%
+    mutate(
+        # Convert IDs to numbers for sorting
+        Session_ID = as.numeric(Session_ID),
+        Talk_Order = as.numeric(Talk_Order)
+    ) %>%
+    # Filter out rows that haven't been assigned a session yet
+    filter(!is.na(Session_ID) & !is.na(Session_Name) & Attending == "YES") %>%
+    arrange(Session_ID, Talk_Order)
+```
+
+
+
+
+::: {.content-visible when-format="pdf"}
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\Huge \textbf{ECOFLOR 2026: Book of Abstracts} \par}
+\vspace{1.5cm}
+\includegraphics[width=0.5\textwidth]{images/logo_without_bakground_small.png}
+\vfill
+{\Large \today \par}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+:::
+
+The ECOFLOR 2026 Book of Abstracts. 
+
+::: {.content-visible when-format="html"}
+::: {.text-center}
+[Download PDF](https://pollination-ecology-group.github.io/ECOFLOR2026/Ecoflor_2026_Book_of_abstracts.pdf){.btn .btn-primary}
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+The book may be downloaded as a PDF file from the [ECOFLOR 2026 website](https://pollination-ecology-group.github.io/ECOFLOR2026/Ecoflor_2026_Book_of_abstracts.pdf).
+:::
+
+# Scientific Committee {style="text-align: center"}
+
+
+The 23rd edition of EcoFlor meeting was organised by **the Wildlife Pollinators Group**, a research group of the [**Wildlife Ecology and Health** **Lab**](https://weh.cat/), based in the [Veterinary Faculty of the Autonomous University of Barcelona (UAB).](https://www.uab.cat/web/studies/graduate/university-master-s-degrees/by-areas-of-knowledge/veterinary-medicine-1345670299644.html) Additional researchers from different institutions (IRTA, CTFC, IVIA, CREAF) are actively involved in the organisation.
+
+In the Wildlife Pollinators Group we study the relationship between large herbivores (domestic and wild) and plant-pollinator communities and interactions,as well as in pollination function. We are also interested in understanding how other processes operating at large scales (such as wildfires) influence the assemblage of these communities. On the opposite (microscopic scale) side, we are interested in disentangling the mysteries behind solitary bee health. We conduct basic faunistic studies as well as research on bee diversity patterns in multiple types of habitats (including urban ecosystems, riparian ecosystems, and grasslands).
+
+
+**Organisation committee**: Carlos Hernández-Castellano, Néstor Pérez-Méndez, Jordi Margalef-Marrassé, Alice Casiraghi, Jakub Štenc, Júlia Batlle-Benaiges, Júlia Coromina, Nil Guerrero, Marina Aguilar Grau,
+
+[![](images/wildlifelab.png){fig-align="center" width="300"}](https://weh.cat/)
+
+::: {.content-visible when-format="html"}
+
+::::: columns
+::: {.column width="30%"}
+![](images/people/CarlosHC.png){fig-align="center" width="150"}
+<br />
+**Carlos Hernández-Castellano**
+
+[✉️](mailto:carlos.hernandezcastellano@gmail.com) [![](images/scholar.png){width="20"}](https://scholar.google.es/citations?user=N20Q75MAAAAJ&hl=es)
+:::
+
+
+
+::: {.column width="30%"}
+![](images/people/NestorPM.png){fig-align="center" width="150"}
+<br />
+**Néstor Pérez-Méndez**
+
+[✉️](mailto:nestor.perez@irta.cat) [![](images/scholar.png){width="20"}](https://scholar.google.es/citations?user=9cVCRHcAAAAJ&hl=es)
+
+:::
+
+
+
+::: {.column width="30%"}
+![](images/people/AliceC.png){fig-align="center" width="150"}
+
+**Alice Casiraghi**
+
+[✉️](mailto:theaphidologist@gmail.com) [![](images/scholar.png){width="20"}](https://scholar.google.com/citations?user=J6BL1f0AAAAJ&hl=es)
+:::
+:::::
+
+\
+
+::::: columns
+::: {.column width="30%"}
+![](images/people/jordi_real.png){fig-align="center" width="150"}
+<br />
+**Jordi Margalef-Marrassé**
+
+[✉️](mailto:jordi.margalef@ctfc.cat) [![](images/scholar.png){width="20"}](https://scholar.google.com/citations?user=Os21VVYAAAAJ&hl=ca)
+:::
+
+
+
+::: {.column width="30%"}
+![](images/people/js3.png){fig-align="center" width="150"}
+<br />
+**Jakub Štenc**
+
+[✉️](mailto:jakubstenc@gmail.com) [![](images/scholar.png){width="20"}](https://scholar.google.com/citations?user=QrFO4O0AAAAJ&hl=cs) [CV](https://jakubstenc.github.io/jakubstenc/CV.html)
+:::
+
+
+
+::: {.column width="30%"}
+![](images/people/JuliaBB.png){fig-align="center" width="150"}
+<br />
+**Júlia Batlle-Benaiges**
+
+[✉️](mailto:ju.ba.benaiges@gmail.com) [![](images/scholar.png){width="20"}](https://scholar.google.com/citations?user=cr9FBjkAAAAJ&hl=ca)
+:::
+:::::
+
+\
+
+::::: columns
+::: {.column width="30%"}
+![](images/people/juliacoronira.png){fig-align="center" width="150"}
+<br />
+**Júlia Coromina**
+
+[✉️](mailto:jucoromina8@gmail.com) [![](images/linkedin.png){width="20"}](https://www.linkedin.com/in/j%C3%BAlia-coromina-javier-320374238/)
+:::
+
+
+
+::: {.column width="30%"}
+![](images/people/jordi.png){fig-align="center" width="150"}
+<br />
+**Nil Guerrero**
+
+[✉️](mailto:nilguerrerok@gmail.com) [[CV]{.underline}](https://www.canva.com/design/DAGr6m6voYA/4fjOUwPOQN46SWjQ7lDYtg/view?utm_content=DAGr6m6voYA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0220aff320)
+:::
+
+
+
+::: {.column width="30%"}
+![](images/people/marina.png){fig-align="center" width="150"}
+<br />
+**Marina Aguilar Grau**
+
+[✉️](mailto:maguilargrau@gmail.com) [[CV]{.underline}](https://www.canva.com/design/DAGzQjEdURY/4tp_HYbH1NokMg0wxn7pJA/edit?utm_content=DAGzQjEdURY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+:::
+:::::
+:::
+
+::: {.content-visible when-format="pdf"}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/CarlosHC.png}
+
+\vspace{1em}
+\textbf{Carlos Hernández-Castellano}
+
+\href{mailto:carlos.hernandezcastellano@gmail.com}{✉️} \href{https://scholar.google.es/citations?user=N20Q75MAAAAJ\&hl=es}{\includegraphics[width=20pt]{images/scholar.png}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/NestorPM.png}
+
+\vspace{1em}
+\textbf{Néstor Pérez-Méndez}
+
+\href{mailto:nestor.perez@irta.cat}{✉️} \href{https://scholar.google.es/citations?user=9cVCRHcAAAAJ\&hl=es}{\includegraphics[width=20pt]{images/scholar.png}}
+\end{minipage}
+
+\vspace{2em}
+
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/AliceC.png}
+
+\vspace{1em}
+\textbf{Alice Casiraghi}
+
+\href{mailto:theaphidologist@gmail.com}{✉️} \href{https://scholar.google.com/citations?user=J6BL1f0AAAAJ\&hl=es}{\includegraphics[width=20pt]{images/scholar.png}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/jordi_real.png}
+
+\vspace{1em}
+\textbf{Jordi Margalef-Marrassé}
+
+\href{mailto:jordi.margalef@ctfc.cat}{✉️} \href{https://scholar.google.com/citations?user=Os21VVYAAAAJ\&hl=ca}{\includegraphics[width=20pt]{images/scholar.png}}
+\end{minipage}
+
+\vspace{2em}
+
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/js3.png}
+
+\vspace{1em}
+\textbf{Jakub Štenc}
+
+\href{mailto:jakubstenc@gmail.com}{✉️} \href{https://scholar.google.com/citations?user=QrFO4O0AAAAJ\&hl=cs}{\includegraphics[width=20pt]{images/scholar.png}} \href{https://jakubstenc.github.io/jakubstenc/CV.html}{CV}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/JuliaBB.png}
+
+\vspace{1em}
+\textbf{Júlia Batlle-Benaiges}
+
+\href{mailto:ju.ba.benaiges@gmail.com}{✉️} \href{https://scholar.google.com/citations?user=cr9FBjkAAAAJ\&hl=ca}{\includegraphics[width=20pt]{images/scholar.png}}
+\end{minipage}
+
+\vspace{2em}
+
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/juliacoronira.png}
+
+\vspace{1em}
+\textbf{Júlia Coromina}
+
+\href{mailto:jucoromina8@gmail.com}{✉️} \href{https://www.linkedin.com/in/j\%C3\%BAlia-coromina-javier-320374238/}{\includegraphics[width=20pt]{images/linkedin.png}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/jordi.png}
+
+\vspace{1em}
+\textbf{Nil Guerrero}
+
+\href{mailto:nilguerrerok@gmail.com}{✉️} \href{https://www.canva.com/design/DAGr6m6voYA/4fjOUwPOQN46SWjQ7lDYtg/view?utm_content=DAGr6m6voYA\&utm_campaign=designshare\&utm_medium=link2\&utm_source=uniquelinks\&utlId=h0220aff320}{\underline{CV}}
+\end{minipage}
+
+\vspace{2em}
+
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=3.5cm]{images/people/marina.png}
+
+\vspace{1em}
+\textbf{Marina Aguilar Grau}
+
+\href{mailto:maguilargrau@gmail.com}{✉️} \href{https://www.canva.com/design/DAGzQjEdURY/4tp_HYbH1NokMg0wxn7pJA/edit?utm_content=DAGzQjEdURY\&utm_campaign=designshare\&utm_medium=link2\&utm_source=sharebutton}{\underline{CV}}
+\end{minipage}
+
+:::
+
+
+\clearpage
+
+:::: {#acknowledgements}
+## Acknowledgements {style="text-align: center;"}
+
+::: {style="text-align: center;"}
+We thank the following organisations for support and funding:
+
+::: {.content-visible when-format="html"}
+::::: columns
+::: {.column width="50%"}
+[![](images/logos/AEET.png){fig-align="center" width="150"}](https://www.aeet.org/es/english/)
+
+[![](images/logos/ports.jpg){fig-align="center" width="150"}](https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/ports/inici/)
+
+[![](images/logos/delta.jpg){fig-align="center" width="150"}](https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/delta-de-lebre/inici/)
+
+:::
+
+::: {.column width="50%"}
+[![](images/logos/logotiphoritzontaltransppetita.png){fig-align="center" width="150"}](https://www.tortosa.cat/)
+
+[![](images/logos/Logo-Diputació-de-Tarragona.png){fig-align="center" width="150"}](https://www.dipta.cat/)
+
+:::
+:::::
+:::
+
+::: {.content-visible when-format="pdf"}
+
+::: {layout-ncol=2}
+[![](images/logos/AEET.png){fig-align="center" width="150"}](https://www.aeet.org/es/english/)
+
+[![](images/logos/ports.jpg){fig-align="center" width="150"}](https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/ports/inici/)
+
+[![](images/logos/delta.jpg){fig-align="center" width="150"}](https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/delta-de-lebre/inici/)
+
+[![](images/logos/logotiphoritzontaltransppetita.png){fig-align="center" width="150"}](https://www.tortosa.cat/)
+:::
+
+::: {layout-ncol=1}
+[![](images/logos/Logo-Diputació-de-Tarragona.png){fig-align="center" width="150"}](https://www.dipta.cat/)
+:::
+
+:::
+:::
+::::
+
+\newpage
+
+# Vote for the Best Presentation {style="text-align: center"}
+
+Please vote for the best student oral and poster presentation!
+
+![](images/qrcode_forms.gle.png){width=300 fig-align="center"}
+
+\newpage
+
+# Oral presentations {style="text-align: center"}
+```{r}
+#| label: render-abstracts-oral
+#| echo: false
+#| results: asis
+
+# Filter for Oral presentations
+oral_data <- sorted_data[sorted_data$Presentation_type == "Oral", ]
+
+# Get list of sessions in order
+sessions <- na.omit(unique(oral_data$Session_Name))
+
+for (sess in sessions) {
+    # PRINT SESSION HEADER
+    cat(paste0("\n# ", sess, "\n\n"))
+
+    # Filter talks for this session
+    current_session_data <- oral_data[oral_data$Session_Name == sess, ]
+
+    # Explicitly sort by Talk_Order
+    current_session_data <- current_session_data[order(current_session_data$Talk_Order), ]
+
+    # LOOP THROUGH TALKS
+    for (i in seq_len(nrow(current_session_data))) {
+        row <- current_session_data[i, ]
+
+        # 1. Title
+        cat(paste0("### ", row$Title, "\n\n"))
+
+        # 2. Presenter
+        cat(paste0("**Presenting:** ", row$Presenter))
+
+        cat("\n\n")
+
+
+        # 3. Authors (Check if exists)
+        if (!is.na(row$Authors) && nzchar(row$Authors)) {
+            authors_formatted <- gsub("\\(([0-9,]+)\\)", "^\\1^", row$Authors)
+            cat(paste0("**Authors:** ", authors_formatted, "\n\n"))
+        }
+
+        # 2. Affiliation
+        if (!is.na(row$Affiliations_co_authors_oral) && nzchar(row$Affiliations_co_authors_oral) && row$Affiliations_co_authors_oral != "NA") {
+            affil_formatted <- gsub("(^|[\\.\\r\\n]+\\s*)([0-9]{1,2})(?![0-9])([\\.\\s]*)", "\\1^\\2^ ", row$Affiliations_co_authors_oral, perl = TRUE)
+            cat(paste0("**Affiliation:** ", affil_formatted, "\n\n"))
+        }
+
+
+        # 4. Abstract Text (Check if exists)
+        if (!is.na(row$Abstract_Text_Presentation)) {
+            cat(paste0(row$Abstract_Text_Presentation, "\n\n"))
+        }
+
+        # 5. Separator
+        cat("---\n\n")
+    }
+}
+```
+
+\newpage
+
+# Poster presentations {style="text-align: center"}
+
+```{r}
+#| label: render-abstracts-poster
+#| echo: false
+#| results: asis
+
+# Filter for Poster presentations
+poster_data <- sorted_data[sorted_data$Presentation_type == "Poster", ]
+
+# Get list of sessions in order
+sessions <- na.omit(unique(poster_data$Session_Name))
+
+for (sess in sessions) {
+    # PRINT SESSION HEADER
+    cat(paste0("\n# ", sess, "\n\n"))
+
+    # Filter talks for this session
+    current_session_data <- poster_data[poster_data$Session_Name == sess, ]
+
+    # LOOP THROUGH TALKS
+    for (i in 1:nrow(current_session_data)) {
+        row <- current_session_data[i, ]
+
+        # 1. Title
+        # cat(paste0("### ", row$Presentation_title_poster, "\n\n"))
+        cat(paste0("### ", row$Presentation_title_poster, "\n\n")) # Fallback
+
+        # 2. Presenter
+        cat(paste0("**Presenting:** ", row$Presenter))
+
+        cat("\n\n")
+
+
+        cat("\n\n")
+
+        # 3. Authors (Check if exists)
+        if (!is.na(row$Authors_poster) && nzchar(row$Authors_poster)) {
+            authors_formatted <- gsub("\\(([0-9,]+)\\)", "^\\1^", row$Authors_poster)
+            cat(paste0("**Authors:** ", authors_formatted, "\n\n"))
+        }
+
+        # 2. Affiliation
+        if (!is.na(row$Affiliations_co_authors_poster) && nzchar(row$Affiliations_co_authors_poster) && row$Affiliations_co_authors_poster != "NA") {
+            affil_formatted <- gsub("(^|[\\.\\r\\n]+\\s*)([0-9]{1,2})(?![0-9])([\\.\\s]*)", "\\1^\\2^ ", row$Affiliations_co_authors_poster, perl = TRUE)
+            cat(paste0("**Affiliation:** ", affil_formatted, "\n\n"))
+        }
+
+
+        # 4. Abstract Text (Check if exists)
+        if (!is.na(row$Abstract_Text_Poster)) {
+            cat(paste0(row$Abstract_Text_Poster, "\n\n"))
+        }
+
+        # 5. Separator
+        cat("---\n\n")
+    }
+}
+```
+
+
+
+
+

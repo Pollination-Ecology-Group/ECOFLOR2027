@@ -1,0 +1,607 @@
+---
+title: "ECOFLOR 2026"
+format: 
+  html: 
+    sidebar: true
+    toc: true
+---
+
+<meta name="google-site-verification" content="_ALkyF3YuAHp5-OSHb0UI4JC0hCsn1ce9XL8cUxTKk8" />
+
+![](images/logo_big.png){fig-align="center" width="500"}
+
+::: {#about style="text-align: center;"}
+## About
+:::
+
+::::: {style="text-align: justify;"}
+::: {#welcome style="text-align: center;"}
+**Welcome to the 23rd Annual Meeting of the Spanish Group for Floral Ecology and Evolution (ECOFLOR)!**
+:::
+
+We're pleased to announce the 23rd Annual Meeting of the Floral Ecology and Evolution working group, **EcoFlor**, which will take place from **February 11-14, 2026, in [Tortosa](https://en.wikipedia.org/wiki/Tortosa)**.
+
+EcoFlor is a working group of the [**Spanish Association of Terrestrial Ecology (AEET)**](https://www.aeet.org/es/english/). It organizes an annual congress to discuss recent scientific findings. The 2026 meeting will be held at the [**Centre Cívic Ferreries**](https://viurearural.cat/es/servei/centre-civic-de-ferreries-2/), located in the city center of the medieval city of Tortosa, on the banks of the Ebro River.
+
+The EcoFlor annual meeting brings together scientists interested in floral ecology and evolution. Its goal is to promote discussion, networking, and creativity in science, involving students at all career stages in an open and friendly environment. Participants are invited to present their ongoing projects and engage in critical scientific discussion and networking. In recent years, EcoFlor has expanded its reach, achieving an international dimension and welcoming contributions from researchers worldwide.
+
+Following the traditional format, the meeting will feature two days of presentations (Thursday and Friday, 11-12th February), including plenary talks, as well as oral and poster contributions. These will be thematically structured based on the submitted abstracts.
+
+In addition, there will be [workshops] on [Wednesday 11th February] and a field trip on Saturday to the [Ports Natural Parks](https://www.spain.info/en/nature/els-ports-natural-park/) (a mountain range affected by a recent wildfire) and the [Delta](https://www.turismodeltadelebro.com/en/what-to-see-and-do-in-the-ebro-delta/) (an area of aquatic ecosystems and ecosystem restoration). The congress dinner will be held on [Thursday 12th February] evening.
+
+All contributions should be in English to promote discussion and interaction with our international audience.
+
+### Meeting information summary {style="text-align: center;"}
+
+::: {style="text-align: left;"}
+📅 11-14th February 2026
+
+📍 [Tortosa](https://en.wikipedia.org/wiki/Tortosa)
+
+💆‍♀️ 2 [Workshops] on 11th February
+
+🧗 [Field trip] on 14th February
+
+🍽 [Conference dinner](#dinner) on 12th February, \~40€ per person
+
+✉️ [Registration] until November 30th, 2025, **currently closed.**
+
+📞 [Contact](#contact) via [WhatsApp group chat](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t), [Discord](https://discord.gg/Ser2GRXgns) or [email](#contact)
+
+:::
+:::::
+
+<div>
+
+::: {#registration style="text-align: center;"}
+## Registration
+:::
+
+</div>
+
+:::::::::::: {style="style"}
+::: {style="text-align: center;"}
+### Registration is closed!
+:::
+
+:::::::::: {#registration_info style="text-align: justify;"}
+::: {style="text-align: center;"}
+#### Registration and Contributions
+:::
+
+Attendance at the meeting is free, but registration is mandatory for logistical reasons. Please fill out the form if you plan to attend.
+
+When registering, you can also submit a proposal for an oral or poster presentation. Awards will be given for the best oral and best poster presentations.
+
+Senior researchers are also welcome to propose opening talks. These talks will be slightly longer than oral presentations and will consist of short lectures on research lines, breakthrough ideas, or emerging topics of scientific interest, rather than the results of specific studies.
+
+We also welcome proposals for workshops to be held on Wednesday the 11th (the day of arrival). We especially encourage workshops that help early-career researchers develop skills, such as fieldwork methods, sample processing, laboratory protocols, data analysis, and scientific writing. Discussions on emerging topics of interest and networking opportunities are also welcome!
+
+At the end of the form, there is a questionnaire to find out if you'd be interested in participating in the parallel activities. Once we know the potential attendance, we'll provide more information to participants.
+
+::: {style="text-align: center;"}
+#### Important Note
+:::
+
+The meeting is limited to 100 participants. Acceptance will be based on a combination of factors: the order of registration, whether you submit a contribution, and the scientific scope of your work. We highly encourage young researchers to submit their contributions, as the scientific commission will give them priority for acceptance.
+
+:::: {style="text-align: center;"}
+::: {style="text-align: center;"}
+#### Preparing Your Abstract
+:::
+::::
+
+Please submit your abstract in English during the registration process. The abstract should not exceed 200 words. When submitting, please also provide five keywords that will help us organize the conference sessions.
+
+Each main author may submit only one contribution. We kindly request that the main author be the one who submits the abstract.
+
+::: {style="text-align: center;"}
+#### Oral Presentations
+:::
+
+Oral presentations will be 10 minutes long, and all slides must be in English.
+
+If your presentation is accepted, please email your slides to [ecoflor2026\@gmail.com](ecoflor2026@gmail.com) by **February 2nd**. The organizing committee will use your file solely for projection during the conference and will delete it immediately afterward.
+
+::: {style="text-align: center;"}
+#### Poster Presentations
+:::
+
+Posters will be displayed in a room next to the main hall throughout the conference.
+
+Poster sessions will take place during the coffee breaks: a 30-minute session in the morning and a one-hour session in the afternoon. The afternoon break, which will include coffee and beer, is specifically designed to encourage discussion and networking with poster presenters.
+
+::: {style="text-align: center;"}
+#### Workshops
+:::
+
+Workshops will occur in the venue, [Centre Cívic Ferreries](https://maps.app.goo.gl/mSEFoTJQ9mBsUPG3A). One workshop will focus on [Nesting traps for cavity-nesting bees and wasps in ecological studies: biology, ecology, materials and methods] and second one on [Perspectives in plant-pollinator systems research in the new era of Nature Restoration]. To participate in the workshops, **you must be registered**. Further information about place and attendance will be sent to all **registered** participants. For more information, see the [Workshops].
+::::::::::
+::::::::::::
+
+::::::::::::: {#programme}
+## Programme {style="text-align: center;"}
+
+Programme can be found [here](documents/ECOFLOR2026_programme_v5.pdf).
+Programme of oral presentations can be found [here](documents/ECOFLOR2026_OP_programme_v10.pdf) and programme of poster presentations can be found [here](documents/ECOFLOR2026_PS_programme_v6.pdf).
+
+![ECOFLOR 2026 Programme](documents/jpg/ECOFLOR2026_programme_V5/ECOFLOR2026_programme_v5_page-0001.jpg){width="100%"}
+
+
+::: {style="text-align: center;"}
+### Oral presentations programme
+:::
+![ECOFLOR 2026 Oral presentations programme](documents/jpg/ECOFLOR2026_OP_programme_v10/ECOFLOR2026_OP_programme_v10_page-0001.jpg){width="100%"}
+![ECOFLOR 2026 Oral presentations programme](documents/jpg/ECOFLOR2026_OP_programme_v10/ECOFLOR2026_OP_programme_v10_page-0002.jpg){width="100%"}
+
+::: {style="text-align: center;"}
+### Poster presentations programme
+:::
+![ECOFLOR 2026 Poster presentations programme](documents/jpg/ECOFLOR2026_PS_programme_v6/ECOFLOR2026_PS_programme_v6_page-0001.jpg){width="100%"}
+![ECOFLOR 2026 Poster presentations programme](documents/jpg/ECOFLOR2026_PS_programme_v6/ECOFLOR2026_PS_programme_v6_page-0002.jpg){width="100%"}
+
+:::::::::::::
+
+::: {#voting style="text-align: center;"}
+### Vote for the Best Presentation {data-link="Vote"}
+:::
+
+Please vote for the best student oral and poster presentation!
+
+![](images/qrcode_forms.gle.png){width=300 fig-align="center"}
+
+\
+
+::: {#keynote}
+### Keynote speakers {.unlisted style="text-align: center;"}
+
+\vspace{2em}
+:::
+
+
+![](images/people/juli_fuego.png){fig-align="center" width="407"}
+
+
+:::: {style="text-align: center;"}
+#### Prof. Juli Pausas [![](images/orcid.svg){width="25"}](https://orcid.org/0000-0003-3533-5786) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=T9C5g_IAAAAJ)
+
+#### Fire and plant reproduction
+
+::: {style="text-align: justify;"}
+Juli G. Pausas is a CSIC Research Professor at [*Centro de Investigación sobre Desertificación* (CIDE, Valencia, Spain)](https://www.uv.es/uvweb/centro-investigacion-desertificacion/es/centro-investigaciones-desertificacion-1285894590702.html) of the Spanish National Research Council (CSIC). His research focuses on [[ecology and evolution of mediterranean and fire-prone ecosystems]{.underline}](https://www.uv.es/jgpausas/fire-ecology-evolution.html), and specifically on understanding the role of fire in shaping populations, species (i.e., fire traits), communities (i.e., assembly processes), landscapes, and biomes. While his primary experience is in Mediterranean ecosystems, he possesses a broad, global perspective on ecology. He has participated in several successful international research projects and has experience in both field and modelling studies. He has written more than 200 [[scientific papers]{.underline}](https://www.uv.es/jgpausas/papers.htm), co-edited an international book on the[[ecology of Cork oak woodlands (Island Press)]{.underline}](https://www.uv.es/jgpausas/corkoak.htm), co-authored a book on [[Fire ecology in Mediterranean ecosystems (Cambridge Press)]{.underline}](https://www.uv.es/jgpausas/fire-book.htm), and book in Spanish on [[fire ecology]{.underline}](https://www.uv.es/jgpausas/incendios.html).
+:::
+::::
+
+
+[![](images/people/plenary2.png){fig-align="center" width="400"}](https://scholar.google.com/citations?user=8s9DF5wAAAAJ&hl=en)
+
+
+:::: {style="text-align: center;"}
+#### Dr. Cristina Botías [![](images/orcid.svg){width="25"}](https://orcid.org/0000-0002-3891-9931) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=U1Q7w6cAAAAJ)
+
+#### Flowers as Hotspots of Pesticide and Pathogen Exposure for Bees
+
+::: {style="text-align: justify;"}
+Cristina Botías is a Ramón y Cajal Research Fellow at the [University of Alcalá](https://www.uah.es/en/). She holds a PhD in Veterinary Science from the [Complutense University of Madrid](https://www.ucm.es/english), completed at the [Apicultural and Agri-environmental Research Center (CIAPA–IRIAF)](https://marchamalo.castillalamancha.es/), where she studied the effects of honeybee pathogens at both individual and colony levels. Her doctoral work, awarded the PhD Extraordinary Prize, provided key insights into how emerging diseases affect bee health and colony performance. Following her PhD, Cristina conducted postdoctoral research at the [University of Sussex](https://www.sussex.ac.uk/) (UK), investigating pesticide exposure and its interactions with other stressors, such as pathogens. Her findings highlighted that bees are exposed to higher and more prolonged pesticide levels than previously thought. She later held a Juan de la Cierva Fellowship at the[Estación Biológica de Doñana–CSIC](https://www.ebd.csic.es/), focusing on disease pressures in wild bees, and subsequently returned to CIAPA–IRIAF with an INIA-DOC fellowship to continue her research on wild pollinator health. Since 2022, she has been based at the [University of Alcalá](https://www.uah.es/en/), where her research focuses on the pathogenesis and epidemiology of pathogens affecting bumblebees and other pollinators. She also teaches undergraduate courses in Zoology and Sanitary Entomology within the degrees of Environmental Sciences, Biology, and Sanitary Biology. Cristina has published over 50 scientific articles and led several research projects funded by regional, national and international bodies. She is also active in outreach efforts, promoting awareness of pollinators' ecological importance and the threats they face.
+:::
+::::
+
+::::: ::::::::::
+:::: {#openingtalk_stefanescu style="text-align: justify;"}
+::: {style="text-align: center;"}
+### Opening lecture
+
+![](images/people/Stefanescu_round.png){fig-alt="Dr. Constantí Stefanescu" fig-align="center"}
+
+#### Dr. Constantí Stefanescu [![](images/orcid.svg){width="25"}](https://orcid.org/0000-0001-8952-7869) [![](images/scopus.svg){width="25"}](https://www.scopus.com/authid/detail.uri?authorId=7003371790) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=rY9z-bwAAAAJ&hl=en)
+
+#### Monitoring pollinators in the long term: the example of butterflies and the European Butterfly Monitoring Schemes
+:::
+
+Constantí Stefanescu began his research career in oceanography as a PhD student at the ICM-CSIC. Since 1994, he has been the scientific coordinator of the Catalan Butterfly Monitoring Scheme (CBMS) and currently coordinates the [BiBIO research group](https://www.bibio.org/) at the MCNG. He is also an associate researcher at [CREAF](https://www.creaf.cat/).
+
+His research activity focuses on the analysis of the CBMS database to explore various aspects of butterfly ecology. He has published more than 100 articles in international SCI-indexed journals, including Nature, Nature Climate Change, Nature Communications, and Proceedings of the National Academy of Sciences USA. He is a co-author of the monograph on diurnal butterflies in the Fauna Ibérica series, published by CSIC, and of the field guide to the diurnal butterflies of Catalonia, published by Lynx. He has made major contributions to understanding the impacts of climate change and landscape change on butterfly communities and their conservation. He also investigates the impact of parasitism on butterfly population dynamics and is the author of the first review of this topic in the book Ecology of Butterflies in Europe.
+
+He leads research on the migration of the painted lady butterfly, with numerous contributions that have represented a significant advance in this field. More recently, he has worked on mutualistic networks of pollinators and flowering plants and on the impact of transgenic crops on non-target Lepidoptera. He regularly collaborates with international research groups, including the UK Centre for Ecology and Hydrology, the University of Helsinki, and Stockholm University, among others. He currently supervises three PhD theses.
+
+In 2018, he received the Marsh Lepidoptera Award for his contribution to the conservation and research of Lepidoptera in Europe. In 2020, he was part of the team that prepared, for the European Commission, a proposal for a pollinator monitoring scheme in Europe (EuPMS).
+::::
+:::::
+
+:::::::::::::::::: ::::::::::
+
+
+::: {style="text-align: center;"}
+### Workshops
+:::
+
+Two workshops will be held on Wednesday 11th February. Please indicate your interest in attending one of them in the registration form. \vspace{2em}
+
+::::::::: columns
+
+![](images/nests.png){fig-align="center" width="400"}
+
+
+#### Nesting traps for cavity-nesting bees and wasps in ecological studies: biology, ecology, materials and methods
+
+::: {style="text-align: justify;"}
+Nesting traps simulate nesting resources for a wide diversity of bees and wasps. They are useful to standardize sampling and sample a lot of sites simultaneously. However, nesting traps can be designed in multiple ways, and their use and effectiveness is dependent on the scientific questions addressed as well as in the knowledge of the natural history of bees and wasps. In this workshop we will provide basic knowledge on the biology and ecology of cavity-nesting bees and wasps, and we will provide specific recommendations on which materials to use and how to install them to assure replicability and effectiveness of sampling.
+
+**Instructors:** [Júlia Batlle-Benaiges], [Júlia Coromina], [Carlos Hernández-Castellano]
+
+**Time:** [Wednesday 11th February], 10:00 - 13:00
+:::
+
+
+![](images/workshop2.png){fig-align="center" width="400"}
+
+
+
+
+#### Perspectives in plant-pollinator systems research in the new era of Nature Restoration
+
+::: {style="text-align: justify;"}
+Plant-pollinator systems are essential to sustain biodiversity and function in ecosystems. Indeed, main research topics in the ECOFLOR community include, among others, the study of the evolution of breeding systems, pollination ecology, spatio-temporal variation in pollinator communities, and ecological networks. In a context of global change, the scientific community is adapting continuously to research and management challenges imposed by the need to reverse negative impacts and restore the integrity of ecosystems. In Europe, this framework is exemplified by the Nature Restoration Law. In this workshop, we want to organize a discussion around the framework of the Nature Restoration Law, to detect priorities, challenges, and opportunities for research in plant-pollinator systems. This will be conducted within the ECOFLOR community and will yield a multi-authored, collaborative paper, published in a scientific journal related to the research topic.
+
+The organizers will provide preliminary information and suggestions, but the aim is that all those with interest and experience can join and lead the workshop team.
+
+**Time:** [Wednesday 11th February], 15:00 - 18:00
+:::
+
+
+:::::::::
+
+
+
+::: {style="text-align: center;"}
+### Field trip {data-link="Fieldtrip" style="text-align: justify;"}
+:::
+
+::: {style="text-align: justify;"}
+The field trip will take place on Saturday 14th February, visiting the [Ports Natural Parks](https://www.spain.info/en/nature/els-ports-natural-park/) (a mountain range affected by a recent wildfire) and the Delta (an area of aquatic ecosystems and ecosystem restoration). More details will be provided to registered participants.
+:::
+
+![](images/posrt.jpeg){fig-align="center"}
+
+##### **Ports Natural Park** {style="text-align: center;"}
+
+::: {style="text-align: justify;"}
+The [Ports Natural Park](https://www.catalunya.com/en/continguts/patrimoni-natural/els-ports-natural-park-17-17001-573555) is a sub-Mediterranean ecosystem predominantly mountainous and dominated by forests. It is located in the southernmost part of Catalonia (NE Spain), being part of the Iberian System mountain range and formed of calcareous mesozoic materials.
+
+In July 2025, a wildfire originated in Paüls (a municipality close to the Ebro river) affected more than 3000 hectares of mainly *Pinus halepensis* forest.
+
+In the first part of the visit, we will learn about 1) the ecosystems and conservation strategies present in the Ports Natural Park; 2) how the wildfire started, developed, and its consequences in the affected area; and 3) the current status of forests and fire regimes in this region. We will also discuss several topics of ecological relevance for plant-pollinator systems in areas affected by wildfires, including ongoing projects and studies.
+:::
+
+![](images/flamingo2.png){fig-align="center" width="1600"}
+
+##### **Delta Natural Park** {style="text-align: center;"}
+
+:::: {style="text-align: justify;"}
+The [Ebro Delta Natural Park](https://www.turismodeltadelebro.com/en/what-to-see-and-do-in-the-ebro-delta/) is one of the most important and biodiverse wetlands in the Western Mediterranean, covering around 320 km2 of rice fields, lagoons, salt marshes and sand dune systems. The Ebro Delta hosts a highly diverse community of waterbirds, including important populations of some iconic species such as the Audouin gull. During the second part of the visit, we will have lunch in the “Casa de Fusta” restaurant, where we will taste several local dishes (cost \~30€). Then we will visit the “Finca Bombita”, a former 500-ha rice farm that is being rewilded to promote biodiversity and face climate change impacts on the territory. Together with the environmental managers, we will have the opportunity to discuss: (i) the effects of climate change on sensitive environments such as the Ebro Delta, (ii) potential strategies and NbS to reduce these impacts, and (iii) the socio-environmental challenges involved in carrying out this type of restoration projects.
+
+::: {style="text-align: center"}
+**Departure will be at 8:00 and arrival at \~18:00, with the possibility to come back to Barcelona.**
+:::
+::::
+
+::::::::::::::::::
+
+:::: ::::::::::
+::: {#venue style="text-align: center;"}
+## Venue
+:::
+::::
+
+:::::::::: ::::::::::
+::::::::: {style="text-align: justify;"}
+::: {style="text-align: center;"}
+**Welcome to TORTOSA!**
+:::
+
+The 23rd edition of EcoFlor takes place at the [Centre Cívic Ferreries](https://maps.app.goo.gl/mSEFoTJQ9mBsUPG3A). This historical building (ancient market) is located in the city center of Tortosa.
+
+Oral Presentations (including plenary talks) will take place in the Main Hall.
+
+Posters will be in the room next to the Main Hall.
+
+Workshops will be conducted in [Centre Cívic Ferreries](https://maps.app.goo.gl/mSEFoTJQ9mBsUPG3A).
+
+There are up to three spaces (two small meeting rooms, one big hall with panoramic view to the Main Hall) upstairs. Consider this if you need to work some time or to meet with colleagues. You could book the room some period of time by 1) mailing to the organization, or 2) writing it in the room schedule (blank paper in the door).
+
+::: {style="text-align: center;"}
+### How to get there
+:::
+
+For those coming from abroad and landing at Barcelona airport, it is easy to reach Tortosa, since there is a [direct bus (Hife company)](https://www.hife.es/en) connection with departures every hour, taking about 2 hours to reach Tortosa. Remember to buy the ticket with anticipation. Consider that you can also get the bus (Hife) from several bus stops in Barcelona, with direct connections to Tortosa. [From the Tortosa bus station, it is approximately fifteen minutes walk to the venue.](https://maps.app.goo.gl/xak7D6uc51aAv5Jm8)
+
+If you are already in Barcelona, you may get the train R16 from [Sants Train Station](https://maps.app.goo.gl/T4eAAoCc3EhT1UyG7) operated by the [Renfe company](https://www.renfe.com/es/en). Departures are approximately every 1-2 hours, taking about 2 hours. [From the Tortosa main train station, it is approximately ten minutes walk to the venue.](https://maps.app.goo.gl/8Bf8CiD97VYjz2p88)
+
+For those coming in car (e.g. Spain), just get the exit number 40 in the AP7 railway.
+
+If you find any problem, contact the ECOFLOR organization committee.
+
+```{=html}
+<iframe src="https://www.google.com/maps/embed?pb=!4v1756480672870!6m8!1m7!1sAkFuwwQGO-dt0fZtsxBnvQ!2m2!1d40.81489856424358!2d0.5161032411093048!3f353.91539408730813!4f11.7989709441717!5f0.5402623288307415" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+```
+
+::: {style="text-align: center;"}
+### Where to stay
+:::
+
+-   [Hotel Corona](https://www.sb-hotels.com/en/hotels/terres-ebre/corona-tortosa/) is close to the venue and kindly offer the attendees a 10% discount after reservation in their website indicating the code ECOFLOR26
+
+-   [Parador de Tortosa](https://paradores.es/en/parador-de-tortosa?gad_campaignid=18590350485&gad_source=1&gclid=Cj0KCQjw18bEBhCBARIsAKuAFEYlHVzsbVzRjAfbLQMYsuRE9CfrUheCecxlB0gDK_WGobp553gn1iMaAr--EALw_wcB&gclsrc=aw.ds) is an ancient building within the medieval castle. It is a majestic place, probably a bit far away from the venue (so assure you will be able to move properly), but if you want to feel the real Tortosa experience, go there. They kindly offer to us a 15% discount if booking is made early.
+
+-   More hotels, hostels, flats, and so on can be found at [www.tortosaturisme.cat](https://www.tortosaturisme.cat/en/hotels-more/)
+
+Consider that Tortosa is a small city, so do not wait unti the last minute to book accommodation! If you find any problem, contact the ECOFLOR organization.
+
+::: {style="text-align: center;"}
+### Where to have lunch
+:::
+
+Close to the venue there are a lot of bars (e.g. Bar Ñoño) and restaurants (never a limiting factor in Spain!)
+
+However, for those who want (no need for reservation) the Restaurant [lo Llaüt](https://share.google/IMLViGAyuDjqN4DZ9) (traditional southern catalan cuisine) will offer to us a genuine and affordable menu (based on traditional and authentic paella) on thursday and friday. Very (very) recommendable.
+
+Another fantastic option is to have lunch in [Mercat de Tortosa](https://share.google/GI6Nx5BjW5Z5VXps4), a genuine Mediterranean market where fresh fruit, vegetables, fish and meat, mingle with quick and delicious cooking in bar stands (Market cuisine).
+
+If you go there, you simply HAVE TO go to [Bar Ester](https://share.google/IO2bF2TtQjZKNY2v5). They are simply the best. Try the traditional “abadejo” (cod), cap-i-pota, artichoke omelette, and so on (everything local).
+
+::: {#dinner style="text-align: center;"}
+### Where to have dinner and beers
+:::
+
+Once the congress sessions end in the afternoon (\~19h) we will cross the bridge over the Ebro river, admire the Cathedral in front of us, and face two streets where plenty of bars and restaurants will help us continue networking:
+
+-   [Avinguda de la Generalitat](https://maps.app.goo.gl/diVKPEeHXMkLHJ8s8)
+
+-   [Carrer de Sant Blai](https://maps.app.goo.gl/QqZPdsg75zNVApQK9)
+
+Anything there and between these streets will be fine.
+
+Remember to join the Whatsapp group [ECOFLOR Dark-Side](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t) for further information (floral ecology and evolution continue at night!).
+
+The Conference Dinner will take place on [Thursday 12th February], at a restaurant specialized in traditional and local food. Price will be \~40€ per person.
+
+::: {style="text-align: center;"}
+### What to visit
+:::
+
+if you are planning to come to Tortosa earlier or to stay a couple of days more after the congress, you may find useful this webpage: <https://www.tortosaturisme.cat/en/> Here you can find several options to enjoy the city, but also the surroundings. Tortosa is an small, ancient city in southern Catalonia, crossed by a river, and between two natural areas (mountains and sea). There is plenty of history, culture, gastronomy (and very good white wines), and an extraordinary natural environment. We will try our best to make you feel everything of these.
+:::::::::
+::::::::::
+
+:::: ::::::::::
+::: {#organisation style="text-align: center;"}
+## Organisation committee
+:::
+::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::: ::::::::::
+<div>
+
+::: {style="text-align: justify;"}
+The 23rd edition of EcoFlor meeting is organised by **the Wildlife Pollinators Group**, a research group of the [**Wildlife Ecology and Health** **Lab**](https://weh.cat/), based in the [Veterinary Faculty of the Autonomous University of Barcelona (UAB).](https://www.uab.cat/web/studies/graduate/university-master-s-degrees/by-areas-of-knowledge/veterinary-medicine-1345670299644.html) Additional researchers from different institutions (IRTA, CTFC, IVIA, CREAF) are actively involved in the organisation.
+
+In the Wildlife Pollinators Group we study the relationship between large herbivores (domestic and wild) and plant-pollinator communities and interactions,as well as in pollination function. We are also interested in understanding how other processes operating at large scales (such as wildfires) influence the assemblage of these communities. On the opposite (microscopic scale) side, we are interested in disentangling the mysteries behind solitary bee health. We conduct basic faunistic studies as well as research on bee diversity patterns in multiple types of habitats (including urban ecosystems, riparian ecosystems, and grasslands).
+:::
+
+\
+**Organisation committee**: [Carlos Hernández-Castellano], [Néstor Pérez-Méndez], [Jordi Margalef-Marrassé], [Alice Casiraghi], [Jakub Štenc], [Júlia Batlle-Benaiges], [Júlia Coromina], [Nil Guerrero], [Marina Aguilar Grau],
+
+[![](images/wildlifelab.png){fig-align="center" width="600"}](https://weh.cat/)
+
+:::::::::::: columns
+::: {.column width="40%"}
+![](images/people/CarlosHC.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Carlos Hernández-Castellano
+
+::: {style="text-align: justify;"}
+Postdoctoral researcher at the Autonomous University of Barcelona (Department of Medicine, Veterinary Faculty), currently based at the Czech University of Life Sciences (Prague, Czech Republic). He is an ecologist with expertise in plant-pollinator interactions and with interest in multiple topics of bee ecology, ranging from the consequences of large-scale disturbances (herbivory and wildfires) to the study of bee health. He is also interested in the diversity patterns of bees in multiple ecosystem types, including urban environments.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:carlos.hernandezcastellano@gmail.com) [![](images/scholar.png){width="25"}](https://scholar.google.es/citations?user=N20Q75MAAAAJ&hl=es)
+:::
+:::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/NestorPM.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Néstor Pérez-Méndez
+
+::: {style="text-align: justify;"}
+Ramon y Cajal Researcher at the Institut de Recerca i Tecnologia Agroalimentàries (IRTA). I am an ecologist broadly interested in (i) assessing how global change drivers affect the functioning of natural and agricultural systems, and (ii) identifying and evaluating agricultural management strategies that reconcile crop production with biodiversity conservation.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:nestor.perez@irta.cat) [![](images/scholar.png){width="25"}](https://scholar.google.es/citations?user=9cVCRHcAAAAJ&hl=es)
+
+Instagram account for wildlife photography: @raw_natura
+:::
+:::::
+:::::::
+::::::::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/AliceC.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Alice Casiraghi
+
+::: {style="text-align: justify;"}
+PhD candidate at the Valencian Institute of Agricultural Research (IVIA), specializing in community ecology. Her doctoral research focuses on arthropod trophic webs (including pollinator-plant relationships) associated with different cover crop treatments in citrus agroecosystems. In addition to her thesis work, she has gained experience as a specialist in aphid–parasitoid interactions in wheat fields and is actively involved in aphid taxonomy studies during her free time.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:theaphidologist@gmail.com) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=J6BL1f0AAAAJ&hl=es)
+:::
+:::::
+:::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/jordi_real.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Jordi Margalef-Marrassé
+
+::: {style="text-align: justify;"}
+PhD in terrestrial ecology from the Autonomous University of Barcelona (UAB) and CREAF. Postdoctoral researcher at Forest Sciences Centre of Catalonia. He is a vegetation ecologist whose research focuses on climate change-induced dynamics and plant-plant interactions. More recently, his work has also focused on exploring forest management scenarios aimed to increase community resilience in the face of wildfires.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:jordi.margalef@ctfc.cat) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=Os21VVYAAAAJ&hl=ca)
+:::
+:::::
+:::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/js3.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Jakub Štenc
+
+::: {style="text-align: justify;"}
+Postdoctoral researcher at the Charles University (Departments of Botany and Zoology, Prague, Czech Republic), currently based at the CREAF research center in Barcelona. He is an ecologist with expertise in plant-pollinator interactions and with interest in multiple topics related to pollen transfer, ranging from the dynamics of pollen presentation, transfer and deposition, consequences of pollinator behaviour (preferences and constancy) to the pollination networks. He is also interested in automatization of the image analysis.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:jakubstenc@gmail.com) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=QrFO4O0AAAAJ&hl=cs) [CV](https://jakubstenc.github.io/jakubstenc/CV.html)
+:::
+:::::
+:::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/JuliaBB.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Júlia Batlle-Benaiges
+
+::: {style="text-align: justify;"}
+M.Sc. Wildlife and Biodiversity student at the University of Freiburg. She is interested in bee ecology and in the resilience of plant-pollinator networks to disturbances such as herbivory. For her Bachelor's thesis, she investigated the effects of pasture size and grazing intensity on bee diversity patterns. She has also gained experience using nesting traps to study cavity-nesting bees and wasps.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:ju.ba.benaiges@gmail.com) [![](images/scholar.png){width="25"}](https://scholar.google.com/citations?user=cr9FBjkAAAAJ&hl=ca)
+:::
+:::::
+:::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/juliacoronira.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Júlia Coromina
+
+::: {style="text-align: justify;"}
+MSc student in Terrestrial Ecology and Biodiversity Management at the Universitat Autònoma de Barcelona. Since 2022, she has been studying native bees and conducting experiments in pastures with large domestic herbivores. She has also studied bee species that nest in pre-existing cavities, built entomological collections, and identified bee and other pollinators. She is currently developing her Master’s thesis on the resilience of plant–pollinator networks under different browsing levels by large wild herbivores.
+:::
+
+::: {style="text-align: center;"}
+[✉️](mailto:jucoromina8@gmail.com) [![](images/linkedin.png){width="25"}](https://www.linkedin.com/in/j%C3%BAlia-coromina-javier-320374238/)
+:::
+:::::
+:::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/jordi.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Nil Guerrero
+
+:::: {style="align-text: justify"}
+MSc student in Terrestrial Ecology and Biodiversity Management at the [Universitat Autònoma de Barcelona](https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954409.html). He holds a double degree in Geology and Environmental Sciences. In 2024, he began studying plant–pollinator interactions, conducting his undergraduate thesis on pollinator communities in riparian ecosystems. In addition, he has collaborated in sampling campaigns in areas affected by wildfires. He has developed strong skills in identifying bees and other pollinators both in the field and in the laboratory, as well as in preparing entomological collections. He is currently working on publications documenting new bee records in the Iberian Peninsula and preparing a review article on the role of pollinators in riparian habitats as part of his MSc.
+
+::: {style="text-align: center;"}
+[✉️](mailto:nilguerrerok@gmail.com) [[CV]{.underline}](https://www.canva.com/design/DAGr6m6voYA/4fjOUwPOQN46SWjQ7lDYtg/view?utm_content=DAGr6m6voYA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0220aff320)
+:::
+::::
+:::::
+:::::::
+
+::::::: columns
+::: {.column width="40%"}
+![](images/people/marina.png){fig-align="left" width="200"}
+:::
+
+::::: {.column width="60%"}
+##### Marina Aguilar Grau
+
+:::: {style="align-text: justify"}
+MSc student in Ecology, Management and Restoration of the Natural Environment at the [University of Barcelona](https://web.ub.edu/en/). She holds a BSc in Biology. In 2024, she began researching the ecology of bee populations in urban environments, with an emphasis on species diversity and taxonomic resolution. She has experience in the use and application of taxonomic keys for various groups of pollinators, in preparing entomological collections, and is skilled in data analysis and processing using R. As part of her MSc research, she is compiling a checklist of bee species from her study system and preparing a manuscript addressing differences in species composition and community turnover between urban and natural habitats.
+
+::: {style="text-align: center;"}
+[✉️](mailto:maguilargrau@gmail.com) [[CV]{.underline}](https://www.canva.com/design/DAGzQjEdURY/4tp_HYbH1NokMg0wxn7pJA/edit?utm_content=DAGzQjEdURY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+:::
+::::
+:::::
+:::::::
+
+</div>
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::: {#acknowledgements}
+## Acknowledgements {style="text-align: center;"}
+
+::: {style="text-align: center;"}
+We thank the following organisations for support and funding:
+
+[![](images/logos/AEET.png){fig-align="center" width="150"}](https://www.aeet.org/es/english/)
+
+**AEET - Asociación Española de Ecología Terrestre**
+
+[![](images/logos/ports.jpg){fig-align="center" width="150"}](https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/ports/inici/)
+
+**Parc Natural dels Ports**
+
+[![](images/logos/delta.jpg){fig-align="center" width="150"}](https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/delta-de-lebre/inici/)
+
+**Parc Natural del Delta de l'Ebree**
+
+[![](images/logos/logotiphoritzontaltransppetita.png){fig-align="center" width="150"}](https://www.tortosa.cat/)
+
+**Ajuntament de Tortosa**
+
+[![](images/logos/Logo-Diputació-de-Tarragona.png){fig-align="center" width="150"}](https://www.dipta.cat/)
+
+**Diputació de Tarragona**
+:::
+::::
+
+:::: {#contact}
+## Contact {style="text-align: center;"}
+
+::: {style="text-align: center;"}
+[**ecoflor2026@gmail.com**](mailto:ecoflor2026@gmail.com)
+
+[**WhatsApp group chat**](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t)
+
+[**Discord**](https://discord.gg/Ser2GRXgns)
+
+[**Instagram**](https://www.instagram.com/ecoflor2026/)
+
+[**Bluesky**](https://bsky.app/profile/ecoflor.bsky.social)
+:::
+::::

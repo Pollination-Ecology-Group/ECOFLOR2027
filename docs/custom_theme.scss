@@ -1,0 +1,384 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Tilt+Warp&display=swap');
+
+// Vertical spacing between blocks of text
+$smallMargin: 5px;
+$blockMargin: 10px;
+$largeMargin: 20px;
+
+// Colors
+
+// Colors are now loaded from _colors.scss, which is auto-generated from colors.json.
+// Do not define color variables here. Edit colors.json and regenerate _colors.scss if needed.
+@import "_colors";
+
+
+
+*{
+  text-align: justify;
+}
+
+.{
+  text-align: justify;
+}
+
+#quarto-document-content {
+	text-align: left;
+}
+
+.text-background-white {
+  background-color: $white;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+ 
+.text-background-black {
+  background-color: $black;
+  color: $white;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-background-blue {
+  background-color: $blue;
+  color: $white;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-background-purple {
+  background-color: $purple;
+  color: $white;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-background-red {
+  background-color: $red;
+  color: $white;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-background-pink {
+  background-color: $pink;
+  color: $white;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-background-brown {
+  background-color: $brown;
+  color: $white;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-background-yellow {
+  background-color: $yellow;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: $smallMargin;
+}
+
+.text-color-white {
+  color: $white;
+}
+
+.text-color-black {
+  color: $black;
+}
+
+.text-color-blue {
+  color: $blue;
+}
+
+.text-color-purple {
+  color: $purple;
+}
+
+.text-color-red {
+  color: $red;
+}
+
+.text-color-pink {
+  color: $pink;
+}
+
+.text-color-brown {
+  color: $brown;
+}
+
+.text-color-yellow {
+  color: $yellow;
+}
+
+$body-color: $black;
+$backgroundColor: $white;
+
+// Typography
+$mainFont: "Inter", sans-serif !default;
+$mainFontSize: 12pt;
+$body-line-height: 1.5;
+
+$headingMargin: 0;
+$headingFont: "Tilt Warp", sans-serif !default;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextShadow: none;
+$headingFontWeight: bold;
+
+$heading1Size: 30pt;
+$heading2Size: 24pt;
+$heading3Size: 20pt;
+$heading4Size: 18pt;
+$heading5Size: 16pt;
+$heading6Size: 14pt;
+
+.bold {
+  font-weight: bold;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.underscore {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/*-- scss:rules --*/
+
+/* Images */
+
+
+.banner {
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* General text styling */
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  line-height: $body-line-height;
+  color: $body-color;
+  background-color: $backgroundColor;
+}
+
+a {
+  color: $red;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: $white !important;
+    background-color: $pink !important;
+  }
+}
+
+/* Headings */
+h1 {
+  font-family: $headingFont;
+  font-size: $heading1Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin-top: $largeMargin;
+  color: $blue;
+}
+
+h2 {
+  font-family: $headingFont;
+  font-size: $heading2Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin-top: $largeMargin;
+  color: $blue;
+  text-align: center;
+  
+}
+
+h3 {
+  font-family: $headingFont;
+  font-size: $heading3Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin-top: $largeMargin;
+  text-align: center;
+}
+
+h4 {
+  font-family: $headingFont;
+  font-size: $heading4Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin-top: $blockMargin;
+  text-align: center;
+}
+
+h5 {
+  font-family: $headingFont;
+  font-size: $heading5Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin-top: $smallMargin;
+  text-align: center;
+
+}
+
+h6 {
+  font-family: $headingFont;
+  font-size: $heading6Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  margin-top: $smallMargin;
+  text-align: center;
+
+}
+
+/* Code block */
+pre,
+code {
+  background-color: $yellow !important;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+pre {
+  overflow: auto;
+  padding: $smallMargin;
+}
+
+code {
+  background-color: $yellow !important;
+  padding: 0;
+}
+
+pre code {
+  background-color: transparent !important;
+  padding: $smallMargin;
+}
+
+pre a,
+code a {
+  color: $black !important;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: $yellow !important;
+    background-color: $black !important;
+  }
+}
+
+/* List styling */
+ul {
+  padding-left: $largeMargin;
+  margin-left: $largeMargin;
+}
+
+ul ul {
+  padding-left: $largeMargin;
+  margin-left: $largeMargin;
+}
+
+/* Navbar */
+.navbar {
+  background: $blue !important;
+  font-family: $headingFont !important;
+  font-size: 20px !important;
+  color: $white !important;
+  padding: 10px 0 !important;
+  a {
+    color: $white !important;
+    text-decoration: none !important;
+    padding: 10px !important;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.navbar-logo {
+  max-height: 70px;
+}
+/* Language dropdown menu styling */
+.navbar .dropdown-menu {
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: $white !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+  background-color: darken($blue, 10%) !important;
+  color: $white !important;
+}
+
+
+.btn {
+  background-color: $white;
+  color: rgb(0,0,0);
+  border-color: $red;
+  font-variant-caps: all-petite-caps;
+  border-radius: 10px;
+  &:hover {
+    background-color: $pink;
+    color: $black;
+    border-color: $black;
+  }
+.button a:link {
+    color: white;
+}  
+  
+}
+
+.callout-red {
+  margin: 1em 0;
+  border: 2px solid $black;
+  border-left: 10px solid $red; 
+  border-radius: 10px;
+  background-color: $white;
+  padding: 0; /* Ensure no unwanted padding */
+}
+
+/* Style the first child element (assumed to be the header) */
+.callout-red > *:first-child {
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: $black;
+  background-color: $pink;
+  border-top-right-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+}
+
+
+/* Style the rest of the content */
+.callout-red > *:not(:first-child) {
+  padding-top: 10px;
+  padding-left: 15px;
+  color: $black;
+  background-color: $white;
+  border-bottom-right-radius: 10px;
+}
