@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "!archive/"
+    - "!Ecoflor_2026_Book_of_abstracts.qmd"
   resources:
     - "images/bluesky.svg"
     - "documents"
@@ -11,11 +12,13 @@ project:
     - cp googleb16326ba55692535.html docs/googleb16326ba55692535.html
   
 website:
+  title: "ECOFLOR 2027 – Praha"
   page-navigation: true
   navbar:
-    logo: "./images/logo_without_bakground_small.png"
-    logo-alt: "ECOFLOR 2026"
-    background: rgb(255,244,224)
+    logo: "./images/logos/logo2027.png"
+    logo-alt: "ECOFLOR 2027 Praha"
+    background: "#5B9E9E"
+    foreground: "white"
     left:
       - href: index.qmd#about
         text: "About" 
@@ -23,62 +26,49 @@ website:
         text: "Registration"     
       - href: index.qmd#programme
         text: "Programme"
+      - href: index.qmd#speakers
+        text: "Speakers"
+      - href: index.qmd#excursion
+        text: "Excursion"
       - href: index.qmd#venue
         text: "Venue" 
       - href: index.qmd#organisation
-        text: "Organisation committee"  
-      - href: index.qmd#acknowledgements
-        text: "Acknowledgements"  
-      - href: Ecoflor_2026_Book_of_abstracts.qmd
-        text: "Book of abstracts"  
-        
+        text: "Organisation"  
       - href: index.qmd#contact
         text: "Contact"
     right:
       - icon: github
-        href: https://github.com/Pollination-Ecology-Group/ECOFLOR2026
-      - icon: discord 
-        href: https://discord.gg/Ser2GRXgns  
-      - icon: whatsapp
-        href: https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t
-      - icon: instagram
-        href: https://www.instagram.com/ecoflor2026/      
-      - text: '<img src="images/bluesky.svg" width="20" height="20" style="vertical-align: middle; padding-bottom: 2px;">'
-        href: https://bsky.app/profile/ecoflor.bsky.social
+        href: https://github.com/Pollination-Ecology-Group/ECOFLOR2027
       - icon: envelope
-        href: mailto:ecoflor2026@gmail.com
-      - icon: book
-        href: Ecoflor_2026_Book_of_abstracts.pdf
-              
+        href: mailto:ecoflor2027@gmail.com
+        
   page-footer: 
-    left: "Made by Jakub Štenc" 
+    left: "ECOFLOR 2027 – Praha | Made by Jakub Štenc" 
     right: 
       - icon: github
-        href: https://github.com/
-      - icon: discord 
-        href: https://discord.gg/Ser2GRXgns
-      - icon: instagram
-        href: https://www.instagram.com/ecoflor2026/
-      - icon: whatsapp
-        href: https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t
+        href: https://github.com/Pollination-Ecology-Group/ECOFLOR2027
+      - icon: envelope
+        href: mailto:ecoflor2027@gmail.com
+
   announcement:
     icon: info-circle
     dismissable: true
-    content: "Dowland the book of abstract in PDF [here](https://pollination-ecology-group.github.io/ECOFLOR2026/Ecoflor_2026_Book_of_abstracts.pdf)."
+    content: "🌸 **ECOFLOR 2027** – 3–6 February 2027, Praha. Registration opens soon!"
     type: light
     position: below-navbar
+
   back-to-top-navigation: true
   cookie-consent: true
 
 format:
   html:
-    fontsize: 1.15rem
+    fontsize: 1.1rem
     monofont: Fira Code
     highlight-style: arrow
     css: [custom_theme.scss]
     toc: true
     smooth-scroll: true
     code-overflow: scroll
-    linkcolor: rgb(97,30,30)
-    background: rgb(255,244,224)
+    linkcolor: "#2A8A8A"
+    background: "#F8FAFA"
     theme: cosmo

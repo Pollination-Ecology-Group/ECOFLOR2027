@@ -1,173 +1,104 @@
 /*-- scss:defaults --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@400;600;700;800&display=swap');
 
 // Vertical spacing between blocks of text
 $smallMargin: 5px;
 $blockMargin: 10px;
 $largeMargin: 20px;
 
-// Colors
+// ============================================================
+// ECOFLOR 2027 – PRAHA COLOUR PALETTE (from logo)
+// ============================================================
+// Primary: Teal (from Prague skyline)
+$teal:        #3BBFBF;
+$teal-dark:   #2A8A8A;
+$teal-light:  #D6F4F4;
+$teal-xlight: #EBF9F9;
 
-// Colors are now loaded from _colors.scss, which is auto-generated from colors.json.
-// Do not define color variables here. Edit colors.json and regenerate _colors.scss if needed.
-@import "_colors";
+// Accent: Purple (from scabious flower)
+$purple:      #7B4FB0;
+$purple-dark: #5A3580;
+$purple-light:#E8D9F8;
 
+// Warm: Amber/Gold (from hoverfly body + logo text)
+$amber:       #E8A830;
+$amber-dark:  #C48920;
+$amber-light: #FBF0D0;
 
+// Neutrals
+$white:       #FFFFFF;
+$off-white:   #F8FAFA;
+$dark:        #1A2B2B;
+$mid-grey:    #5E7272;
+$light-grey:  #E8EFEF;
 
-*{
-  text-align: justify;
-}
+// Legacy variable aliases used in SCSS rules below
+$blue:        $teal;
+$red:         $teal-dark;
+$pink:        $teal-light;
+$yellow:      $amber-light;
+$brown:       $purple;
+$black:       $dark;
 
-.{
-  text-align: justify;
-}
+// ============================================================
+// TYPOGRAPHY
+// ============================================================
+$body-color:       $dark;
+$backgroundColor:  $off-white;
 
-#quarto-document-content {
-	text-align: left;
-}
+$mainFont:         "Inter", sans-serif !default;
+$mainFontSize:     12pt;
+$body-line-height: 1.6;
 
-.text-background-white {
-  background-color: $white;
-  color: $black;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
- 
-.text-background-black {
-  background-color: $black;
-  color: $white;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-background-blue {
-  background-color: $blue;
-  color: $white;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-background-purple {
-  background-color: $purple;
-  color: $white;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-background-red {
-  background-color: $red;
-  color: $white;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-background-pink {
-  background-color: $pink;
-  color: $white;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-background-brown {
-  background-color: $brown;
-  color: $white;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-background-yellow {
-  background-color: $yellow;
-  color: $black;
-  padding: $smallMargin;
-  border-radius: $smallMargin;
-}
-
-.text-color-white {
-  color: $white;
-}
-
-.text-color-black {
-  color: $black;
-}
-
-.text-color-blue {
-  color: $blue;
-}
-
-.text-color-purple {
-  color: $purple;
-}
-
-.text-color-red {
-  color: $red;
-}
-
-.text-color-pink {
-  color: $pink;
-}
-
-.text-color-brown {
-  color: $brown;
-}
-
-.text-color-yellow {
-  color: $yellow;
-}
-
-$body-color: $black;
-$backgroundColor: $white;
-
-// Typography
-$mainFont: "Inter", sans-serif !default;
-$mainFontSize: 12pt;
-$body-line-height: 1.5;
-
-$headingMargin: 0;
-$headingFont: "Tilt Warp", sans-serif !default;
-$headingLineHeight: 1.2;
-$headingLetterSpacing: normal;
-$headingTextShadow: none;
-$headingFontWeight: bold;
+$headingFont:          "Outfit", sans-serif !default;
+$headingLineHeight:    1.2;
+$headingLetterSpacing: -0.02em;
+$headingTextShadow:    none;
+$headingFontWeight:    700;
+$headingMargin:        0;
 
 $heading1Size: 30pt;
 $heading2Size: 24pt;
 $heading3Size: 20pt;
-$heading4Size: 18pt;
-$heading5Size: 16pt;
-$heading6Size: 14pt;
+$heading4Size: 17pt;
+$heading5Size: 15pt;
+$heading6Size: 13pt;
 
-.bold {
-  font-weight: bold;
-}
+// ============================================================
+// UTILITY CLASSES
+// ============================================================
 
-.cursive {
-  font-style: italic;
-}
+.bold        { font-weight: bold; }
+.cursive     { font-style: italic; }
+.underscore  { text-decoration: underline; }
+.uppercase   { text-transform: uppercase; }
+.lowercase   { text-transform: lowercase; }
 
-.underscore {
-  text-decoration: underline;
-}
+.text-background-white  { background-color: $white;         color: $dark;    padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-black  { background-color: $dark;          color: $white;   padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-blue   { background-color: $teal;          color: $white;   padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-purple { background-color: $purple;        color: $white;   padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-red    { background-color: $teal-dark;     color: $white;   padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-pink   { background-color: $teal-light;    color: $dark;    padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-brown  { background-color: $purple;        color: $white;   padding: $smallMargin; border-radius: $smallMargin; }
+.text-background-yellow { background-color: $amber-light;   color: $dark;    padding: $smallMargin; border-radius: $smallMargin; }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-.lowercase {
-  text-transform: lowercase;
-}
+.text-color-white  { color: $white; }
+.text-color-black  { color: $dark; }
+.text-color-blue   { color: $teal; }
+.text-color-purple { color: $purple; }
+.text-color-red    { color: $teal-dark; }
+.text-color-pink   { color: $teal-light; }
+.text-color-brown  { color: $purple; }
+.text-color-yellow { color: $amber; }
 
 /*-- scss:rules --*/
 
-/* Images */
+/* ============================================================
+   BASE
+   ============================================================ */
 
-
-.banner {
-    max-width: 100%;
-    max-height: auto;
-}
-
-/* General text styling */
 body {
   font-family: $mainFont;
   font-size: $mainFontSize;
@@ -176,17 +107,25 @@ body {
   background-color: $backgroundColor;
 }
 
+/* ============================================================
+   LINKS
+   ============================================================ */
+
 a {
-  color: $red;
+  color: $teal-dark;
   text-decoration: underline !important;
 
   &:hover {
     color: $white !important;
-    background-color: $pink !important;
+    background-color: $teal !important;
+    border-radius: 3px;
   }
 }
 
-/* Headings */
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+
 h1 {
   font-family: $headingFont;
   font-size: $heading1Size;
@@ -194,7 +133,7 @@ h1 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin-top: $largeMargin;
-  color: $blue;
+  color: $teal-dark;
 }
 
 h2 {
@@ -204,9 +143,8 @@ h2 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin-top: $largeMargin;
-  color: $blue;
+  color: $teal-dark;
   text-align: center;
-  
 }
 
 h3 {
@@ -216,6 +154,7 @@ h3 {
   letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin-top: $largeMargin;
+  color: $purple;
   text-align: center;
 }
 
@@ -223,9 +162,9 @@ h4 {
   font-family: $headingFont;
   font-size: $heading4Size;
   line-height: $headingLineHeight;
-  letter-spacing: $headingLetterSpacing;
   font-weight: $headingFontWeight;
   margin-top: $blockMargin;
+  color: $amber-dark;
   text-align: center;
 }
 
@@ -233,83 +172,39 @@ h5 {
   font-family: $headingFont;
   font-size: $heading5Size;
   line-height: $headingLineHeight;
-  letter-spacing: $headingLetterSpacing;
-  font-weight: $headingFontWeight;
+  font-weight: 600;
   margin-top: $smallMargin;
   text-align: center;
-
 }
 
 h6 {
   font-family: $headingFont;
   font-size: $heading6Size;
   line-height: $headingLineHeight;
-  letter-spacing: $headingLetterSpacing;
-  font-weight: $headingFontWeight;
+  font-weight: 600;
   margin-top: $smallMargin;
   text-align: center;
-
 }
 
-/* Code block */
-pre,
-code {
-  background-color: $yellow !important;
-  color: $black;
-  padding: $smallMargin;
-  border-radius: 5px;
-}
+/* ============================================================
+   NAVBAR
+   ============================================================ */
 
-pre {
-  overflow: auto;
-  padding: $smallMargin;
-}
-
-code {
-  background-color: $yellow !important;
-  padding: 0;
-}
-
-pre code {
-  background-color: transparent !important;
-  padding: $smallMargin;
-}
-
-pre a,
-code a {
-  color: $black !important;
-  text-decoration: underline !important;
-
-  &:hover {
-    color: $yellow !important;
-    background-color: $black !important;
-  }
-}
-
-/* List styling */
-ul {
-  padding-left: $largeMargin;
-  margin-left: $largeMargin;
-}
-
-ul ul {
-  padding-left: $largeMargin;
-  margin-left: $largeMargin;
-}
-
-/* Navbar */
 .navbar {
-  background: $blue !important;
+  background: #5B9E9E !important;
   font-family: $headingFont !important;
-  font-size: 20px !important;
+  font-size: 17px !important;
   color: $white !important;
   padding: 10px 0 !important;
   a {
-    color: $white !important;
+    color: rgba(255,255,255,0.92) !important;
     text-decoration: none !important;
     padding: 10px !important;
+    transition: color 0.2s ease;
     &:hover {
-      text-decoration: underline !important;
+      color: $amber !important;
+      text-decoration: none !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -317,68 +212,227 @@ ul ul {
 .navbar-logo {
   max-height: 70px;
 }
-/* Language dropdown menu styling */
-.navbar .dropdown-menu {
+
+.navbar-nav .nav-link.active {
+  color: $amber !important;
+  font-weight: 700;
 }
 
-.navbar .dropdown-menu .dropdown-item {
-  color: $white !important;
+/* ============================================================
+   IMAGES & FIGURES
+   ============================================================ */
+
+.banner {
+  max-width: 100%;
+  max-height: auto;
 }
 
-.navbar .dropdown-menu .dropdown-item:hover,
-.navbar .dropdown-menu .dropdown-item:focus {
-  background-color: darken($blue, 10%) !important;
-  color: $white !important;
+img.rounded {
+  object-fit: cover;
+  border-radius: 50% !important;
+  height: 195px;
+  width: 195px;
 }
 
-
-.btn {
-  background-color: $white;
-  color: rgb(0,0,0);
-  border-color: $red;
-  font-variant-caps: all-petite-caps;
-  border-radius: 10px;
-  &:hover {
-    background-color: $pink;
-    color: $black;
-    border-color: $black;
-  }
-.button a:link {
-    color: white;
-}  
-  
+img.speaker-photo {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 4px solid $teal-light;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
+
+.figure-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: $mid-grey;
+}
+
+/* ============================================================
+   INFO CARDS (meeting summary quick-facts)
+   ============================================================ */
+
+.info-card {
+  background: $white;
+  border-left: 5px solid $teal;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+  &:hover { box-shadow: 0 4px 16px rgba(59,191,191,0.15); }
+}
+
+/* ============================================================
+   CALLOUT BOXES
+   ============================================================ */
 
 .callout-red {
   margin: 1em 0;
-  border: 2px solid $black;
-  border-left: 10px solid $red; 
+  border: 2px solid $dark;
+  border-left: 10px solid $teal;
   border-radius: 10px;
   background-color: $white;
-  padding: 0; /* Ensure no unwanted padding */
+  padding: 0;
 }
-
-/* Style the first child element (assumed to be the header) */
 .callout-red > *:first-child {
   margin: 0;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  color: $black;
-  background-color: $pink;
+  padding: 10px;
+  color: $dark;
+  background-color: $teal-light;
   border-top-right-radius: 10px;
   font-size: 1em;
   font-weight: bold;
   display: flex;
 }
-
-
-/* Style the rest of the content */
 .callout-red > *:not(:first-child) {
   padding-top: 10px;
   padding-left: 15px;
-  color: $black;
+  color: $dark;
   background-color: $white;
   border-bottom-right-radius: 10px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.btn {
+  background-color: $teal;
+  color: $white;
+  border-color: $teal-dark;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.1s;
+  &:hover {
+    background-color: $teal-dark;
+    color: $white;
+    border-color: $teal-dark;
+    transform: translateY(-1px);
+  }
+}
+
+/* ============================================================
+   VIDEO EMBEDS (YouTube iframe)
+   ============================================================ */
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  margin-bottom: 1.5rem;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-label {
+  text-align: center;
+  font-size: 0.9rem;
+  color: $mid-grey;
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.video-col {
+  padding: 0 0.8rem;
+}
+
+/* ============================================================
+   SPEAKER SECTION
+   ============================================================ */
+
+.speaker-card {
+  background: $white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(59,191,191,0.10);
+  margin-bottom: 2.5rem;
+  border-top: 4px solid $teal;
+}
+
+/* ============================================================
+   TABS
+   ============================================================ */
+
+.nav-pills .nav-link.active {
+  background-color: $teal;
+  color: $white;
+}
+.nav-pills .nav-link:hover {
+  color: $teal-dark;
+}
+
+/* ============================================================
+   TEAM CARDS
+   ============================================================ */
+
+.card-column {
+  float: left;
+  width: 28.8%;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  display: block;
+}
+@media screen and (max-width: 952px) {
+  .card-column { width: 100%; display: block; }
+}
+.team-card { box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); }
+.container { padding: 0 16px; }
+.container::after, .row::after { content: ""; clear: both; display: table; }
+.team-image { opacity: 1; display: block; width: 100%; height: auto; transition: .5s ease; backface-visibility: hidden; }
+.team-image:hover { opacity: 0.75; }
+
+/* ============================================================
+   PAGE FOOTER / NAV
+   ============================================================ */
+
+.page-item.active .page-link {
+  background-color: $teal;
+  border-color: $teal-dark;
+}
+.page-link { color: $teal-dark; }
+
+/* ============================================================
+   CODE
+   ============================================================ */
+
+pre, code {
+  background-color: $teal-xlight !important;
+  color: $dark;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+pre code { background-color: transparent !important; padding: $smallMargin; }
+pre a, code a { color: $dark !important; }
+
+/* ============================================================
+   MISC
+   ============================================================ */
+
+.clipped { clip-path: circle(); }
+
+.column-rounded { margin-left: auto; margin-right: auto; width: 50%; }
+
+.placeholder-notice {
+  background: $amber-light;
+  border-left: 5px solid $amber;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-style: italic;
+  color: $amber-dark;
+  margin: 1rem 0;
+  font-size: 0.9rem;
 }
