@@ -339,16 +339,24 @@ Further recommendations will be shared with registered participants.
 
 
 ::: {style="text-align: justify;"}
-The 24th edition of EcoFlor is organised by researchers based at the **[Faculty of Science, Charles University](https://www.natur.cuni.cz/eng)** (Praha, Czech Republic) in cooperation with the **[Česká společnost pro ekologii](https://www.cspe.cz/)** (Czech Society for Ecology, ČSPE).
+The 24th edition of EcoFlor is organised by researchers based at the **[Faculty of Science, Charles University](https://www.natur.cuni.cz/eng)** (Praha, Czech Republic) in cooperation with the **[Česká společnost pro ekologii](https://www.cspe.cz/)** (ČSPE) and the **[Asociación Española de Ecología Terrestre](https://www.aeet.org/)** (AEET).
 :::
 
 \
 
-::: {style="text-align: center;"}
-[![](images/logos/cspe_logo.svg){width="220" fig-alt="Česká společnost pro ekologii (ČSPE)"}](https://www.cspe.cz/)
+:::::: columns
+::: {.column width="50%" style="text-align: center;"}
+[![](images/logos/cspe_logo.svg){width="200" fig-alt="Česká společnost pro ekologii (ČSPE)"}](https://www.cspe.cz/)
 
-**[Česká společnost pro ekologii (ČSPE)](https://www.cspe.cz/)** is an independent civic association uniting scientists, academics, students, and other professionals working in the field of ecology in the Czech Republic. It supports ecological research, education, and public engagement with ecological science.
+**[ČSPE](https://www.cspe.cz/)** — Česká společnost pro ekologii is an independent civic association uniting scientists, academics, students, and other professionals working in ecology in the Czech Republic.
 :::
+
+::: {.column width="50%" style="text-align: center;"}
+[![](images/logos/AEET.png){width="200" fig-alt="Asociación Española de Ecología Terrestre (AEET)"}](https://www.aeet.org/)
+
+**[AEET](https://www.aeet.org/)** — The Asociación Española de Ecología Terrestre is the Spanish scientific society for terrestrial ecology, promoting ecological research, education, and international collaboration across the Iberian Peninsula and beyond.
+:::
+::::::
 
 \
 
