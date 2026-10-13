@@ -398,16 +398,14 @@ Postdoctoral researcher at the [Faculty of Science, Charles University](https://
 
 ::::::: columns
 ::: {.column width="40%"}
-![](images/people/placeholder_f1.png){fig-align="left" width="200"}
+![](images/people/petr_svanda_sq.jpg){.rounded fig-align="left" fig-alt="Petr Švanda"}
 :::
 
 ::::: {.column width="60%"}
-##### Name Surname *(TBD)*
+##### Petr Švanda
 
 ::: {style="text-align: justify;"}
-::: {.placeholder-notice}
-📝 **Placeholder** — Bio and affiliation to be confirmed.
-:::
+Doctoral student at the [Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Department of Zoology, Prague, Czech Republic). He is interested in pollen in all its aspects, whether it is pollen transfer and deposition, or how it is foraged by facultatively social *Ceratina* bees.
 :::
 :::::
 :::::::
@@ -416,55 +414,40 @@ Postdoctoral researcher at the [Faculty of Science, Charles University](https://
 
 ::::::: columns
 ::: {.column width="40%"}
-![](images/people/placeholder_m1.png){fig-align="left" width="200"}
+![](images/people/filip_buzleta_sq.jpg){.rounded fig-align="left" fig-alt="Filip Bužleta"}
 :::
 
 ::::: {.column width="60%"}
-##### Name Surname *(TBD)*
+##### Filip Bužleta
 
 ::: {style="text-align: justify;"}
-::: {.placeholder-notice}
-📝 **Placeholder** — Bio and affiliation to be confirmed.
-:::
+PhD student at the University of South Bohemia in České Budějovice. He is an ecologist with research interest in monitoring of plant-pollinator interactions using AI cameras and the impact of restoration on plant-pollinator interactions.
 :::
 :::::
 :::::::
 
 \
 
-::::::: columns
-::: {.column width="40%"}
-![](images/people/placeholder_f2.png){fig-align="left" width="200"}
-:::
+::: {.committee-list}
+##### Further members of the organising team
 
-::::: {.column width="60%"}
-##### Name Surname *(TBD)*
-
-::: {style="text-align: justify;"}
-::: {.placeholder-notice}
-📝 **Placeholder** — Bio and affiliation to be confirmed.
+- Sailee Sakhalkar
+- Guillermo Uceda
+- Helena Pijálková
+- Eva Horčičková
+- Eva Matoušková
+- Jiří Hadrava
+- Michael Mikát
+- Anna E-Vojtkó
+- Lars Götzenberger
+- Lucie Holzbachová
+- Tereza Kočárková
+- Natálie Námešná
+- Dominik Anýž
+- Carlos Hernández Castellano
+- Martin Freudenfeld
+- Alptekin Koc
 :::
-:::
-:::::
-:::::::
-
-\
-
-::::::: columns
-::: {.column width="40%"}
-![](images/people/placeholder_m2.png){fig-align="left" width="200"}
-:::
-
-::::: {.column width="60%"}
-##### Name Surname *(TBD)*
-
-::: {style="text-align: justify;"}
-::: {.placeholder-notice}
-📝 **Placeholder** — Bio and affiliation to be confirmed.
-:::
-:::
-:::::
-:::::::
 
 
 

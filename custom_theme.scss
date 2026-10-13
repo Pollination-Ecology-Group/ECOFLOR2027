@@ -414,6 +414,22 @@ img.speaker-photo {
   }
 }
 
+/* Committee: names-only list in columns */
+.committee-list {
+  text-align: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 2rem;
+    text-align: left;
+    max-width: 520px;
+    margin: 1rem auto 0;
+  }
+  li { margin-bottom: 0.35rem; }
+}
+
 /* Fixed-height logo box so logos of different shapes line up */
 .org-logo {
   height: 150px;
