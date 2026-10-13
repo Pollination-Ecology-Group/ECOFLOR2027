@@ -47,7 +47,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 ✉️ [Registration] – **opens soon**
 
-📞 [Contact](#contact) via [email](mailto:ecoflor2027@gmail.com)
+📞 [Contact](#contact) via [Discord](https://discord.gg/YCXbyRmUX5), [WhatsApp group chat](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t) or [email](mailto:ecoflor2027@googlegroups.com)
 
 :::
 :::::
@@ -487,12 +487,18 @@ We are grateful to the institutions that make EcoFlor 2027 possible: the **[Facu
 ## Contact {style="text-align: center;"}
 
 ::: {style="text-align: center;"}
-[**ecoflor2027@gmail.com**](mailto:ecoflor2027@gmail.com)
+[**ecoflor2027@googlegroups.com**](mailto:ecoflor2027@googlegroups.com)
 
 For questions about the meeting, abstract submission, registration or logistics, please reach out by email.
 
-::: {.placeholder-notice}
-📱 **Placeholder** — Social media accounts (Instagram, Bluesky, WhatsApp group) for ECOFLOR 2027 to be set up and linked here.
+Stay in touch and join the community:
 :::
+
+::: {.social-links}
+[<i class="bi bi-discord"></i> Discord](https://discord.gg/YCXbyRmUX5)
+[<i class="bi bi-whatsapp"></i> WhatsApp](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t)
+[<i class="bi bi-instagram"></i> Instagram](https://www.instagram.com/ecoflor2026/)
+[<i class="bi bi-bluesky"></i> Bluesky](https://bsky.app/profile/ecoflor.bsky.social)
+[<i class="bi bi-envelope"></i> Email](mailto:ecoflor2027@googlegroups.com)
 :::
 ::::

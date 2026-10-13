@@ -39,16 +39,32 @@ website:
     right:
       - icon: github
         href: https://github.com/Pollination-Ecology-Group/ECOFLOR2027
+      - icon: discord
+        href: https://discord.gg/YCXbyRmUX5
+      - icon: whatsapp
+        href: https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t
+      - icon: instagram
+        href: https://www.instagram.com/ecoflor2026/
+      - icon: bluesky
+        href: https://bsky.app/profile/ecoflor.bsky.social
       - icon: envelope
-        href: mailto:ecoflor2027@gmail.com
+        href: mailto:ecoflor2027@googlegroups.com
         
   page-footer: 
     left: "ECOFLOR 2027 – Praha | Made by Jakub Štenc" 
     right: 
       - icon: github
         href: https://github.com/Pollination-Ecology-Group/ECOFLOR2027
+      - icon: discord
+        href: https://discord.gg/YCXbyRmUX5
+      - icon: whatsapp
+        href: https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t
+      - icon: instagram
+        href: https://www.instagram.com/ecoflor2026/
+      - icon: bluesky
+        href: https://bsky.app/profile/ecoflor.bsky.social
       - icon: envelope
-        href: mailto:ecoflor2027@gmail.com
+        href: mailto:ecoflor2027@googlegroups.com
 
   announcement:
     icon: info-circle
