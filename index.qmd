@@ -26,7 +26,7 @@ EcoFlor is a working group of the [**Spanish Association of Terrestrial Ecology 
 
 The EcoFlor annual meeting brings together scientists interested in floral ecology and evolution. Its goal is to promote discussion, networking, and creativity in science, involving students at all career stages in an open and friendly environment. Participants are invited to present their ongoing projects and engage in critical scientific discussion and networking.
 
-The meeting will feature **two days of presentations** including plenary talks by **Prof. Robert Tropek** and **Dr Katherine Baldock**, as well as oral and poster contributions, thematically organised based on submitted abstracts.
+The meeting will feature **two days of presentations** including plenary talks by **Dr Robert Tropek** and **Dr Katherine Baldock**, as well as oral and poster contributions, thematically organised based on submitted abstracts.
 
 In addition, there will be an **excursion on Saturday 6th February** to the [Milovice Nature Reserve](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve) to see the reintroduced **European Bison** (*Bison bonasus*) and other large herbivores in the Czech wild steppe.
 
@@ -39,7 +39,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng) – lecture hall to be announced
 
-🎤 Plenary speakers: [Prof. Robert Tropek] & [Dr Katherine Baldock]
+🎤 Plenary speakers: [Dr. Robert Tropek] & [Dr. Katherine Baldock]
 
 🦬 [Excursion] to Milovice Nature Reserve on **Saturday 6th February**
 
@@ -170,6 +170,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Excursion: European Bison at Milovice
 :::
 
+![European bison in the Milovice reserve (Traviny near Benátky nad Jizerou). Photo: Michal Köpping, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zubr_v_P%C5%99%C3%ADrodn%C3%AD_rezervaci_velk%C3%BDch_kopytn%C3%ADk%C5%AF_Milovice,_lokalita_Traviny_u_Ben%C3%A1tek_nad_Jizerou.jpg)](images/bison_milovice.jpg){fig-align="center" width="700" fig-alt="European bison grazing in the steppe grassland of the Milovice Nature Reserve"}
+
 ::: {style="text-align: justify;"}
 The conference excursion will take place on **Saturday 6th February 2027**. We will visit the [**Milovice Nature Reserve**](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve), located approximately 40 km east of Prague, where you can encounter **European Bison** (*Bison bonasus*), **Exmoor Ponies**, and **Konik horses** roaming freely in a rewilded Czech steppe landscape.
 
@@ -225,6 +227,8 @@ The specific lecture hall will be announced to registered participants. Oral pre
 - 🔴 **I. P. Pavlova** (Line C, red) – 7 min walk
 
 **Tickets — use the Lítačka app:** Prague's public transport (operated by [PID](https://pid.cz/en/)) is excellent, affordable, and runs 24 hours. The easiest way to buy tickets is the **[PID Lítačka](https://app.pidlitacka.cz/)** mobile app (available for [Android](https://play.google.com/store/apps/details?id=cz.dpp.praguepublictransport) and [iOS](https://apps.apple.com/cz/app/pid-l%C3%ADta%C4%8Dka/id1140104120)). You can buy single-ride tickets, time passes, and airport zone supplements directly in the app and activate them instantly — no need to find a ticket machine. A **24-hour ticket** costs ~120 CZK (~5 EUR) and is valid on all metro, tram, and bus lines. Tickets can also be purchased from machines at metro stations or by SMS.
+
+🎥 **Not sure how it works?** Watch this short video: [How To Buy A Ticket For Public Transport in Prague](https://www.youtube.com/watch?v=OMbCsMObyfQ).
 
 ```{=html}
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.2!2d14.4265!3d50.0737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e6d86c3a3d%3A0x1f8d8d5a1b6c7e90!2sPr%C3%ADrodov%C4%9Bdeck%C3%A1%20fakulta%20UK!5e0!3m2!1sen!2scz!4v1695000000000" width="100%" height="420" style="border:0; border-radius:12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -345,14 +349,26 @@ The 24th edition of EcoFlor is organised by researchers based at the **[Faculty 
 \
 
 :::::: columns
-::: {.column .org-col width="50%"}
-[![](images/logos/cspe_logo.svg){width="200" fig-alt="Česká společnost pro ekologii (ČSPE)"}](https://www.cspe.cz/)
+::: {.column .org-col width="33%"}
+::: {.org-logo}
+[![](images/logos/prf_logo.svg){fig-alt="Faculty of Science, Charles University"}](https://www.natur.cuni.cz/eng)
+:::
+
+**[Faculty of Science, Charles University](https://www.natur.cuni.cz/eng)** — one of the leading research faculties in the Czech Republic, with a long tradition in botany, ecology, and zoology, and the host of EcoFlor 2027.
+:::
+
+::: {.column .org-col width="33%"}
+::: {.org-logo}
+[![](images/logos/cspe_logo.svg){fig-alt="Česká společnost pro ekologii (ČSPE)"}](https://www.cspe.cz/)
+:::
 
 **[ČSPE](https://www.cspe.cz/)** — Česká společnost pro ekologii is an independent civic association uniting scientists, academics, students, and other professionals working in ecology in the Czech Republic.
 :::
 
-::: {.column .org-col width="50%"}
-[![](images/logos/AEET.png){width="200" fig-alt="Asociación Española de Ecología Terrestre (AEET)"}](https://www.aeet.org/)
+::: {.column .org-col width="33%"}
+::: {.org-logo}
+[![](images/logos/AEET.png){fig-alt="Asociación Española de Ecología Terrestre (AEET)"}](https://www.aeet.org/)
+:::
 
 **[AEET](https://www.aeet.org/)** — The Asociación Española de Ecología Terrestre is the Spanish scientific society for terrestrial ecology, promoting ecological research, education, and international collaboration across the Iberian Peninsula and beyond.
 :::
@@ -456,11 +472,16 @@ Postdoctoral researcher at the [Faculty of Science, Charles University](https://
 ## Acknowledgements {style="text-align: center;"}
 
 ::: {style="text-align: center;"}
-::: {.placeholder-notice}
-🙏 **Placeholder** — Sponsors and supporting organisations to be announced. We are grateful to all institutions that support this meeting.
+We are grateful to the institutions that make EcoFlor 2027 possible: the **[Faculty of Science, Charles University](https://www.natur.cuni.cz/eng)** for hosting the meeting, and the **[Česká společnost pro ekologii](https://www.cspe.cz/)** (ČSPE) and the **[Asociación Española de Ecología Terrestre](https://www.aeet.org/)** (AEET) for their support and co-organisation.
 :::
+
+::: {.ack-logos}
+[![](images/logos/prf_logo.svg){fig-alt="Faculty of Science, Charles University"}](https://www.natur.cuni.cz/eng)
+[![](images/logos/cspe_logo.svg){fig-alt="Česká společnost pro ekologii (ČSPE)"}](https://www.cspe.cz/)
+[![](images/logos/AEET.png){fig-alt="Asociación Española de Ecología Terrestre (AEET)"}](https://www.aeet.org/)
 :::
-::::
+
+:::
 
 :::: {#contact}
 ## Contact {style="text-align: center;"}

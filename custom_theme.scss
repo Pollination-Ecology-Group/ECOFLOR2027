@@ -357,6 +357,39 @@ img.speaker-photo {
   padding: 0 1rem;
 }
 
+/* Fixed-height logo box so logos of different shapes line up */
+.org-logo {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  /* explicit height: SVGs without intrinsic size collapse otherwise */
+  img {
+    height: 140px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+.ack-logos p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 1.5rem 0;
+
+  img {
+    height: 80px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+  }
+}
+
 /* ============================================================
    SPEAKER SECTION
    ============================================================ */

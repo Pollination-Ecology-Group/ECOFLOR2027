@@ -1,0 +1,7 @@
+<script>
+  // Keep the navbar (and the mobile burger menu) visible while scrolling down:
+  // Quarto's headroom.js would otherwise hide it until the reader scrolls up.
+  if (window.Headroom) {
+    window.Headroom.prototype.shouldUnpin = function () { return false; };
+  }
+</script>
