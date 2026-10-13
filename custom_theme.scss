@@ -215,6 +215,34 @@ h6 {
   width: auto !important;
 }
 
+/* Phone: slim banner, text instead of logo, no search icon */
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 0 !important;
+    font-size: 15px !important;
+  }
+  .navbar-logo,
+  .navbar-brand img {
+    display: none !important;
+  }
+  .navbar-title {
+    font-size: 17px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 0 !important;
+  }
+  .navbar-brand-container {
+    margin-right: 0;
+    max-width: none;
+  }
+  #quarto-search {
+    display: none !important;
+  }
+  .navbar-toggler {
+    padding: 0.2rem 0.4rem;
+  }
+}
+
 .navbar-nav .nav-link.active {
   color: $amber !important;
   font-weight: 700;

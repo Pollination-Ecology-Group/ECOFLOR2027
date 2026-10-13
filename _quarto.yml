@@ -15,6 +15,7 @@ website:
   title: "ECOFLOR 2027 – Praha"
   page-navigation: true
   navbar:
+    title: "ECOFLOR 2027"
     logo: "./images/logos/logo2027.png"
     logo-alt: "ECOFLOR 2027 Praha"
     background: "#5B9E9E"
