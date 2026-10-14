@@ -1,14 +1,19 @@
 # =============================================================================
-# ECOFLOR 2026 — Certificate Generator
+# ECOFLOR 2027 — Certificate Generator
 # =============================================================================
-# Generates three types of PDF certificates:
-#   1. Certificate of Attendance (for everyone with Attending == "YES")
-#   2. Certificate of Presentation (for Oral and Poster presenters)
-#   3. Certificate of Attendance to Workshop (for workshop attendees)
+# Generates three types of PDF certificates from the "Submissions" tab:
+#   1. Certificate of Attendance     — rows with Attended == "YES"
+#   2. Certificate of Presentation   — attended + Status "Accepted" + Final_format set
+#   3. Certificate of Workshop       — attended + workshop title(s) in Workshop_attended
+#
+# After the meeting, add two columns at the right end of "Submissions":
+#   Attended           YES for everyone who came
+#   Workshop_attended  title(s) of the workshop(s) attended, separated by ";"
+#                      (must match the titles in WORKSHOPS below)
 #
 # OUTPUT: documents/certificates/generated/
 # REQUIRES: googlesheets4, dplyr, pagedown (Chrome must be installed)
-# AUTHENTICATION: Run gs4_auth() once to authenticate with Google.
+# DATA: the sheet set in R/ecoflor_submissions.R (or example data without it)
 # =============================================================================
 
 # ── 0. INSTALL MISSING PACKAGES ──────────────────────────────────────────────
@@ -27,11 +32,24 @@ library(htmltools)
 # ── 1. CONFIGURATION ─────────────────────────────────────────────────────────
 
 # Paths (relative to project root — set working directory to project root first)
-SHEET_URL <- "https://docs.google.com/spreadsheets/d/1zsfhYz32GoeKz8qzaHgDKsc-InRxitIsdnc9JWG-4OU/edit?usp=sharing"
 OUTPUT_DIR <- "documents/certificates/generated"
-LOGO_ECOFLOR <- normalizePath("images/IMG_1108.jpg", mustWork = FALSE)
-LOGO_AEET <- normalizePath("images/logos/AEET.png", mustWork = FALSE)
-SIGNATURE <- normalizePath("documents/certificates/singature.png", mustWork = FALSE)
+LOGO_ECOFLOR <- normalizePath("images/logos/logo2027.png", mustWork = FALSE)
+LOGO_RIGHT <- normalizePath("images/logos/prf_logo.svg", mustWork = FALSE)
+SIGNATURE <- normalizePath("documents/certificates/signature_2027.png", mustWork = FALSE)
+
+# Texts
+MEETING_NAME <- "24th ECOFLOR Meeting"
+MEETING_SUB <- "24th Annual Meeting of the Floral Ecology and Evolution Working Group"
+MEETING_DATES <- "3rd to 6th February 2027"
+MEETING_PLACE <- "Prague, Czech Republic"
+FOOTER_LINE <- "Faculty of Science, Charles University, Prague · 3–6 February 2027"
+SIGNATORY <- "Jakub Štenc"
+SIGNATORY_ROLE <- "On behalf of the Organising Committee"
+
+# Workshops: exact titles (as typed in Workshop_attended) → length and date
+WORKSHOPS <- list(
+  # "Workshop title" = list(hours = 3, date = "Wednesday, February 3, 2027")
+)
 
 # Encode images as Base64 so they work in self-contained HTML (no path issues)
 img_to_base64 <- function(path) {
@@ -43,6 +61,7 @@ img_to_base64 <- function(path) {
     png = "image/png",
     jpg = ,
     jpeg = "image/jpeg",
+    svg = "image/svg+xml",
     "image/png"
   )
   raw <- readBin(path, "raw", file.info(path)$size)
@@ -53,27 +72,22 @@ img_to_base64 <- function(path) {
 
 # ── 2. AUTHENTICATE & READ DATA ──────────────────────────────────────────────
 
-message("\n=== ECOFLOR 2026 Certificate Generator ===\n")
-message("Authenticating with Google Sheets...")
-message("(If this is your first time, a browser window will open for OAuth.)")
-gs4_auth() # Comment this out and use gs4_deauth() if sheet becomes public
+message("\n=== ECOFLOR 2027 Certificate Generator ===\n")
+source("R/ecoflor_submissions.R")
 
-message("Reading data from Google Sheet...")
-data_raw <- read_sheet(SHEET_URL, col_types = "c")
-
+message("Reading data from the Submissions tab...")
+data_raw <- read_tab("Submissions") %>%
+  mutate(across(everything(), ~ str_trim(tidyr::replace_na(.x, ""))))
 message("  → ", nrow(data_raw), " rows read, ", ncol(data_raw), " columns.")
 
-# ── 3. IDENTIFY WORKSHOP COLUMNS ─────────────────────────────────────────────
-# Workshop columns are those whose header contains "Wednesday" or "workshop"
-col_names <- names(data_raw)
-workshop_cols <- col_names[
-  str_detect(col_names, regex("workshop|Wednesday|ateli[e|è]r", ignore_case = TRUE))
-]
-message("Workshop columns detected (", length(workshop_cols), "): ")
-for (wc in workshop_cols) message("  • ", wc)
-if (length(workshop_cols) == 0) {
-  message("  WARNING: No workshop columns found! Check column names in the sheet.")
+if (!"Attended" %in% names(data_raw)) {
+  stop("Add a column 'Attended' (YES for participants who came) at the right end of the Submissions tab.", call. = FALSE)
 }
+if (!"Workshop_attended" %in% names(data_raw)) data_raw$Workshop_attended <- ""
+
+attendees <- data_raw %>%
+  filter(toupper(Attended) == "YES") %>%
+  mutate(name = str_squish(paste(First_name, Last_name)))
 
 # ── 4. CREATE OUTPUT DIRECTORY ───────────────────────────────────────────────
 dir.create(OUTPUT_DIR, showWarnings = FALSE, recursive = TRUE)
@@ -293,13 +307,13 @@ build_certificate_html <- function(body_html,
 
 <!-- HEADER -->
 <div class="header">
-  <img src="', logo_ecoflor_b64, '" alt="ECOFLOR 2026">
+  <img src="', logo_ecoflor_b64, '" alt="ECOFLOR 2027">
   <div class="header-center">
     <div class="conference-label">Certificate</div>
-    <div class="conference-name">ECOFLOR 2026</div>
-    <div class="conference-sub">23rd Meeting of the Spanish Society for Pollination Ecology</div>
+    <div class="conference-name">ECOFLOR 2027</div>
+    <div class="conference-sub">', MEETING_SUB, '</div>
   </div>
-  <img src="', logo_aeet_b64, '" alt="AEET">
+  <img src="', logo_aeet_b64, '" alt="Faculty of Science, Charles University">
 </div>
 
 <!-- CONTENT -->
@@ -310,10 +324,10 @@ build_certificate_html <- function(body_html,
 <!-- FOOTER -->
 <div class="footer">
   <div class="signature-block">
-    <div class="location-date">Tortosa, Catalonia, Spain · 11–14 February 2026</div>
+    <div class="location-date">', FOOTER_LINE, '</div>
 ', sig_html, '
-    <div class="sig-name">Carlos Hernández-Castellano</div>
-    <div class="sig-role">On behalf of the Scientific Committee</div>
+    <div class="sig-name">', SIGNATORY, '</div>
+    <div class="sig-role">', SIGNATORY_ROLE, '</div>
   </div>
 </div>
 
@@ -352,6 +366,11 @@ generate_pdf <- function(html_content, output_path) {
   unlink(tmp_html)
 }
 
+# Escapes HTML and turns _species name_ (form convention) into italics
+italics_html <- function(x) {
+  str_replace_all(htmltools::htmlEscape(x), "_([^_]+)_", "<i>\\1</i>")
+}
+
 # Safe filename: remove special characters
 safe_name <- function(x) {
   x <- iconv(x, to = "ASCII//TRANSLIT")
@@ -363,28 +382,19 @@ safe_name <- function(x) {
 # ── 7. LOAD IMAGES AS BASE64 ─────────────────────────────────────────────────
 message("\nEncoding logos...")
 logo_ecoflor_b64 <- img_to_base64(LOGO_ECOFLOR)
-logo_aeet_b64 <- img_to_base64(LOGO_AEET)
+logo_aeet_b64 <- img_to_base64(LOGO_RIGHT)
 signature_b64 <- img_to_base64(SIGNATURE)
 
 if (nchar(logo_ecoflor_b64) == 0) warning("ECOFLOR logo not found at: ", LOGO_ECOFLOR)
-if (nchar(logo_aeet_b64) == 0) warning("AEET logo not found at: ", LOGO_AEET)
+if (nchar(logo_aeet_b64) == 0) warning("Right-hand logo not found at: ", LOGO_RIGHT)
 if (nchar(signature_b64) == 0) warning("Signature not found at: ", SIGNATURE)
 
 # ── 8. ATTENDANCE CERTIFICATES ───────────────────────────────────────────────
 message("\n--- [1/3] Attendance Certificates ---")
 
-# Identify the actual column names present in the data
-name_col <- intersect(c("Names", "Name"), names(data_raw))[1]
-inst_col <- intersect(c("Affiliated Institution", "Institution"), names(data_raw))[1]
-
-attendance_data <- data_raw %>%
-  filter(Attending == "YES") %>%
-  mutate(
-    name        = if (!is.na(name_col)) .data[[name_col]] else NA_character_,
-    institution = if (!is.na(inst_col)) .data[[inst_col]] else NA_character_
-  ) %>%
-  select(name, institution) %>%
-  filter(!is.na(name), nzchar(name))
+attendance_data <- attendees %>%
+  transmute(name, institution = Affiliation) %>%
+  filter(nzchar(name))
 
 message("  Generating ", nrow(attendance_data), " attendance certificates...")
 att_dir <- file.path(OUTPUT_DIR, "1_attendance")
@@ -403,8 +413,8 @@ for (i in seq_len(nrow(attendance_data))) {
       with affiliation in the
       <span class="cert-institution">', htmltools::htmlEscape(inst), "</span>
       <br><br>
-      has attended the <strong>23rd ECOFLOR Meeting</strong>,<br>
-      held from <strong>11th to 14th February 2026</strong>, in <strong>Tortosa, Catalonia, Spain</strong>.
+      has attended the <strong>", MEETING_NAME, "</strong>,<br>
+      held from <strong>", MEETING_DATES, "</strong>, in <strong>", MEETING_PLACE, "</strong>.
     </div>"
   )
 
@@ -418,34 +428,16 @@ message("  Done. PDFs saved to: ", att_dir)
 # ── 9. PRESENTATION CERTIFICATES ─────────────────────────────────────────────
 message("\n--- [2/3] Presentation Certificates ---")
 
-pres_type_col <- intersect(c("Presentation"), names(data_raw))[1]
-title_col_oral <- intersect(c("Presentation_title", "Presentation title"), names(data_raw))[1]
-title_col_poster <- intersect(c("Presentation title poster", "Presentation_title_poster"), names(data_raw))[1]
-authors_col <- intersect(c("Authors", "Authors poster", "Authors  poster"), names(data_raw))[1]
-
-pres_data <- data_raw %>%
-  filter(
-    !is.na(.data[[pres_type_col]]),
-    nzchar(.data[[pres_type_col]]),
-    str_detect(.data[[pres_type_col]], regex("oral|poster", ignore_case = TRUE))
+pres_data <- attendees %>%
+  filter(Status == "Accepted", Final_format %in% c("Oral", "Rising Star", "Poster")) %>%
+  transmute(
+    name,
+    pres_type = ifelse(Final_format == "Poster", "Poster", "Oral"),
+    pres_title = Title,
+    # plain author names, without affiliation numbers and the presenter mark
+    authors = purrr::map_chr(Authors, ~ paste(parse_authors(.x)$name, collapse = ", "))
   ) %>%
-  mutate(
-    name = if (!is.na(name_col)) .data[[name_col]] else NA_character_,
-    pres_type = if (!is.na(pres_type_col)) .data[[pres_type_col]] else NA_character_,
-    # For oral presentations use the oral-title column;
-    # for posters use the poster-title column (falls back to oral-title if absent).
-    pres_title = case_when(
-      str_detect(
-        ifelse(!is.na(pres_type_col), .data[[pres_type_col]], ""),
-        regex("poster", ignore_case = TRUE)
-      ) & !is.na(title_col_poster) ~ .data[[title_col_poster]],
-      !is.na(title_col_oral) ~ .data[[title_col_oral]],
-      TRUE ~ NA_character_
-    ),
-    authors = if (!is.na(authors_col)) .data[[authors_col]] else NA_character_
-  ) %>%
-  select(name, pres_type, pres_title, authors) %>%
-  filter(!is.na(name), nzchar(name))
+  filter(nzchar(name))
 
 message("  Generating ", nrow(pres_data), " presentation certificates...")
 pres_dir <- file.path(OUTPUT_DIR, "2_presentations")
@@ -466,10 +458,10 @@ for (i in seq_len(nrow(pres_data))) {
       <span class="cert-type-badge">', htmltools::htmlEscape(ptype), '</span>
       <br>
       has presented a contribution entitled<br>
-      <span class="cert-pres-title">&ldquo;', htmltools::htmlEscape(title), "&rdquo;</span>
+      <span class="cert-pres-title">&ldquo;', italics_html(title), "&rdquo;</span>
       <br><br>
-      scheduled within the <strong>23rd ECOFLOR Meeting</strong>,<br>
-      held from <strong>11th to 14th February 2026</strong>, in <strong>Tortosa, Catalonia, Spain</strong>.
+      scheduled within the <strong>", MEETING_NAME, "</strong>,<br>
+      held from <strong>", MEETING_DATES, "</strong>, in <strong>", MEETING_PLACE, "</strong>.
       <br><br>
       <small><em>Authors of the contribution:</em><br>", htmltools::htmlEscape(auths), "</small>
     </div>"
@@ -485,77 +477,49 @@ message("  Done. PDFs saved to: ", pres_dir)
 # ── 10. WORKSHOP CERTIFICATES ─────────────────────────────────────────────────
 message("\n--- [3/3] Workshop Certificates ---")
 
-workshop_col <- "Workshops (Wednesday 11th February)"
+workshop_rows <- attendees %>%
+  filter(nzchar(Workshop_attended)) %>%
+  mutate(ws = str_split(Workshop_attended, ";")) %>%
+  tidyr::unnest(ws) %>%
+  mutate(ws = str_trim(ws)) %>%
+  filter(nzchar(ws))
 
-if (!workshop_col %in% names(data_raw)) {
-  message("  Skipping — '", workshop_col, "' column not detected.")
+unknown <- setdiff(unique(workshop_rows$ws), names(WORKSHOPS))
+if (length(unknown)) {
+  warning("Workshop titles not listed in WORKSHOPS (skipped): ", paste(unknown, collapse = " | "), call. = FALSE)
+}
+workshop_rows <- workshop_rows %>% filter(ws %in% names(WORKSHOPS))
+
+if (nrow(workshop_rows) == 0) {
+  message("  Skipping — nobody has a known workshop in Workshop_attended.")
 } else {
   work_dir <- file.path(OUTPUT_DIR, "3_workshops")
-  dir.create(work_dir, showWarnings = FALSE)
+  for (i in seq_len(nrow(workshop_rows))) {
+    name <- workshop_rows$name[i]
+    ws_name <- workshop_rows$ws[i]
+    ws <- WORKSHOPS[[ws_name]]
 
-  total_workshop <- 0
+    body <- paste0(
+      '<div class="cert-title">Certificate of Attendance to Workshop</div>
+      <div class="cert-body">
+        We hereby certify that,
+        <span class="cert-name">', htmltools::htmlEscape(name), '</span>
+        has attended the Workshop<br>
+        <span class="cert-pres-title">&ldquo;', htmltools::htmlEscape(ws_name), "&rdquo;</span>
+        <br><br>
+        with a total duration of <strong>", ws$hours, " teaching hours</strong>,<br>
+        held on <strong>", ws$date, "</strong>,<br>
+        as part of the Scientific program of the <strong>", MEETING_NAME, "</strong>,<br>
+        held from <strong>", MEETING_DATES, "</strong>, in <strong>", MEETING_PLACE, "</strong>.
+      </div>"
+    )
 
-  ws1_clean <- "Nesting traps for cavity-nesting bees and wasps in ecological studies: biology, ecology, materials and methods"
-  ws2_clean <- "Perspectives in plant-pollinator systems research in the new era of Nature Restoration"
-
-  workshop_attendees <- data_raw %>%
-    filter(
-      Attending == "YES",
-      !is.na(.data[[workshop_col]]),
-      nzchar(.data[[workshop_col]])
-    ) %>%
-    mutate(
-      name = if (!is.na(name_col)) .data[[name_col]] else NA_character_,
-      ws_val = .data[[workshop_col]]
-    ) %>%
-    select(name, ws_val) %>%
-    filter(!is.na(name), nzchar(name))
-
-  message("  Generating certificates for workshop attendees...")
-
-  dir.create(file.path(work_dir, safe_name(substr(ws1_clean, 1, 50))), showWarnings = FALSE)
-  dir.create(file.path(work_dir, safe_name(substr(ws2_clean, 1, 50))), showWarnings = FALSE)
-
-  for (i in seq_len(nrow(workshop_attendees))) {
-    name <- workshop_attendees$name[i]
-    val <- workshop_attendees$ws_val[i]
-
-    attended_ws1 <- str_detect(val, "10-13h") || str_detect(val, regex("both", ignore_case = TRUE))
-    attended_ws2 <- str_detect(val, "15-18h") || str_detect(val, regex("both", ignore_case = TRUE))
-
-    gen_ws_cert <- function(ws_name) {
-      body <- paste0(
-        '<div class="cert-title">Certificate of Attendance to Workshop</div>
-        <div class="cert-body">
-          We hereby certify that,
-          <span class="cert-name">', htmltools::htmlEscape(name), '</span>
-          has attended the Workshop<br>
-          <span class="cert-pres-title">&ldquo;', htmltools::htmlEscape(ws_name), "&rdquo;</span>
-          <br><br>
-          with a total duration of <strong>3 teaching hours</strong>,<br>
-          held on <strong>Wednesday, February 11, 2026</strong>,<br>
-          as part of the Scientific program of the <strong>23rd ECOFLOR Meeting</strong>,<br>
-          held from <strong>11th to 14th February 2026</strong>, in <strong>Tortosa, Catalonia, Spain</strong>.
-        </div>"
-      )
-
-      html <- build_certificate_html(body, logo_ecoflor_b64, logo_aeet_b64, signature_b64)
-      ws_folder <- file.path(work_dir, safe_name(substr(ws_name, 1, 50)))
-      out <- file.path(ws_folder, paste0("workshop_", safe_name(name), ".pdf"))
-      generate_pdf(html, out)
-    }
-
-    if (attended_ws1) {
-      gen_ws_cert(ws1_clean)
-      total_workshop <- total_workshop + 1
-    }
-    if (attended_ws2) {
-      gen_ws_cert(ws2_clean)
-      total_workshop <- total_workshop + 1
-    }
+    html <- build_certificate_html(body, logo_ecoflor_b64, logo_aeet_b64, signature_b64)
+    ws_folder <- file.path(work_dir, safe_name(substr(ws_name, 1, 50)))
+    dir.create(ws_folder, showWarnings = FALSE, recursive = TRUE)
+    generate_pdf(html, file.path(ws_folder, paste0("workshop_", safe_name(name), ".pdf")))
   }
-
-  message("  Done. ", total_workshop, " workshop certificate(s) saved to: ", work_dir)
+  message("  Done. ", nrow(workshop_rows), " workshop certificate(s) saved to: ", work_dir)
 }
 
 # ── 11. SUMMARY ───────────────────────────────────────────────────────────────

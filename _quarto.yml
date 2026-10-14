@@ -5,6 +5,8 @@ project:
     - "*.qmd"
     - "!archive/"
     - "!Ecoflor_2026_Book_of_abstracts.qmd"
+    - "!Ecoflor_2027_Book_of_abstracts.qmd"
+    - "!Ecoflor_2027_programme.qmd"
   resources:
     - "images/bluesky.svg"
     - "documents"

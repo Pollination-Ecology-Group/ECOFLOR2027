@@ -1,0 +1,140 @@
+---
+title: "ECOFLOR 2027: Book of Abstracts"
+format:
+  html:
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+    pdf-engine: xelatex
+    linkcolor: "ecoteal"
+    urlcolor: "ecoteal"
+    include-in-header:
+      text: |
+        \usepackage{sectsty}
+        \usepackage{xcolor}
+        \definecolor{ecoteal}{HTML}{2A8A8A}
+        \definecolor{ecoamber}{HTML}{C8862A}
+        \sectionfont{\color{ecoteal}\sffamily}
+        \subsectionfont{\color{ecoteal}\sffamily}
+        \subsubsectionfont{\color{ecoamber}\sffamily}
+        \let\maketitle\relax
+execute:
+  echo: false
+  warning: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# Data: set SHEET_URL in R/ecoflor_submissions.R (or env ECOFLOR_SHEET);
+# without it the example data in submission_pipeline/ are used.
+source("R/ecoflor_submissions.R")
+
+contributions <- read_contributions()
+orals <- contributions %>% filter(Final_format %in% TALK_FORMATS)
+posters <- contributions %>% filter(Final_format == "Poster")
+
+render_abstract <- function(row, label) {
+  cat("### ", md_escape(row$Title), " {#", tolower(row$Submission_ID), "}\n\n", sep = "")
+  cat("[", label, " · ", row$Submission_ID, "]{.smallcaps}\n\n", sep = "")
+  cat(format_authors(row$Authors, row$Presenter), "\n\n", sep = "")
+  cat("::: {.small}\n", format_affiliations(row$Affiliations), "\n:::\n\n", sep = "")
+  cat(format_abstract(row$Abstract), "\n\n", sep = "")
+  kw <- keywords_of(row)
+  if (length(kw)) cat("*Keywords:* ", paste(md_escape(kw), collapse = ", "), "\n\n", sep = "")
+  cat("---\n\n")
+}
+
+render_block <- function(data, label_fun) {
+  for (sid in unique(data$Session_ID)) {
+    sess <- data %>% filter(Session_ID == sid)
+    cat("\n## ", sess$Session_Name[1], "\n\n", sep = "")
+    for (i in seq_len(nrow(sess))) render_abstract(sess[i, ], label_fun(sess[i, ], i))
+  }
+}
+```
+
+::: {.content-visible when-format="pdf"}
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\Huge \textbf{ECOFLOR 2027} \par}
+\vspace{0.5cm}
+{\LARGE Book of Abstracts \par}
+\vspace{1.5cm}
+\includegraphics[width=0.55\textwidth]{images/logos/logo2027.png}
+\vspace{1.5cm}
+
+{\large 24th Annual Meeting of the Floral Ecology and Evolution Working Group \par}
+\vspace{0.3cm}
+{\large 3–6 February 2027 · Faculty of Science, Charles University · Prague \par}
+\vfill
+{\normalsize \today \par}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+:::
+
+# Welcome {.unnumbered}
+
+Welcome to ECOFLOR 2027 in Prague! This book contains the abstracts of all oral and poster presentations, ordered as in the programme. Presenting authors are underlined.
+
+The meeting is organised by researchers at the [Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) in cooperation with the [Česká společnost pro ekologii](https://www.cspe.cz/) (ČSPE) and the [Asociación Española de Ecología Terrestre](https://www.aeet.org/) (AEET).
+
+`r nrow(orals)` oral presentations · `r nrow(posters)` posters
+
+\newpage
+
+# Oral presentations
+
+```{r}
+#| results: asis
+render_block(orals, function(row, i) if (row$Final_format == "Rising Star") "Rising Stars talk" else "Talk")
+```
+
+\newpage
+
+# Posters
+
+```{r}
+#| results: asis
+poster_no <- setNames(seq_len(nrow(posters)), posters$Submission_ID)
+render_block(posters, function(row, i) paste("Poster", poster_no[[row$Submission_ID]]))
+```
+
+\newpage
+
+# Keyword index
+
+```{r}
+#| results: asis
+kw_index <- contributions %>%
+  select(Submission_ID, Keyword_1, Keyword_2, Keyword_3) %>%
+  pivot_longer(-Submission_ID, values_to = "Keyword") %>%
+  filter(Keyword != "") %>%
+  group_by(Keyword) %>%
+  summarise(ids = paste0("[", Submission_ID, "](#", tolower(Submission_ID), ")", collapse = ", ")) %>%
+  arrange(Keyword, .locale = "en")
+cat(paste0("**", md_escape(kw_index$Keyword), "** — ", kw_index$ids, collapse = "\\\n"), "\n")
+```
+
+# Author index
+
+```{r}
+#| results: asis
+author_index <- contributions %>%
+  mutate(author = map(Authors, ~ parse_authors(.x)$name)) %>%
+  select(Submission_ID, author) %>%
+  unnest(author) %>%
+  group_by(author) %>%
+  summarise(ids = paste0("[", Submission_ID, "](#", tolower(Submission_ID), ")", collapse = ", ")) %>%
+  mutate(surname = word(author, -1)) %>%
+  arrange(surname, author, .locale = "en")
+cat(paste0(md_escape(author_index$author, italics = FALSE), " — ", author_index$ids, collapse = "\\\n"), "\n")
+```

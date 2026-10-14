@@ -1,0 +1,82 @@
+---
+title: "ECOFLOR 2027: Programme"
+format:
+  html:
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+    pdf-engine: xelatex
+    geometry: margin=2cm
+    urlcolor: "ecoteal"
+    include-in-header:
+      text: |
+        \usepackage{sectsty}
+        \usepackage{xcolor}
+        \definecolor{ecoteal}{HTML}{2A8A8A}
+        \sectionfont{\color{ecoteal}\sffamily}
+        \subsectionfont{\color{ecoteal}\sffamily}
+execute:
+  echo: false
+  warning: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+source("R/ecoflor_submissions.R")
+
+contributions <- read_contributions()
+sessions <- read_sessions()
+orals <- contributions %>% filter(Final_format %in% TALK_FORMATS) %>% add_talk_times()
+posters <- contributions %>% filter(Final_format == "Poster") %>%
+  mutate(Poster_no = row_number())
+
+talk_table <- function(talks) {
+  rows <- paste0(
+    "| ", talks$Time,
+    " | **", md_escape(talks$Presenter, italics = FALSE), "**",
+    ifelse(talks$Student, " ^S^", ""),
+    " | ", ifelse(talks$Final_format == "Rising Star", "*Rising Stars talk:* ", ""),
+    md_escape(talks$Title), " |"
+  )
+  paste(c("| Time | Speaker | Title |", "|:--|:--|:------|", rows), collapse = "\n")
+}
+
+poster_table <- function(p) {
+  rows <- paste0(
+    "| ", p$Poster_no,
+    " | **", md_escape(p$Presenter, italics = FALSE), "**",
+    ifelse(p$Student, " ^S^", ""),
+    " | ", md_escape(p$Title), " |"
+  )
+  paste(c("| No. | Presenter | Title |", "|:--|:--|:------|", rows), collapse = "\n")
+}
+```
+
+**3–6 February 2027 · Faculty of Science, Charles University · Viničná 7, Prague**
+
+^S^ student presentation (eligible for the best student presentation award)
+
+```{r}
+#| results: asis
+for (day in unique(sessions$Day)) {
+  cat("\n## ", day, "\n\n", sep = "")
+  for (sid in sessions$Session_ID[sessions$Day == day]) {
+    s <- sessions %>% filter(Session_ID == sid)
+    chair <- if (s$Chair != "") paste0(" · Chair: ", s$Chair) else ""
+    cat("\n### ", s$Start_time, " · ", s$Session_Name, "\n\n", sep = "")
+    if (chair != "") cat("*", sub("^ · ", "", chair), "*\n\n", sep = "")
+
+    if (s$Type == "Poster") {
+      p <- posters %>% filter(Session_ID == sid)
+      if (nrow(p)) cat(poster_table(p), "\n\n")
+    } else {
+      t <- orals %>% filter(Session_ID == sid)
+      if (nrow(t)) cat(talk_table(t), "\n\n")
+    }
+  }
+}
+```

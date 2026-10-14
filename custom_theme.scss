@@ -385,6 +385,37 @@ img.speaker-photo {
   padding: 0 1rem;
 }
 
+/* Programme: one card per day */
+.programme-days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.programme-day {
+  background: $white;
+  border-radius: 14px;
+  border-top: 4px solid $teal;
+  box-shadow: 0 4px 16px rgba(59,191,191,0.12);
+  padding: 1rem 1.25rem;
+  text-align: left;
+
+  h4 {
+    margin-top: 0;
+    color: $teal-dark;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  li { margin-bottom: 0.35rem; }
+  li ul { padding-left: 1.4rem; list-style: disc; margin-top: 0.3rem; }
+}
+
 /* Contact: social media buttons */
 .social-links p {
   display: flex;
