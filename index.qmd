@@ -330,7 +330,7 @@ Nearby highlights include **Náměstí Míru** square, **Riegrovy sady** park (g
 We recommend the **Honest Guide** YouTube channel, run by local journalists Janek Rubeš and Honza Mikulka. Their videos give practical, honest advice for navigating Prague like a local — avoiding tourist traps, finding the best food and beer, and getting around safely and cheaply.
 :::
 
-::: {.video-wrapper-columns}
+::: {.columns .video-wrapper-columns}
 ::: {.column .video-col width="50%"}
 ```{=html}
 <div class="video-wrapper">
@@ -354,7 +354,7 @@ We recommend the **Honest Guide** YouTube channel, run by local journalists Jane
 :::
 :::
 
-::: {.video-wrapper-columns}
+::: {.columns .video-wrapper-columns}
 ::: {.column .video-col width="50%"}
 ```{=html}
 <div class="video-wrapper">
