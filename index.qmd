@@ -28,7 +28,10 @@ The EcoFlor annual meeting brings together scientists interested in floral ecolo
 
 The meeting will feature **two days of presentations** including plenary talks by **Dr Robert Tropek** and **Dr Katherine Baldock**, as well as oral and poster contributions, thematically organised based on submitted abstracts.
 
-In addition, there will be an **excursion on Saturday 6th February** to the [Milovice Nature Reserve](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve) to see the reintroduced **European Bison** (*Bison bonasus*) and other large herbivores in the Czech wild steppe.
+In addition, there will be two possible excursions on **Saturday 6th February**:
+
+1. to the [Milovice Nature Reserve](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve) to see the reintroduced **European Bison** (*Bison bonasus*) and other large herbivores in the Czech wild steppe. [Details](#excursion).
+2. Guided tour of **Prague historical centre** and pubs.
 
 All contributions should be in **English** to promote discussion and interaction with our international audience.
 
@@ -37,15 +40,19 @@ All contributions should be in **English** to promote discussion and interaction
 ::: {style="text-align: left;"}
 📅 **3–6 February 2027**
 
-📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng) – lecture hall to be announced
+📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng), Viničná 7, Praha 2 – lecture hall to be announced
 
 🎤 Plenary speakers: [Dr. Robert Tropek](#robert_tropek) & [Dr. Katherine Baldock](#katherine_baldock)
 
 🦬 [Excursion](#excursion) to Milovice Nature Reserve on **Saturday 6th February**
 
-🍻 Conference dinner – during the meeting (free attendance; dinner details TBD)
+🍺 [Excursion](#excursion) Guided tour of **Prague historical centre** and pubs on **Saturday 6th February**
 
-✉️ [Registration](#registration) – **now open!** Deadline **30 November 2026**
+🍲 Lunches & catering – lunches are not provided, but coffee/refreshments will be served during breaks and we recommend [several great lunch options nearby](#where-to-eat-and-drink)
+
+🍻 Conference dinner – during the meeting (expected cost up to ~30 EUR per person; venue and details to be specified)
+
+✉️ [Registration](#registration) – **now open!** Deadline **30 November 2026** (notification of acceptance by **15 December 2026**)
 
 📞 [Contact](#contact) via [Discord](https://discord.gg/YCXbyRmUX5), [WhatsApp group chat](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t) or [email](mailto:ecoflor2027@googlegroups.com)
 
@@ -65,7 +72,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 ::: {.cta-subtitle}
 Attendance at ECOFLOR 2027 is **free**, but registration is **mandatory** for logistical reasons.<br>
-Deadline for registration & abstract submission: **30 November 2026**
+Deadline for registration & abstract submission: **30 November 2026** (notification of acceptance by **15 December 2026**)
 :::
 
 ::: {.cta-button-wrap}
@@ -82,9 +89,11 @@ Deadline for registration & abstract submission: **30 November 2026**
 
 Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Please fill out the [**registration form**](https://forms.gle/HFG9EKboVBc1kqF76) if you plan to attend. The deadline for registration and abstract submission is **30 November 2026**.
 
+The meeting will take place **in person**. While presentations will be given on site, we would like to record talks and share the recordings with the community after the conference (only where permitted by the speakers).
+
 When registering, you can also submit a proposal for an **oral** or **poster** presentation. Awards will be given for the **best oral** and **best poster** presentations.
 
-We also welcome proposals for **Rising Stars talks** — slightly longer presentations aimed at early-career researchers with exciting research to showcase. These are a great opportunity to present a broader research line, a breakthrough idea, or an emerging topic in more depth than a standard oral presentation allows.
+We also welcome proposals for **Rising Stars talks** — **20-minute presentations (+ Q&A)** aimed at early-career researchers with exciting research to showcase. These are a great opportunity to present a broader research line, a breakthrough idea, or an emerging topic in more depth than a standard oral presentation allows.
 
 We also welcome proposals for **workshops** to be held on the first day of the meeting (Wednesday 3 February). We especially encourage workshops that help early-career researchers develop skills, such as fieldwork methods, sample processing, laboratory protocols, data analysis, and scientific writing. Discussions on emerging topics and networking opportunities are also welcome!
 
@@ -92,13 +101,13 @@ We also welcome proposals for **workshops** to be held on the first day of the m
 #### Important Note
 :::
 
-The meeting has a **limited number of places**. Acceptance will be based on a combination of factors: order of registration, whether you submit a contribution, and scientific scope. We highly encourage young researchers to submit their contributions, as the scientific committee will give them priority.
+The meeting has a **limited number of places**. Acceptance will be based on a combination of factors: order of registration, whether you submit a contribution, and scientific scope. We highly encourage young researchers to submit their contributions, as the scientific committee will give them priority. Notification of acceptance will be sent by **15 December 2026**.
 
 ::: {style="text-align: center;"}
 #### Preparing Your Abstract
 :::
 
-Please submit your abstract in **English** during the registration process. The abstract should **not exceed 200 words**. When submitting, choose **one primary keyword** (required) from the list below to help us organise conference sessions, and optionally **1–2 additional keywords** if your work spans multiple topics.
+Please submit your abstract in **English** during the registration process. The abstract should **not exceed 200 words**. When submitting, choose **one primary keyword** (required) from the list in the registration form to help us organise conference sessions, and optionally **1–2 additional keywords** if your work spans multiple topics.
 
 Each main author may submit only **one contribution**. We kindly request that the main author is the one submitting the abstract.
 
@@ -106,13 +115,13 @@ Each main author may submit only **one contribution**. We kindly request that th
 #### Oral Presentations
 :::
 
-Oral presentations will be **10 minutes long**; slides should be in English.
+Oral presentations will be **10 minutes long, followed by 2 minutes of discussion** (12 minutes total); slides should be in English.
 
 ::: {style="text-align: center;"}
 #### Poster Presentations
 :::
 
-Posters will be displayed throughout the conference. Poster sessions will take place during coffee breaks: a 30-minute session in the morning and a one-hour session in the afternoon, specifically designed to encourage discussion and networking.
+Posters should be prepared in standard **A0 format (portrait / vertical orientation)**. Posters will be displayed throughout the conference. Poster sessions will take place during coffee breaks: a 30-minute session in the morning and a one-hour session in the afternoon, specifically designed to encourage discussion and networking.
 
 ::: {style="text-align: center; margin: 2.5rem 0 1.5rem 0;"}
 <a href="https://forms.gle/HFG9EKboVBc1kqF76" target="_blank" rel="noopener noreferrer" class="btn-register">
@@ -141,12 +150,14 @@ Posters will be displayed throughout the conference. Poster sessions will take p
 
 ::: {.programme-day}
 #### Thursday 4 February {.programme-title}
+- 09:00 – 19:00
 - 🗣 **Oral presentations**
 - 🌼 Poster session
 :::
 
 ::: {.programme-day}
 #### Friday 5 February {.programme-title}
+- 09:00 – 19:00
 - 🗣 Oral presentations
 - 🌼 Poster session
 - 🎉 Closing ceremony
@@ -155,8 +166,8 @@ Posters will be displayed throughout the conference. Poster sessions will take p
 ::: {.programme-day}
 #### Saturday 6 February {.programme-title}
 - 🦬 Excursion — two options:
-  - Milovice Nature Reserve
-  - Prague
+  - **Milovice Nature Reserve** (European Bison & wild herbivores)
+  - **Prague** (walk through the historical centre with a local guide)
 - Details to be announced
 :::
 :::
@@ -176,6 +187,7 @@ Two hands-on workshops will be offered on the first day of the conference (start
 :::
 
 ::: {style="text-align: left;"}
+**Leader:** Tadeáš Ryšan  
 **Capacity:** 25 participants
 
 Insect pollinators represent an exceptionally diverse group of organisms, yet many researchers studying plant–pollinator interactions have limited experience with insect identification. This workshop aims to introduce the diversity of insect pollinators and provide participants with practical skills for recognizing and distinguishing their major taxonomic and functional groups.
@@ -190,6 +202,7 @@ The overall goal is not to provide species-level identification skills, but rath
 :::
 
 ::: {style="text-align: left;"}
+**Leader:** Jakub Štenc  
 **Capacity:** 15 participants
 
 Do you need to do repetitive image or video analysis and are tired of doing it manually? Do you need to count objects from images or videos? Recognize movement of pollinators or track your plants' growth? You don't need to do that manually anymore!
@@ -213,7 +226,7 @@ On Wednesday afternoon (starting at 14:00), we will host an informal networking 
 ## Plenary Speakers
 :::
 
-:::  {.speaker-card}
+:::  {.speaker-card #robert_tropek}
 ![](images/people/Robert_Tropek/robert_tropek.png){.speaker-photo fig-alt="doc. Robert Tropek"}
 
 ::: {style="text-align: center;"}
@@ -230,7 +243,8 @@ In his plenary talk, he will explore how plant–pollinator communities and thei
 :::
 :::
 
-:::  {.speaker-card}
+:::  {.speaker-card #katherine_baldock}
+![](images/people/katherine_baldock.png){.speaker-photo fig-alt="Dr Katherine Baldock"}
 
 ::: {style="text-align: center;"}
 #### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=ntJPwpkAAAAJ)
@@ -247,7 +261,15 @@ To be Announced.
 ---
 
 ::: {#excursion style="text-align: center;"}
-## Excursion: European Bison at Milovice
+## Excursions: Saturday 6 February
+:::
+
+::: {style="text-align: justify;"}
+The conference excursion will take place on **Saturday 6th February 2027**. Participants can choose between two exciting options:
+:::
+
+::: {style="text-align: center;"}
+### Option 1: European Bison at Milovice Nature Reserve
 :::
 
 ![European bison in the Milovice reserve (Traviny near Benátky nad Jizerou). Photo: Michal Köpping, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zubr_v_P%C5%99%C3%ADrodn%C3%AD_rezervaci_velk%C3%BDch_kopytn%C3%ADk%C5%AF_Milovice,_lokalita_Traviny_u_Ben%C3%A1tek_nad_Jizerou.jpg)](images/bison_milovice.jpg){fig-align="center" width="700" fig-alt="European bison grazing in the steppe grassland of the Milovice Nature Reserve"}
@@ -259,7 +281,7 @@ The Milovice reserve is one of Central Europe's most exciting rewilding projects
 
 From the perspective of floral ecology, the reserve is a remarkable case study: the grazing and browsing by large herbivores shapes plant communities, floral diversity, and pollinator habitats across the steppe grasslands.
 
-Capacity is limited to 60 participants. Public transport (train) will most likely be used from [Praha Hlavní Nádraží](https://maps.app.goo.gl/HgYZuyYPNbUpmqKx5) and back and it is not organized by the conference organisation committee, but informations will be provided to registered participants. Additional costs are expected to be ~10 EUR per person for the train tickets.  
+Capacity is limited to 60 participants. Public transport (train) will most likely be used from [Praha Hlavní Nádraží](https://maps.app.goo.gl/HgYZuyYPNbUpmqKx5) and back and it is not organized by the conference organisation committee, but information will be provided to registered participants. Additional costs are expected to be ~10 EUR per person for the train tickets.  
 
 ::: {style="text-align: center;"}
 🦬 Further details (transport, timing, costs) will be provided to registered participants.
@@ -268,11 +290,29 @@ Capacity is limited to 60 participants. Public transport (train) will most likel
 :::
 
 
+::: {style="text-align: center;"}
+### Option 2:Historical centre of Prague 
+:::
+
+
+
 ```{=html}
 <div style="display: flex; justify-content: center; margin: 1.5rem auto;">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16322.565429630642!2d14.87585409293312!3d50.24400106417309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bf80b979973e1%3A0x84aefd91301eea18!2sRezervace%20divok%C3%BDch%20kon%C3%AD!5e1!3m2!1sen!2sus!4v1791982410689!5m2!1sen!2sus" width="100%" height="450" style="max-width: 700px; border:0; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </div>
 ```
+
+::: {style="text-align: center;"}
+### Option 2: Historical Prague Walking Tour
+:::
+
+::: {style="text-align: justify;"}
+For participants wishing to stay in Prague, we will organise a **walk through the historical centre of Prague with a local guide**. Explore the architectural highlights, historic university grounds, and hidden picturesque streets of the Old and New Towns.
+
+::: {style="text-align: center;"}
+🏰 Further details (meeting point, route, timing) will be announced to registered participants.
+:::
+:::
 
 ---
 
@@ -301,7 +341,19 @@ Prague's public transport system is generally well-adapted to serve people with 
 ### Transportation
 :::
 
-**By plane:** Prague's [Václav Havel Airport](https://www.prg.aero/en) is well connected to major European cities. From the airport, take **Bus 119** to the metro terminus *Nádraží Veleslavín* (line A, green), then take the metro to *Náměstí Míru* (about 20 minutes total). From there it is a short walk to Viničná 7.
+**By plane:** Prague's [Václav Havel Airport](https://www.prg.aero/en) is well connected to major European cities. From the airport, take **Trolleybus Line 59** to the metro terminus *Nádraží Veleslavín* (line A, green, about 17 minutes), then take the metro to *Náměstí Míru* (about 20 minutes). From there it is a short walk to Viničná 7 or tram ride. Other options include buses 191 or 100, depending on your desired destination in Praha. For connection options from the airport consult **[PID Lítačka](https://app.pidlitacka.cz/)** or [Google Maps](https://maps.app.goo.gl/HgYZuyYPNbUpmqKx5).
+The buses are running all day and night, thus you don't have to worry about the time of your arrival (if you will arrive in the middle of the night, you will have to change buses once or twice and it will take a bit longer).
+
+You can buy single tickets from yellow vending machines at every bus stop, or via the [PID Lítačka](https://app.pidlitacka.cz/) app (recommended). The yellow machines accept contactless cards, but **not cash** — make sure to use a card. 
+
+How to find the bus and buy ticket in 4 minutes:
+
+::: {.column-page}
+```{=html}
+<iframe src="https://www.youtube.com/embed/57WeRN0Nrb4?si=_yePT_RepWKwXosK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="100%" height="420" style="border:0; border-radius:12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+```
+
+:::
 
 > ⚠️ **Avoid the Airport Express bus** — it is significantly overpriced for what it offers and offers no real advantage over the standard public transport connection, which is fast, frequent, and cheap. **Taxis and ride-hailing services from the airport are also notoriously expensive** — Prague's public transport will get you to the venue faster and for a fraction of the cost.
 
@@ -313,6 +365,9 @@ Prague's public transport system is generally well-adapted to serve people with 
 - 🔴 **I. P. Pavlova** (Line C, red) – 7 min walk
 
 **Tickets — use the Lítačka app:** Prague's public transport (operated by [PID](https://pid.cz/en/)) is excellent, affordable, and runs 24 hours. The easiest way to buy tickets is the **[PID Lítačka](https://app.pidlitacka.cz/)** mobile app (available for [Android](https://play.google.com/store/apps/details?id=cz.dpp.praguepublictransport) and [iOS](https://apps.apple.com/cz/app/pid-l%C3%ADta%C4%8Dka/id1140104120)). You can buy single-ride tickets, time passes, and airport zone supplements directly in the app and activate them instantly — no need to find a ticket machine. A **24-hour ticket** costs ~120 CZK (~5 EUR) and is valid on all metro, tram, and bus lines. Tickets can also be purchased from machines at metro stations or by SMS.
+
+A 30-minute single-ride ticket costs 40 CZK (~1.6 EUR) and is valid for one non-transfer journey on buses, trams, or metro (transfers between metro lines are allowed, but you cannot switch to bus/tram after exiting the metro). If you plan to use public transport more, consider a **24-hour ticket** (120 CZK / ~4.8 EUR) or a **3-day pass** (330 CZK / ~13 EUR) — both are excellent value and cover all modes of transport including travel to/from the airport.
+
 
 🎥 **Not sure how it works?** Watch this short video: [How To Buy A Ticket For Public Transport in Prague](https://www.youtube.com/watch?v=OMbCsMObyfQ).
 
@@ -402,15 +457,21 @@ We recommend the **Honest Guide** YouTube channel, run by local journalists Jane
 ### Where to eat and drink
 :::
 
-Prague has an outstanding food and beer scene. Near the venue in **Vinohrady** and **Žižkov**, you will find:
+Please note that **lunches are not provided** by the conference. However, there will be a lunch break scheduled each day and Prague has an outstanding food and beer scene with plenty of affordable spots right around the corner. Within walking distance of the faculty (Albertov, Karlovo náměstí, I. P. Pavlova, and Vinohrady), we recommend:
 
-- 🍺 **Riegrovy sady beer garden** – iconic outdoor beer garden with city views (seasonal, may be cold in February!)
-- 🍺 **Vinohradský pivovar** – excellent craft brewery restaurant
-- 🍽 **Lokál Vinohrady** – legendary Czech pub food and Pilsner Urquell served perfectly
-- 🍽 **Café Sladkovský** – neighbourhood favourite for coffee and food
-- 🥩 **Maso a Kobliha** – butcher-restaurant with exceptional local Czech ingredients
+#### Quick Lunch Specials (*Denní Menu*) & Local Bistros (5–8 min walk)
+- 🍺 **[Pivovarský dům Benedict](https://online.pivo-dum.cz/)** (Lípová 15) – historic local microbrewery just 5 minutes from the faculty; traditional Czech weekday lunch specials (*svíčková*, goulash, schnitzels) and house-brewed beers.
+- 🍽 **[Restaurace U Šumavy](https://www.usumavy.cz/)** (Štěpánská 3) – dependable traditional Czech pub with an honest, budget-friendly daily lunch menu (*denní menu*) and fast service.
+- 🍺 **[Kozlovna Tylák](https://www.kozlovnatylak.cz/)** (Tylovo náměstí) – modern Czech pub serving quality weekday lunch specials and fresh tank Kozel beer.
+- 🥗 **[Bistro Fair Food Club](https://fairfoodclub.cz/)** (U Nemocnice 4) – ethical social-enterprise bistro with fresh daily lunch menus, soups, vegetarian/vegan bowls, and Georgian *khachapuri*.
 
-Further recommendations will be shared with registered participants.
+#### Dinner, Breweries & International Options
+- 🍺 **Potrefená Husa Albertov** – right below the faculty building; modern Czech cuisine and tank beer, ideal for conference lunches or dinner.
+- 🍺 **Vinohradský pivovar** – popular neighbourhood microbrewery with excellent craft beer and modern Czech gastropub food.
+- 🍽 **Lokál Korunní** – legendary Czech pub culture, perfectly tapped Pilsner Urquell, and classic Czech comfort food.
+- 🥗 **Dhaba Beas** (I. P. Pavlova) – fast, healthy vegetarian/vegan Indian buffet by weight, popular with students and university staff.
+- 🥙 **Paprika Mediterranean Kitchen** (I. P. Pavlova) – superb homemade hummus, falafel, and shakshuka.
+
 :::
 
 ---
@@ -549,7 +610,7 @@ Postdoctoral researcher at the [Czech University of Life Sciences](https://www.c
 ##### Eva Horčičková
 
 ::: {style="text-align: justify;"}
-Assistant professor at the [Faculty of Enviroment, Jan Evangelista Purkyně University in Ústí nad Labem](https://www.ujep.cz/en/uee) (Ústí nad Labem, Czech Republic). She is interested in restoration ecology, pollination ecology, particularly in the role of large herbivores.
+Assistant professor at the [Faculty of Environment, Jan Evangelista Purkyně University in Ústí nad Labem](https://www.ujep.cz/en/uee) (Ústí nad Labem, Czech Republic). She is interested in restoration ecology, pollination ecology, particularly in the role of large herbivores.
 :::
 :::
 :::
@@ -582,7 +643,7 @@ PhD candidate at the [Department of Ecology, Faculty of Science, Charles Univers
 ##### Jiří Hadrava
 
 ::: {style="text-align: justify;"}
-Researcher at the [Department of Zoology, Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic). He is an entomologsit focusing on diptera, especially hoverflies (Syrphidae). His primary focus is on hoverfly ecology, taxonomy and distribution and their role as pollinators. 
+Researcher at the [Department of Zoology, Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic). He is an entomologist focusing on Diptera, especially hoverflies (Syrphidae). His primary focus is on hoverfly ecology, taxonomy and distribution and their role as pollinators. 
 :::
 :::
 :::
@@ -629,7 +690,7 @@ Doctoral researcher at the [Department of Botany of the Faculty of Science of Ch
 ##### Helena Pijálková
 
 ::: {style="text-align: justify;"}
-Postgradual student of [Zoology at Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic). Focuses on the seasonal differences in composition of alpine pollinators and composition of pollinators and aquatic invertebrates of beaver territories. 
+PhD student of [Zoology at Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic). Focuses on the seasonal differences in composition of alpine pollinators and composition of pollinators and aquatic invertebrates of beaver territories. 
 :::
 :::
 :::
@@ -641,10 +702,10 @@ Postgradual student of [Zoology at Faculty of Science, Charles University](https
 :::
 
 ::: {.column width="60%"}
-##### Tadeáš Ryšavý
+##### Tadeáš Ryšan
 
 ::: {style="text-align: justify;"}
-Postgradual student of [Zoology at Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic). Focusing on plant-pollinator interactions in various environments. Taxonomic interest in Diptera. 
+PhD student of [Zoology at Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic). Focusing on plant-pollinator interactions in various environments. Taxonomic interest in Diptera. 
 :::
 :::
 :::
@@ -749,7 +810,7 @@ Stay in touch and join the community:
 ::: {.social-links}
 [<i class="bi bi-discord"></i> Discord](https://discord.gg/YCXbyRmUX5)
 [<i class="bi bi-whatsapp"></i> WhatsApp](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t)
-[<i class="bi bi-instagram"></i> Instagram](https://www.instagram.com/ecoflor2026/)
+[<i class="bi bi-instagram"></i> Instagram](https://www.instagram.com/ecoflor2027?srtk=MTVrcXdodTk5MGxrdQ%3D%3D)
 [<i class="bi bi-bluesky"></i> Bluesky](https://bsky.app/profile/ecoflor.bsky.social)
 [<i class="bi bi-envelope"></i> Email](mailto:ecoflor2027@googlegroups.com)
 :::
