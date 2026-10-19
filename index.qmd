@@ -41,7 +41,7 @@ All contributions should be in **English** to promote discussion and interaction
 ::: {style="text-align: left;"}
 📅 **3–6 February 2027**
 
-📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng), Viničná 7, Praha 2 – [Velká zoologická posluchárna](https://natur.cuni.cz/kontakty/mapy/mapa-budov/budova-vinicna-7/budova-vinicna-7-2-patro) (2nd floor)
+📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng), Viničná 7, Praha 2 – [Velká zoologická posluchárna](https://natur.cuni.cz/en/contacts/maps/campus-map/building-vinicna-7/vinicna-7-2nd-floor) (2nd floor)
 
 🎤 Plenary speakers: [Dr. Robert Tropek](#robert_tropek) & [Dr. Katherine Baldock](#katherine_baldock)
 
@@ -273,7 +273,7 @@ The conference excursion will take place on **Saturday 6th February 2027**. Part
 ![European bison in the Milovice reserve (Traviny near Benátky nad Jizerou). Photo: Michal Köpping, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zubr_v_P%C5%99%C3%ADrodn%C3%AD_rezervaci_velk%C3%BDch_kopytn%C3%ADk%C5%AF_Milovice,_lokalita_Traviny_u_Ben%C3%A1tek_nad_Jizerou.jpg)](images/bison_milovice.jpg){fig-align="center" width="700" fig-alt="European bison grazing in the steppe grassland of the Milovice Nature Reserve"}
 
 ::: {style="text-align: justify;"}
-The conference excursion will take place on **Saturday 6th February 2027**. We will visit the [**Milovice Nature Reserve**](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve), located approximately 40 km east of Prague, where you can encounter **European Bison** (*Bison bonasus*), **Exmoor Ponies**, and **Konik horses** roaming freely in a rewilded Czech steppe landscape.
+The conference excursion will take place on **Saturday 6th February 2027**. We will visit the [**Milovice Nature Reserve**](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve), located approximately 40 km east of Prague, where you can encounter **European Bison** (*Bison bonasus*), **Exmoor Ponies**, and **wild oxen** (back-bred aurochs / Tauros cattle) roaming freely in a rewilded Czech steppe landscape.
 
 The Milovice reserve is one of Central Europe's most exciting rewilding projects — a former military training area that has been transformed into a haven for large herbivores and grassland biodiversity. The project is run by the [**European Wildlife Foundation**](https://www.european-wildlife.eu/) and serves as a flagship example of large-scale rewilding in Central Europe.
 
