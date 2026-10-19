@@ -8,6 +8,7 @@ format:
 
 <meta name="description" content="ECOFLOR 2027 – 24th Annual Meeting of the Floral Ecology and Evolution Working Group, 3–6 February 2027, Přírodovědecká fakulta UK, Praha (Prague), Czech Republic." />
 <meta name="keywords" content="ECOFLOR 2027, floral ecology, pollination, Praha, Prague, conference, plant-pollinator" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 
 ![](images/logos/logo2027.png){fig-align="center" width="600"}
 
@@ -26,7 +27,7 @@ EcoFlor is a working group of the [**Spanish Association of Terrestrial Ecology 
 
 The EcoFlor annual meeting brings together scientists interested in floral ecology and evolution. Its goal is to promote discussion, networking, and creativity in science, involving students at all career stages in an open and friendly environment. Participants are invited to present their ongoing projects and engage in critical scientific discussion and networking.
 
-The meeting will feature **two days of presentations** including plenary talks by **Dr Robert Tropek** and **Dr Katherine Baldock**, as well as oral and poster contributions, thematically organised based on submitted abstracts.
+The meeting will feature **two days of presentations** (Thursday 4th and Friday 5th February, **09:00–19:00**) including plenary talks by **Dr Robert Tropek** and **Dr Katherine Baldock**, as well as oral and poster contributions, thematically organised based on submitted abstracts.
 
 In addition, there will be two possible excursions on **Saturday 6th February**:
 
@@ -40,7 +41,7 @@ All contributions should be in **English** to promote discussion and interaction
 ::: {style="text-align: left;"}
 📅 **3–6 February 2027**
 
-📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng), Viničná 7, Praha 2 – lecture hall to be announced
+📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng), Viničná 7, Praha 2 – [Velká zoologická posluchárna](https://natur.cuni.cz/kontakty/mapy/mapa-budov/budova-vinicna-7/budova-vinicna-7-2-patro) (2nd floor)
 
 🎤 Plenary speakers: [Dr. Robert Tropek](#robert_tropek) & [Dr. Katherine Baldock](#katherine_baldock)
 
@@ -150,17 +151,15 @@ Posters should be prepared in standard **A0 format (portrait / vertical orientat
 
 ::: {.programme-day}
 #### Thursday 4 February {.programme-title}
-- 09:00 – 19:00
-- 🗣 **Oral presentations**
-- 🌼 Poster session
+- 09:00–19:00 🗣 **Oral presentations**
+- 🌼 **Poster session**
 :::
 
 ::: {.programme-day}
 #### Friday 5 February {.programme-title}
-- 09:00 – 19:00
-- 🗣 Oral presentations
-- 🌼 Poster session
-- 🎉 Closing ceremony
+- 09:00–19:00 🗣 **Oral presentations**
+- 🌼 **Poster session**
+- 🎉 **Closing ceremony**
 :::
 
 ::: {.programme-day}
@@ -244,7 +243,6 @@ In his plenary talk, he will explore how plant–pollinator communities and thei
 :::
 
 :::  {.speaker-card #katherine_baldock}
-![](images/people/katherine_baldock.png){.speaker-photo fig-alt="Dr Katherine Baldock"}
 
 ::: {style="text-align: center;"}
 #### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=ntJPwpkAAAAJ)
@@ -290,12 +288,6 @@ Capacity is limited to 60 participants. Public transport (train) will most likel
 :::
 
 
-::: {style="text-align: center;"}
-### Option 2:Historical centre of Prague 
-:::
-
-
-
 ```{=html}
 <div style="display: flex; justify-content: center; margin: 1.5rem auto;">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16322.565429630642!2d14.87585409293312!3d50.24400106417309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bf80b979973e1%3A0x84aefd91301eea18!2sRezervace%20divok%C3%BDch%20kon%C3%AD!5e1!3m2!1sen!2sus!4v1791982410689!5m2!1sen!2sus" width="100%" height="450" style="max-width: 700px; border:0; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -305,6 +297,8 @@ Capacity is limited to 60 participants. Public transport (train) will most likel
 ::: {style="text-align: center;"}
 ### Option 2: Historical Prague Walking Tour
 :::
+
+![Historical panorama of Prague. Woodcut from the Nuremberg Chronicle (*Schedelsche Weltchronik*), 1493, folios 229v–230r. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nuremberg_Chronicle_f_229v_230r.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Nuremberg_Chronicle_f_229v_230r.jpg/1280px-Nuremberg_Chronicle_f_229v_230r.jpg){fig-align="center" width="700" fig-alt="Historical woodcut view of Prague from the 1493 Nuremberg Chronicle"}
 
 ::: {style="text-align: justify;"}
 For participants wishing to stay in Prague, we will organise a **walk through the historical centre of Prague with a local guide**. Explore the architectural highlights, historic university grounds, and hidden picturesque streets of the Old and New Towns.
@@ -327,7 +321,13 @@ For participants wishing to stay in Prague, we will organise a **walk through th
 
 The 24th edition of EcoFlor takes place at the **[Přírodovědecká fakulta UK](https://www.natur.cuni.cz/eng)** (Faculty of Science, Charles University), located at **Viničná 7, Praha 2** — in the heart of Prague, just minutes from the historic city centre.
 
-The specific lecture hall will be announced to registered participants. Oral presentations (including plenary talks) and poster sessions will both be held within the faculty building.
+Oral presentations (including plenary talks) will be held in the **[Velká zoologická posluchárna](https://natur.cuni.cz/en/contacts/maps/campus-map/building-vinicna-7/vinicna-7-2nd-floor)** (Great Zoological Lecture Hall, 2nd floor; [view floor map](https://natur.cuni.cz/kontakty/mapy/mapa-budov/budova-vinicna-7/budova-vinicna-7-2-patro)). Poster sessions will also take place within the faculty building.
+
+```{=html}
+<div style="display: flex; justify-content: center; margin: 1.5rem auto;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.2!2d14.4265!3d50.0737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e6d86c3a3d%3A0x1f8d8d5a1b6c7e90!2sPr%C3%ADrodov%C4%9Bdeck%C3%A1%20fakulta%20UK!5e0!3m2!1sen!2scz!4v1695000000000" width="100%" height="420" style="max-width: 700px; border:0; border-radius:12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+```
 
 ::: {style="text-align: center;"}
 ### Venue Accessibility
@@ -348,12 +348,12 @@ You can buy single tickets from yellow vending machines at every bus stop, or vi
 
 How to find the bus and buy ticket in 4 minutes:
 
-::: {.column-page}
 ```{=html}
-<iframe src="https://www.youtube.com/embed/57WeRN0Nrb4?si=_yePT_RepWKwXosK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="100%" height="420" style="border:0; border-radius:12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="video-wrapper" style="max-width: 580px; margin: 1rem auto 0.5rem auto;">
+  <iframe src="https://www.youtube.com/embed/57WeRN0Nrb4" title="Fast & Cheap: From Prague Airport to the City Centre" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p style="text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;"><a href="https://www.youtube.com/watch?v=57WeRN0Nrb4" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Watch on YouTube: Fast & Cheap – From Prague Airport to City Centre</a></p>
 ```
-
-:::
 
 > ⚠️ **Avoid the Airport Express bus** — it is significantly overpriced for what it offers and offers no real advantage over the standard public transport connection, which is fast, frequent, and cheap. **Taxis and ride-hailing services from the airport are also notoriously expensive** — Prague's public transport will get you to the venue faster and for a fraction of the cost.
 
@@ -369,10 +369,13 @@ How to find the bus and buy ticket in 4 minutes:
 A 30-minute single-ride ticket costs 40 CZK (~1.6 EUR) and is valid for one non-transfer journey on buses, trams, or metro (transfers between metro lines are allowed, but you cannot switch to bus/tram after exiting the metro). If you plan to use public transport more, consider a **24-hour ticket** (120 CZK / ~4.8 EUR) or a **3-day pass** (330 CZK / ~13 EUR) — both are excellent value and cover all modes of transport including travel to/from the airport.
 
 
-🎥 **Not sure how it works?** Watch this short video: [How To Buy A Ticket For Public Transport in Prague](https://www.youtube.com/watch?v=OMbCsMObyfQ).
+🎥 **Not sure how it works?** Watch this short video: [How To Buy A Ticket For Public Transport in Prague](https://www.youtube.com/watch?v=OMbCsMObyfQ)
 
 ```{=html}
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.2!2d14.4265!3d50.0737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e6d86c3a3d%3A0x1f8d8d5a1b6c7e90!2sPr%C3%ADrodov%C4%9Bdeck%C3%A1%20fakulta%20UK!5e0!3m2!1sen!2scz!4v1695000000000" width="100%" height="420" style="border:0; border-radius:12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="video-wrapper" style="max-width: 580px; margin: 1rem auto 0.5rem auto;">
+  <iframe src="https://www.youtube.com/embed/OMbCsMObyfQ" title="How To Buy A Ticket For Public Transport in Prague" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p style="text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;"><a href="https://www.youtube.com/watch?v=OMbCsMObyfQ" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Watch on YouTube: How To Buy A Ticket For Public Transport in Prague</a></p>
 ```
 
 ::: {style="text-align: center;"}
