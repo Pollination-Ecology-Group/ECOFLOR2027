@@ -45,7 +45,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 🍻 Conference dinner – during the meeting (free attendance; dinner details TBD)
 
-✉️ [Registration](#registration) – **opens soon**, deadline **30 November 2026**
+✉️ [Registration](#registration) – **now open!** Deadline **30 November 2026**
 
 📞 [Contact](#contact) via [Discord](https://discord.gg/YCXbyRmUX5), [WhatsApp group chat](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t) or [email](mailto:ecoflor2027@googlegroups.com)
 
@@ -58,8 +58,21 @@ All contributions should be in **English** to promote discussion and interaction
 ## Registration
 :::
 
-::: {style="text-align: center;"}
-### Registration is not yet open
+::: {.registration-cta}
+::: {.cta-title}
+✨ Registration is Now Open! ✨
+:::
+
+::: {.cta-subtitle}
+Attendance at ECOFLOR 2027 is **free**, but registration is **mandatory** for logistical reasons.<br>
+Deadline for registration & abstract submission: **30 November 2026**
+:::
+
+::: {.cta-button-wrap}
+<a href="https://forms.gle/HFG9EKboVBc1kqF76" target="_blank" rel="noopener noreferrer" class="btn-register">
+  <i class="bi bi-pencil-square"></i> Register for ECOFLOR 2027 <i class="bi bi-arrow-right-short"></i>
+</a>
+:::
 :::
 
 ::: {#registration_info style="text-align: justify;"}
@@ -67,7 +80,7 @@ All contributions should be in **English** to promote discussion and interaction
 #### Registration and Contributions
 :::
 
-Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Please fill out the form once it opens if you plan to attend. The deadline for registration and abstract submission is **30 November 2026**.
+Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Please fill out the [**registration form**](https://forms.gle/HFG9EKboVBc1kqF76) if you plan to attend. The deadline for registration and abstract submission is **30 November 2026**.
 
 When registering, you can also submit a proposal for an **oral** or **poster** presentation. Awards will be given for the **best oral** and **best poster** presentations.
 
@@ -101,6 +114,12 @@ Oral presentations will be **10 minutes long**; slides should be in English.
 
 Posters will be displayed throughout the conference. Poster sessions will take place during coffee breaks: a 30-minute session in the morning and a one-hour session in the afternoon, specifically designed to encourage discussion and networking.
 
+::: {style="text-align: center; margin: 2.5rem 0 1.5rem 0;"}
+<a href="https://forms.gle/HFG9EKboVBc1kqF76" target="_blank" rel="noopener noreferrer" class="btn-register">
+  <i class="bi bi-pencil-square"></i> Register for ECOFLOR 2027 <i class="bi bi-arrow-right-short"></i>
+</a>
+:::
+
 :::
 
 ::: {#programme}
@@ -114,15 +133,15 @@ Posters will be displayed throughout the conference. Poster sessions will take p
 ::: {.programme-day}
 #### Wednesday 3 February {.programme-title}
 - 10:00 🔬 **Workshops:** "Pollinators for Non-Entomologists" & "Introduction to YOLO and Visual Tools"
-- 📝 Registration
-- 🎤 Keynote session
+- 📝 **Registration** 
 - 14:00 💼 **Networking:** Mentoring and collaboration matching
-- 🍻 Meet & greet
+- 17:00 🎤 **Keynote session** 
+- 🍻 **Meet & greet**
 :::
 
 ::: {.programme-day}
 #### Thursday 4 February {.programme-title}
-- 🗣 Oral presentations
+- 🗣 **Oral presentations**
 - 🌼 Poster session
 :::
 
@@ -195,33 +214,32 @@ On Wednesday afternoon (starting at 14:00), we will host an informal networking 
 :::
 
 :::  {.speaker-card}
-![](images/people/robert_tropek.png){.speaker-photo fig-alt="doc. Robert Tropek"}
+![](images/people/Robert_Tropek/robert_tropek.png){.speaker-photo fig-alt="doc. Robert Tropek"}
 
 ::: {style="text-align: center;"}
-#### doc. Robert Tropek [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?user=YOUR_ID)
+#### doc. Robert Tropek [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=0UDnavUAAAAJ)
 
-#### *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+#### *Geographic patterns in plant–pollinator interactions: from mountain slopes to the globe*
 :::
 
 ::: {style="text-align: justify;"}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
+Robert Tropek is an associate professor and head of the Insect Community Ecology Research Group based at the Faculty of Science, Charles University, and the Institute of Entomology, Biology Centre of the Czech Academy of Sciences. His research focuses on insect diversity, community ecology and conservation in both natural and human-modified habitats, with butterflies and moths as the main focal groups. In plant–pollinator interactions, he is particularly interested in (and perhaps even obsessed with) the trade-offs between specialisation and generalisation. He studies the degree of specialisation in plant–pollinator interactions across scales, from the fine details of particular systems to broad geographic patterns and their drivers. Much of his field research is based in tropical African ecosystems, especially on Mount Cameroon and in southern Africa, complemented by comparative work in European temperate ecosystems.
+In his plenary talk, he will explore how plant–pollinator communities and their interactions change across geographic gradients, moving from elevational gradients on Mount Cameroon and in the Krkonoše Mountains to a global synthesis of more than 3,400 pollination networks. He will ask whether plant and pollinator diversity, floral traits and interaction specialisation follow general geographic rules, and why apparently simple gradients often produce complex, context-dependent patterns.
 
 
 :::
 :::
 
 :::  {.speaker-card}
-![](images/people/katherine_baldock.png){.speaker-photo fig-alt="Dr Katherine Baldock"}
 
 ::: {style="text-align: center;"}
-#### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?user=YOUR_ID)
+#### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=ntJPwpkAAAAJ)
 
-#### *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+#### To be Announced
 :::
 
 ::: {style="text-align: justify;"}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
-
+To be Announced.
 
 :::
 :::
@@ -639,7 +657,7 @@ Postgradual student of [Zoology at Faculty of Science, Charles University](https
 ##### Dominik Anýž
 
 ::: {style="text-align: justify;"}
-
+Doctoral student at the Faculty of Science, Charles University (Department of Ecology, Prague, Czechia). His primary research  interest lies in pollination ecology, focusing on everything from plant breeding systems to analyzing plant-pollinator interaction networks. However, he is fascinated with any interaction dynamics, currently also being employed at the Biology Centre CAS in České Budějovice, where he investigates the role of plant chemistry in mediating interactions between plants, herbivores, and their predators.
 :::
 :::
 :::
@@ -660,13 +678,41 @@ Postdoctoral fellow at [Philipps Universität Marburg](https://www.uni-marburg.d
 :::
 \
 
+::: {.columns}
+::: {.column width="40%"}
+![](images/people/Lucie_Holzbachova.jpg){.rounded fig-align="left" fig-alt="Lucie Holzbachová"}
+:::
+
+::: {.column width="60%"}
+##### Lucie Holzbachová
+
+::: {style="text-align: justify;"}
+PhD candidate at the Department of Botany, [Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Czech Republic), specializing in high-elevation plant ecology. She is interested in the flower economic spectrum of zoogamous alpine plants and how plant–pollinator interactions and extreme environments drive floral diversity.
+:::
+:::
+:::
+
+::: {.columns}
+::: {.column width="40%"}
+![](images/people/Guillermo_Uceda.jpg){.rounded fig-align="left" fig-alt="Guillermo Uceda"}
+:::
+
+::: {.column width="60%"}
+##### Guillermo Uceda-Gómez
+
+::: {style="text-align: justify;"}
+Guillermo Uceda-Gómez is an ecologist passionate about understanding how species interact and how ecological communities respond to environmental change. He obtained his PhD in Ecology from **[Charles University in Prague](https://www.natur.cuni.cz/eng)** (Czech Republic), focusing on plant–bird pollination networks across elevational gradients and seasons on Mount Cameroon, Central Africa. His research brings together field ecology, ecological modelling, network analysis, and molecular approaches,  to explore the complex relationships between species and their environments. Having participated in several research expeditions to Mount Cameroon, Guillermo has developed a strong appreciation for field-based research and international scientific collaboration. He is particularly interested in advancing our understanding of biodiversity through collaborative research and innovative analytical approaches, with the broader goal of contributing to the conservation of ecological systems.
+:::
+:::
+:::
+
+
+
 ::: {.committee-list}
 ##### Further members of the organising team
 
-- Guillermo Uceda
 - Eva Matoušková
 - Lars Götzenberger
-- Lucie Holzbachová
 
 :::
 
