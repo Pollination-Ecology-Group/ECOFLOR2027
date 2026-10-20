@@ -260,7 +260,6 @@ In his plenary talk, he will explore how plant–pollinator communities and thei
 :::
 
 :::  {.speaker-card #katherine_baldock}
-![](images/people/katherine_baldock.png){.speaker-photo fig-alt="Dr Katherine Baldock"}
 
 ::: {style="text-align: center;"}
 #### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=ntJPwpkAAAAJ)
@@ -537,9 +536,9 @@ The 24th edition of EcoFlor is organised by researchers based at the **[Faculty 
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
-![](images/people/js3.png){fig-align="left" width="200"}
+![](images/people/js3.png){.rounded fig-align="left" fig-alt="Jakub Štenc"}
 :::
 
 ::: {.column width="60%"}

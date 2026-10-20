@@ -283,7 +283,8 @@ img.speaker-photo {
    ============================================================ */
 
 .committee-person,
-.columns:has(img.rounded) {
+.columns:has(img.rounded),
+.columns:has(img[src*="people"]) {
   align-items: center;
   margin-bottom: 2rem;
 }
@@ -291,7 +292,8 @@ img.speaker-photo {
 /* On phones / tablets (< 768px): stack photo above name and text */
 @media (max-width: 768px) {
   .committee-person,
-  .columns:has(img.rounded) {
+  .columns:has(img.rounded),
+  .columns:has(img[src*="people"]) {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -319,7 +321,8 @@ img.speaker-photo {
       float: none !important;
     }
 
-    img.rounded {
+    img.rounded,
+    img[src*="people"] {
       margin: 0 auto !important;
       display: block !important;
       width: 175px !important;

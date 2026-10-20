@@ -438,7 +438,6 @@ cookieconsent.run({
 </div>
 </div>
 <div id="katherine_baldock" class="speaker-card">
-<p><img src="images/people/katherine_baldock.png" class="speaker-photo img-fluid" alt="Dr Katherine Baldock"></p>
 <div style="text-align: center;">
 <section id="dr-katherine-baldock" class="level4">
 <h4 class="anchored" data-anchor-id="dr-katherine-baldock">Dr Katherine Baldock <a href="https://scholar.google.com/citations?hl=cs&amp;user=ntJPwpkAAAAJ"><img src="images/scholar.png" class="img-fluid" width="22"></a></h4>
@@ -651,11 +650,11 @@ cookieconsent.run({
 </div>
 <p><br>
 </p>
-<div class="columns">
+<div class="columns committee-person">
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="images/people/js3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="200"></p>
+<p><img src="images/people/js3.png" class="rounded img-fluid quarto-figure quarto-figure-left figure-img" alt="Jakub Štenc"></p>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
@@ -974,14 +973,16 @@ cookieconsent.run({
    ORGANISATION COMMITTEE (Mobile Stacking: photo above name & bio)
    ============================================================ */
 .committee-person,
-.columns:has(img.rounded) {
+.columns:has(img.rounded),
+.columns:has(img[src*="people"]) {
   align-items: center;
   margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
   .committee-person,
-  .columns:has(img.rounded) {
+  .columns:has(img.rounded),
+  .columns:has(img[src*="people"]) {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -1009,7 +1010,8 @@ cookieconsent.run({
       float: none !important;
     }
 
-    img.rounded {
+    img.rounded,
+    img[src*="people"] {
       margin: 0 auto !important;
       display: block !important;
       width: 175px !important;
