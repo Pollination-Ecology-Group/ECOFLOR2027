@@ -60,6 +60,19 @@ All contributions should be in **English** to promote discussion and interaction
 :::
 :::
 
+::: {#logo-story}
+### The Story Behind the Logo {style="text-align: center;"}
+
+::: {.logo-story-card}
+The ECOFLOR 2027 logo weaves together Central European botany, Prague’s iconic landmarks, and pollination biology:
+
+- 🍃 **Small-leaved Lime (*Tilia cordata* / lípa srdčitá):** The national tree of the Czech Republic, revered since the 19th century as a Slavic symbol of freedom and protection. In floral ecology, linden trees are celebrated for their sweetly fragrant, nectar-rich blossoms and distinct pale bracts, sustaining dense communities of bees, hoverflies, and other pollinators in early summer across Central Europe.
+- 🌉 **Charles Bridge (*Karlův most*):** Prague’s historic 14th-century Gothic stone bridge across the Vltava River — representing our host city and symbolising the bridges of collaboration and community that ECOFLOR fosters across European researchers.
+- 🕰️ **The Astronomical Clock (*Pražský orloj*):** The iconic 1410 medieval clock tower of Prague’s Old Town Hall, rendered with a playful pollination biology twist: its astronomical and calendar dials are reimagined as **microscopic pollen grains** (echinate and aperture structures), honouring the floral structures central to pollination research.
+- 🪰 **The Hoverfly (Syrphidae):** Approaching the lime flowers, honouring the diverse non-bee insect pollinators that play an indispensable role in plant reproduction and floral evolutionary ecology.
+:::
+:::
+
 ---
 
 ::: {#registration style="text-align: center;"}
@@ -526,7 +539,7 @@ The 24th edition of EcoFlor is organised by researchers based at the **[Faculty 
 
 ::: {.columns}
 ::: {.column width="40%"}
-![](images/people/js3.png){fig-align="left" width="200"}
+![](images/people/js3.png){.rounded fig-align="left" fig-alt="Jakub Štenc"}
 :::
 
 ::: {.column width="60%"}
