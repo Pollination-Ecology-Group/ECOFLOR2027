@@ -24,7 +24,7 @@ const CONFIG = {
   formTitle: 'ECOFLOR 2027 – Registration & Abstract Submission',
   sheetTitle: 'ECOFLOR 2027 – Submissions',
   idPrefix: 'EF27-',
-  deadline: '30 November 2026',
+  deadline: '20 November 2026',
   maxTitleChars: 200,
   maxAbstractWords: 200,
   // Keyword configuration: 1 primary (required) + up to 2 optional
@@ -227,7 +227,7 @@ function buildForm_(form) {
   add('Excursion', form.addMultipleChoiceItem().setTitle('Excursion on Saturday 6 February')
     .setChoiceValues(['Milovice Nature Reserve (European bison)', 'Prague', 'Not attending', 'Not sure yet'])
     .setRequired(true));
-  add('Dinner', form.addMultipleChoiceItem().setTitle('Will you attend the conference dinner?')
+  add('Dinner', form.addMultipleChoiceItem().setTitle('Will you attend the conference dinner on Thursday 4 February (20:00)?')
     .setChoiceValues(['Yes', 'No']).setRequired(true));
   add('Diet', form.addMultipleChoiceItem().setTitle('Dietary requirements')
     .setChoiceValues(['No restrictions', 'Vegetarian', 'Vegan'])

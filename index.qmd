@@ -27,12 +27,12 @@ EcoFlor is a working group of the [**Spanish Association of Terrestrial Ecology 
 
 The EcoFlor annual meeting brings together scientists interested in floral ecology and evolution. Its goal is to promote discussion, networking, and creativity in science, involving students at all career stages in an open and friendly environment. Participants are invited to present their ongoing projects and engage in critical scientific discussion and networking.
 
-The meeting will feature **two days of presentations** (Thursday 4th and Friday 5th February, **09:00–19:00**) including plenary talks by **Dr Robert Tropek** and **Dr Katherine Baldock**, as well as oral and poster contributions, thematically organised based on submitted abstracts.
+The meeting will feature plenary talks by [**Dr Robert Tropek**](#robert_tropek) and [**Dr Katherine Baldock**](#katherine_baldock) (one on [Wednesday evening](#programme) to open the meeting, and one on [Thursday evening](#programme)), alongside two full days of oral and poster presentations (Thursday 4th and Friday 5th February, **09:00–19:00**), thematically organised based on submitted abstracts.
 
-In addition, there will be two possible excursions on **Saturday 6th February**:
+In addition, there will be two possible excursions on [**Saturday 6th February**](#excursion):
 
-1. to the [Milovice Nature Reserve](https://en.wikipedia.org/wiki/Milovice_Nature_Reserve) to see the reintroduced **European Bison** (*Bison bonasus*) and other large herbivores in the Czech wild steppe. [Details](#excursion).
-2. Guided tour of **Prague historical centre** and pubs.
+1. to the [Milovice Nature Reserve](#excursion-milovice) to see the reintroduced **European Bison** (*Bison bonasus*) and other large herbivores in the Czech wild steppe. [Details](#excursion-milovice).
+2. [Guided tour of **Prague historical centre** and pubs](#excursion-prague).
 
 All contributions should be in **English** to promote discussion and interaction with our international audience.
 
@@ -43,17 +43,17 @@ All contributions should be in **English** to promote discussion and interaction
 
 📍 [Přírodovědecká fakulta UK, Praha](https://www.natur.cuni.cz/eng), Viničná 7, Praha 2 – [Velká zoologická posluchárna](https://natur.cuni.cz/en/contacts/maps/campus-map/building-vinicna-7/vinicna-7-2nd-floor) (2nd floor)
 
-🎤 Plenary speakers: [Dr. Robert Tropek](#robert_tropek) & [Dr. Katherine Baldock](#katherine_baldock)
+🎤 Plenary speakers: [Dr. Robert Tropek](#robert_tropek) & [Dr. Katherine Baldock](#katherine_baldock) ([Wednesday evening](#programme) & [Thursday evening](#programme))
 
-🦬 [Excursion](#excursion) to Milovice Nature Reserve on **Saturday 6th February**
+🦬 [Excursion to Milovice Nature Reserve](#excursion-milovice) on [**Saturday 6th February**](#programme)
 
-🍺 [Excursion](#excursion) Guided tour of **Prague historical centre** and pubs on **Saturday 6th February**
+🍺 [Excursion – Guided tour of Prague historical centre & pubs](#excursion-prague) on [**Saturday 6th February**](#programme)
 
 🍲 Lunches & catering – lunches are not provided, but coffee/refreshments will be served during breaks and we recommend [several great lunch options nearby](#where-to-eat-and-drink)
 
-🍻 Conference dinner – during the meeting (expected cost up to ~30 EUR per person; venue and details to be specified)
+🍻 Conference dinner – **Thursday 4 February (20:00)** after the scientific programme (expected cost up to ~30 EUR per person; venue and details to be specified)
 
-✉️ [Registration](#registration) – **now open!** Deadline **30 November 2026** (notification of acceptance by **15 December 2026**)
+✉️ [Registration](#registration) – **open from 20 October 2026!** Deadline **20 November 2026** (notification of acceptance by **15 December 2026**)
 
 📞 [Contact](#contact) via [Discord](https://discord.gg/YCXbyRmUX5), [WhatsApp group chat](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t) or [email](mailto:ecoflor2027@googlegroups.com)
 
@@ -73,7 +73,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 ::: {.cta-subtitle}
 Attendance at ECOFLOR 2027 is **free**, but registration is **mandatory** for logistical reasons.<br>
-Deadline for registration & abstract submission: **30 November 2026** (notification of acceptance by **15 December 2026**)
+Submissions open: **20 October 2026** &nbsp;|&nbsp; Deadline: **20 November 2026** &nbsp;|&nbsp; Notification of acceptance: **15 December 2026**
 :::
 
 ::: {.cta-button-wrap}
@@ -88,15 +88,15 @@ Deadline for registration & abstract submission: **30 November 2026** (notificat
 #### Registration and Contributions
 :::
 
-Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Please fill out the [**registration form**](https://forms.gle/HFG9EKboVBc1kqF76) if you plan to attend. The deadline for registration and abstract submission is **30 November 2026**.
+Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Please fill out the [**registration form**](https://forms.gle/HFG9EKboVBc1kqF76) if you plan to attend. Registration and abstract submission open on **20 October 2026**, and the deadline is **20 November 2026**.
 
 The meeting will take place **in person**. While presentations will be given on site, we would like to record talks and share the recordings with the community after the conference (only where permitted by the speakers).
 
-When registering, you can also submit a proposal for an **oral** or **poster** presentation. Awards will be given for the **best oral** and **best poster** presentations.
+When registering, you can also submit a proposal for an [**oral**](#oral-presentations) or [**poster**](#poster-presentations) presentation. Awards will be given for the **best oral** and **best poster** presentations.
 
 We also welcome proposals for **Rising Stars talks** — **20-minute presentations (+ Q&A)** aimed at early-career researchers with exciting research to showcase. These are a great opportunity to present a broader research line, a breakthrough idea, or an emerging topic in more depth than a standard oral presentation allows.
 
-We also welcome proposals for **workshops** to be held on the first day of the meeting (Wednesday 3 February). We especially encourage workshops that help early-career researchers develop skills, such as fieldwork methods, sample processing, laboratory protocols, data analysis, and scientific writing. Discussions on emerging topics and networking opportunities are also welcome!
+We also welcome proposals for [**workshops**](#workshops) to be held on the first day of the meeting ([Wednesday 3 February](#programme)). We especially encourage workshops that help early-career researchers develop skills, such as fieldwork methods, sample processing, laboratory protocols, data analysis, and scientific writing. Discussions on emerging topics and networking opportunities are also welcome!
 
 ::: {style="text-align: center;"}
 #### Important Note
@@ -142,31 +142,33 @@ Posters should be prepared in standard **A0 format (portrait / vertical orientat
 ::: {.programme-days}
 ::: {.programme-day}
 #### Wednesday 3 February {.programme-title}
-- 10:00 🔬 **Workshops:** "Pollinators for Non-Entomologists" & "Introduction to YOLO and Visual Tools"
-- 📝 **Registration** 
-- 14:00 💼 **Networking:** Mentoring and collaboration matching
-- 17:00 🎤 **Keynote session** 
+- 10:00 🔬 [**Workshops**](#workshops): ["Pollinators for Non-Entomologists"](#workshops) & ["Introduction to YOLO and Visual Tools"](#workshops)
+- 📝 [**Registration**](#registration) 
+- 14:00 💼 [**Networking**](#networking): Mentoring and collaboration matching
+- 17:00 🎤 [**Opening plenary talk**](#speakers) 
 - 🍻 **Meet & greet**
 :::
 
 ::: {.programme-day}
 #### Thursday 4 February {.programme-title}
-- 09:00–19:00 🗣 **Oral presentations**
-- 🌼 **Poster session**
+- 09:00–19:00 🗣 [**Oral presentations**](#oral-presentations)
+- 🌼 [**Poster session**](#poster-presentations)
+- 🎤 [**Plenary talk** (evening)](#speakers)
+- 20:00 🍻 **Conference dinner** (after the programme; venue to be announced)
 :::
 
 ::: {.programme-day}
 #### Friday 5 February {.programme-title}
-- 09:00–19:00 🗣 **Oral presentations**
-- 🌼 **Poster session**
+- 09:00–19:00 🗣 [**Oral presentations**](#oral-presentations)
+- 🌼 [**Poster session**](#poster-presentations)
 - 🎉 **Closing ceremony**
 :::
 
 ::: {.programme-day}
 #### Saturday 6 February {.programme-title}
-- 🦬 Excursion — two options:
-  - **Milovice Nature Reserve** (European Bison & wild herbivores)
-  - **Prague** (walk through the historical centre with a local guide)
+- 🦬 [**Excursions**](#excursion) — two options:
+  - [**Milovice Nature Reserve**](#excursion-milovice) (European Bison & wild herbivores)
+  - [**Prague**](#excursion-prague) (walk through the historical centre with a local guide)
 - Details to be announced
 :::
 :::
@@ -223,6 +225,8 @@ On Wednesday afternoon (starting at 14:00), we will host an informal networking 
 
 ::: {#speakers style="text-align: center;"}
 ## Plenary Speakers
+
+Two plenary talks will take place during the meeting: one on [**Wednesday 3 February** (17:00)](#programme) opening the scientific programme, and the other on [**Thursday 4 February** (evening)](#programme).
 :::
 
 :::  {.speaker-card #robert_tropek}
@@ -243,6 +247,7 @@ In his plenary talk, he will explore how plant–pollinator communities and thei
 :::
 
 :::  {.speaker-card #katherine_baldock}
+![](images/people/katherine_baldock.png){.speaker-photo fig-alt="Dr Katherine Baldock"}
 
 ::: {style="text-align: center;"}
 #### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=ntJPwpkAAAAJ)
@@ -263,11 +268,11 @@ To be Announced.
 :::
 
 ::: {style="text-align: justify;"}
-The conference excursion will take place on **Saturday 6th February 2027**. Participants can choose between two exciting options:
+The conference excursion will take place on [**Saturday 6th February 2027**](#programme). Participants can choose between two exciting options:
 :::
 
 ::: {style="text-align: center;"}
-### Option 1: European Bison at Milovice Nature Reserve
+### Option 1: European Bison at Milovice Nature Reserve {#excursion-milovice}
 :::
 
 ![European bison in the Milovice reserve (Traviny near Benátky nad Jizerou). Photo: Michal Köpping, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zubr_v_P%C5%99%C3%ADrodn%C3%AD_rezervaci_velk%C3%BDch_kopytn%C3%ADk%C5%AF_Milovice,_lokalita_Traviny_u_Ben%C3%A1tek_nad_Jizerou.jpg)](images/bison_milovice.jpg){fig-align="center" width="700" fig-alt="European bison grazing in the steppe grassland of the Milovice Nature Reserve"}
@@ -295,7 +300,7 @@ Capacity is limited to 60 participants. Public transport (train) will most likel
 ```
 
 ::: {style="text-align: center;"}
-### Option 2: Historical Prague Walking Tour
+### Option 2: Historical Prague Walking Tour {#excursion-prague}
 :::
 
 ![Historical panorama of Prague. Woodcut from the Nuremberg Chronicle (*Schedelsche Weltchronik*), 1493, folios 229v–230r. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nuremberg_Chronicle_f_229v_230r.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Nuremberg_Chronicle_f_229v_230r.jpg/1280px-Nuremberg_Chronicle_f_229v_230r.jpg){fig-align="center" width="700" fig-alt="Historical woodcut view of Prague from the 1493 Nuremberg Chronicle"}
@@ -469,11 +474,11 @@ Please note that **lunches are not provided** by the conference. However, there 
 - 🥗 **[Bistro Fair Food Club](https://fairfoodclub.cz/)** (U Nemocnice 4) – ethical social-enterprise bistro with fresh daily lunch menus, soups, vegetarian/vegan bowls, and Georgian *khachapuri*.
 
 #### Dinner, Breweries & International Options
-- 🍺 **Potrefená Husa Albertov** – right below the faculty building; modern Czech cuisine and tank beer, ideal for conference lunches or dinner.
-- 🍺 **Vinohradský pivovar** – popular neighbourhood microbrewery with excellent craft beer and modern Czech gastropub food.
-- 🍽 **Lokál Korunní** – legendary Czech pub culture, perfectly tapped Pilsner Urquell, and classic Czech comfort food.
-- 🥗 **Dhaba Beas** (I. P. Pavlova) – fast, healthy vegetarian/vegan Indian buffet by weight, popular with students and university staff.
-- 🥙 **Paprika Mediterranean Kitchen** (I. P. Pavlova) – superb homemade hummus, falafel, and shakshuka.
+- 🍺 **[Potrefená Husa Albertov](https://www.potrefena-husa-albertov.cz/)** – right below the faculty building; modern Czech cuisine and tank beer, ideal for conference lunches or dinner.
+- 🍺 **[Vinohradský pivovar](https://www.vinohradskypivovar.cz/)** – popular neighbourhood microbrewery with excellent craft beer and modern Czech gastropub food.
+- 🍽 **[Lokál Korunní](https://lokal-korunni.ambi.cz/)** – legendary Czech pub culture, perfectly tapped Pilsner Urquell, and classic Czech comfort food.
+- 🥗 **[Dhaba Beas](https://dhababeas.cz/)** (I. P. Pavlova) – fast, healthy vegetarian/vegan Indian buffet by weight, popular with students and university staff.
+- 🥙 **[Paprika Mediterranean Kitchen](https://www.my-paprika.com/)** (I. P. Pavlova) – superb homemade hummus, falafel, and shakshuka.
 
 :::
 
@@ -723,7 +728,7 @@ PhD student of [Zoology at Faculty of Science, Charles University](https://www.n
 ##### Dominik Anýž
 
 ::: {style="text-align: justify;"}
-Doctoral student at the Faculty of Science, Charles University (Department of Ecology, Prague, Czechia). His primary research  interest lies in pollination ecology, focusing on everything from plant breeding systems to analyzing plant-pollinator interaction networks. However, he is fascinated with any interaction dynamics, currently also being employed at the Biology Centre CAS in České Budějovice, where he investigates the role of plant chemistry in mediating interactions between plants, herbivores, and their predators.
+Doctoral student at the [Faculty of Science, Charles University](https://www.natur.cuni.cz/eng) (Department of Ecology, Prague, Czechia). His primary research  interest lies in pollination ecology, focusing on everything from plant breeding systems to analyzing plant-pollinator interaction networks. However, he is fascinated with any interaction dynamics, currently also being employed at the Biology Centre CAS in České Budějovice, where he investigates the role of plant chemistry in mediating interactions between plants, herbivores, and their predators.
 :::
 :::
 :::
