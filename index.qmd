@@ -537,7 +537,7 @@ The 24th edition of EcoFlor is organised by researchers based at the **[Faculty 
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/js3.png){.rounded fig-align="left" fig-alt="Jakub Štenc"}
 :::
@@ -557,7 +557,7 @@ Postdoctoral researcher at the [Faculty of Science, Charles University](https://
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Sailee.png){.rounded fig-align="left" fig-alt="Sailee Sakhalkar"}
 :::
@@ -573,7 +573,7 @@ Postdoctoral researcher at the [Institute of Microbiology of the Czech Academy o
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/petr_svanda_sq.jpg){.rounded fig-align="left" fig-alt="Petr Švanda"}
 :::
@@ -590,7 +590,7 @@ Doctoral student at the [Faculty of Science, Charles University](https://www.nat
 \
 
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/filip_buzleta_sq.jpg){.rounded fig-align="left" fig-alt="Filip Bužleta"}
 :::
@@ -606,7 +606,7 @@ PhD student at the [University of South Bohemia in České Budějovice](https://
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/CarlosHC.png){.rounded fig-align="left" fig-alt="Carlos Hernández Castellano"}
 :::
@@ -622,7 +622,7 @@ Postdoctoral researcher at the [Czech University of Life Sciences](https://www.c
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/eh.jpg){.rounded fig-align="left" fig-alt="Eva Horčičková"}
 :::
@@ -639,7 +639,7 @@ Assistant professor at the [Faculty of Environment, Jan Evangelista Purkyně Uni
 
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Tereza_Kocarkova.jpg){.rounded fig-align="left" fig-alt="Tereza Kočárková"}
 :::
@@ -655,7 +655,7 @@ PhD candidate at the [Department of Ecology, Faculty of Science, Charles Univers
 \
 
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Jirka_Hadrava.JPG){.rounded fig-align="left" fig-alt="Jiří Hadrava"}
 :::
@@ -670,7 +670,7 @@ Researcher at the [Department of Zoology, Faculty of Science, Charles University
 :::
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/mm.jpg){.rounded fig-align="left" fig-alt="Michael Mikát"}
 :::
@@ -686,7 +686,7 @@ Researcher at the [Department of Zoology, Faculty of Science, Charles University
 \
 
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Alpi_Koc.jpg ){.rounded fig-align="left" fig-alt="Alptekin Koc"}
 :::
@@ -702,7 +702,7 @@ Doctoral researcher at the [Department of Botany of the Faculty of Science of Ch
 \
 
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Helena_Pijalkova.jpeg ){.rounded fig-align="left" fig-alt="Helena Pijálková"}
 :::
@@ -717,7 +717,7 @@ PhD student of [Zoology at Faculty of Science, Charles University](https://www.n
 :::
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Tadeas_Rysan.jpeg){.rounded fig-align="left" fig-alt="Tadeáš Ryšan"}
 :::
@@ -732,7 +732,7 @@ PhD student of [Zoology at Faculty of Science, Charles University](https://www.n
 :::
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Dominik_Anyz.png){.rounded fig-align="left" fig-alt="Dominik Anýž"}
 :::
@@ -747,7 +747,7 @@ Doctoral student at the [Faculty of Science, Charles University](https://www.nat
 :::
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Ana_Vojtko.jpg){.rounded fig-align="left" fig-alt="Anna E-Vojtkó"}
 :::
@@ -762,7 +762,7 @@ Postdoctoral fellow at [Philipps Universität Marburg](https://www.uni-marburg.d
 :::
 \
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Lucie_Holzbachova.jpg){.rounded fig-align="left" fig-alt="Lucie Holzbachová"}
 :::
@@ -776,7 +776,7 @@ PhD candidate at the Department of Botany, [Faculty of Science, Charles Universi
 :::
 :::
 
-::: {.columns}
+::: {.columns .committee-person}
 ::: {.column width="40%"}
 ![](images/people/Guillermo_Uceda.jpg){.rounded fig-align="left" fig-alt="Guillermo Uceda"}
 :::

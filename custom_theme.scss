@@ -278,28 +278,91 @@ img.speaker-photo {
   margin: 0 auto 1rem auto;
 }
 
-/* Ensure people columns stack cleanly on mobile so images are never squeezed */
-@media (max-width: 650px) {
-  #organisation .columns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+/* ============================================================
+   ORGANISATION COMMITTEE (Desktop side-by-side, Mobile stacked)
+   ============================================================ */
 
-    .column {
+.committee-person,
+.columns:has(img.rounded) {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* On phones / tablets (< 768px): stack photo above name and text */
+@media (max-width: 768px) {
+  .committee-person,
+  .columns:has(img.rounded) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-bottom: 2.2rem !important;
+
+    > .column {
       width: 100% !important;
+      max-width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .quarto-figure,
+    figure.figure,
+    .quarto-figure-left {
+      margin: 0 auto 0.75rem auto !important;
+      text-align: center !important;
+      display: flex !important;
+      justify-content: center !important;
+      float: none !important;
     }
 
     img.rounded {
-      margin: 0 auto 0.75rem auto;
-      display: block;
+      margin: 0 auto !important;
+      display: block !important;
+      width: 175px !important;
+      height: 175px !important;
+      max-width: 60vw !important;
+      aspect-ratio: 1 / 1 !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+    }
+
+    section.level5 {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    h5 {
+      margin-top: 0.35rem !important;
+      margin-bottom: 0.65rem !important;
+      text-align: center !important;
+      font-size: 1.35rem !important;
+      width: 100% !important;
+    }
+
+    div[style*="text-align: justify;"] {
+      text-align: justify !important;
+      text-justify: inter-word;
+      padding: 0 0.5rem !important;
+      width: 100% !important;
+      max-width: 600px !important;
+      margin: 0 auto !important;
     }
 
     div[style*="text-align: center;"] {
-      text-align: center;
+      text-align: center !important;
+      width: 100% !important;
+      margin-top: 0.5rem !important;
     }
   }
 }
+
 
 .figure-caption {
   text-align: center;
