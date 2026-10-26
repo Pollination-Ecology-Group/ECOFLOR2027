@@ -681,13 +681,24 @@ img.speaker-photo {
   gap: 2.5rem;
   margin: 1.5rem 0;
 
+  a {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
   img {
     height: 80px;
     width: auto;
     max-width: 180px;
     object-fit: contain;
+    transition: opacity 0.2s ease;
   }
 }
+
 
 /* ============================================================
    SPEAKER SECTION
@@ -803,6 +814,199 @@ pre a, code a { color: $dark !important; }
       line-height: 1.6;
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* ============================================================
+   JPE INVITATION CARD
+   ============================================================ */
+
+.jpe-card {
+  margin: 2.2rem auto 2.5rem auto;
+  padding: 2.2rem 2.4rem;
+  max-width: 840px;
+  background: linear-gradient(135deg, rgba(251, 240, 208, 0.50) 0%, #FFFFFF 52%, rgba(214, 244, 244, 0.42) 100%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(232, 168, 48, 0.45);
+  box-shadow: 0 8px 24px rgba(232, 168, 48, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(232, 168, 48, 0.20);
+  }
+
+  .jpe-layout {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.2rem;
+    }
+  }
+
+  .jpe-logo-wrap {
+    flex-shrink: 0;
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: 1;
+    }
+
+    img {
+      width: 145px;
+      height: 145px;
+      object-fit: contain;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(232, 168, 48, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 8px 24px rgba(232, 168, 48, 0.40);
+      }
+    }
+
+    .jpe-badge {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.3rem 0.8rem;
+      background: rgba(232, 168, 48, 0.18);
+      color: $amber-dark;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      border: 1px solid rgba(232, 168, 48, 0.45);
+      white-space: nowrap;
+    }
+  }
+
+  .jpe-content {
+    flex-grow: 1;
+
+    h4 {
+      font-family: $headingFont;
+      color: $teal-dark;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      line-height: 1.6;
+      color: $dark;
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      margin: 0.6rem 0 1.2rem 0;
+      padding-left: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        padding-left: 1.8rem;
+        margin-bottom: 0.65rem;
+        line-height: 1.55;
+        font-size: 0.98rem;
+        color: $dark;
+        text-align: left;
+
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          top: -1px;
+          color: $amber-dark;
+          font-weight: 800;
+          font-size: 1.15rem;
+          line-height: 1.4;
+        }
+      }
+
+    }
+
+    .jpe-actions {
+      margin-top: 1.1rem;
+
+      p {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        margin: 0;
+
+        @media (max-width: 768px) {
+          justify-content: center;
+        }
+      }
+    }
+
+
+    .btn-jpe {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.65rem 1.4rem;
+      font-family: $headingFont;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: $white !important;
+      background: linear-gradient(135deg, $amber 0%, $amber-dark 100%) !important;
+      border: none;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(232, 168, 48, 0.35);
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+
+      i {
+        font-size: 1.05rem;
+        line-height: 1;
+      }
+
+      &:hover {
+        background: linear-gradient(135deg, $amber-dark 0%, #aa7519 100%) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(232, 168, 48, 0.45);
+        color: $white !important;
+      }
+    }
+
+    .btn-jpe-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.65rem 1.4rem;
+      font-family: $headingFont;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: $teal-dark !important;
+      background: $white !important;
+      border: 1.5px solid $teal !important;
+      border-radius: 999px;
+      text-decoration: none !important;
+      box-shadow: 0 2px 8px rgba(42, 138, 138, 0.08);
+      transition: all 0.2s ease;
+
+      i {
+        font-size: 1.05rem;
+        line-height: 1;
+      }
+
+      &:hover {
+        background: $teal-xlight !important;
+        border-color: $teal-dark !important;
+        color: $teal-dark !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(42, 138, 138, 0.15);
       }
     }
   }

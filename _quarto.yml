@@ -9,6 +9,7 @@ project:
     - "!Ecoflor_2027_programme.qmd"
   resources:
     - "images/bluesky.svg"
+    - "images/logos/jpe.png"
     - "documents"
   post-render:
     - cp googleb16326ba55692535.html docs/googleb16326ba55692535.html
