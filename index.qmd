@@ -55,7 +55,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 🍻 Conference dinner – **Thursday 4 February (20:00)** after the scientific programme (expected cost up to \~30 EUR per person; venue and details to be specified)
 
-📖 [Publication](#publish-in-jpe) – participants are invited to submit their work to the [**Journal of Pollination Ecology**](https://www.pollinationecology.org/index.php/jpe/index) (Diamond Open Access, no fees)
+📖 [Publication](#publish-in-jpe) – participants are invited to submit their work to the [**Journal of Pollination Ecology**](https://www.pollinationecology.org/index.php/jpe/index) (Diamond Open Access)
 
 ✉️ [Registration](#registration) – **open from 20 October 2026!** Deadline **20 November 2026** (notification of acceptance by **15 December 2026**)
 
@@ -152,7 +152,7 @@ Posters should be prepared in standard **A0 format (portrait / vertical orientat
 :::: {.jpe-content}
 All ECOFLOR 2027 participants — whether presenting an oral talk or a poster — are warmly invited to submit manuscripts based on their presented research to the [**Journal of Pollination Ecology (JPE)**](https://www.pollinationecology.org/index.php/jpe/index).
 
-- **Diamond Open Access:** 100% free to publish and free to read — zero author fees (no APCs) and completely open to the global community.
+- **Diamond Open Access:** Voluntary, low author fees and completely open to the global community.
 - **Dedicated Community Scope:** An international, peer-reviewed scientific journal dedicated specifically to all aspects of pollination ecology, floral biology, and plant–pollinator interactions.
 - **Supportive & Constructive Review:** Fast, constructive peer review conducted by active pollination biologists.
 - **Diverse Formats Welcome:** Original research articles, short communications, reviews, and methodological contributions.
