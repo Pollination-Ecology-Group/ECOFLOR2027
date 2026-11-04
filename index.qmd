@@ -285,14 +285,18 @@ Robert Tropek is an associate professor and head of the Insect Community Ecology
 :::::
 
 ::::: {#katherine_baldock .speaker-card}
+![](images/people/Katherine_Baldock.jpg){.speaker-photo fig-alt="Dr Katherine Baldock"}
+
 ::: {style="text-align: center;"}
 #### Dr Katherine Baldock [![](images/scholar.png){width="22"}](https://scholar.google.com/citations?hl=cs&user=ntJPwpkAAAAJ)
 
-#### To be Announced
+#### *Managing urban greenspaces for pollinators and people: a network approach*
 :::
 
 ::: {style="text-align: justify;"}
-To be Announced.
+Katherine Baldock is an associate professor based in the School of Geography and Natural Sciences at Northumbria University, Newcastle upon Tyne, UK. Her research focuses on plant-pollinator interactions at a community level, applying a network approach to improving our understanding of how anthropogenic activities affect plant and pollinator communities across a range of landscapes including urban, agricultural and natural ecosystems.
+
+Katherine’s research projects have taken her from the Kenyan savannah to the Peruvian Amazon to the urban jungles of cities across the UK. Her first foray into the world of pollinator research involved climbing trees in the tropical dry forest of Costa Rica and camping under a fig tree. She then undertook a PhD at the University of Edinburgh, exploring daily temporal structure in plant-pollinator networks in the Kenyan savannah. Closer to home, a postdoctoral position at the University of Bristol led her to explore pollinator communities in urban allotments, gardens, parks and other greenspaces as part of the UK Urban Pollinators Project team. A NERC-funded Knowledge Exchange Fellowship enabled her to connect with policymakers, practitioners and other stakeholders to develop policy and practice for urban greenspaces based on the research findings. Her current projects include interdisciplinary urban ecology studies across a range of urban greenspaces, and research with local stakeholders on coffee pollination in the Peruvian Amazon.
 :::
 :::::
 
