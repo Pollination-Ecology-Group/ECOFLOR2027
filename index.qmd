@@ -834,6 +834,21 @@ Klára Hoďánková is a Bachelor's student at the [**Faculty of Science, Charle
 ::::::
 
 
+:::::: columns
+::: {.column width="40%"}
+![](images/people/Jana_Jersakova.jpg){.rounded fig-align="left" fig-alt="Jana Jersáková"}
+:::
+
+:::: {.column width="60%"}
+##### Jana Jersáková
+
+::: {style="text-align: justify;"}
+Dr. Jana Jersáková is an Associate Professor at the [Faculty of Science, University of South Bohemia](https://www.prf.jcu.cz/en), Czechia, specializing in plant ecology, evolutionary biology, and symbiotic interactions. Her research primarily focuses on the ecology and evolution of orchids, with particular attention to pollination strategies, reproductive biology, and mycorrhizal associations. She combines field ecology, experimental approaches, and molecular techniques to explore how orchids interact with pollinators and fungal partners, and how these relationships influence species distribution and adaptation. She actively collaborates in international projects and contributes to advancing knowledge on biodiversity and ecosystem functioning. She is a secretary of the [Czech Society for Ecology](https://www.cspe.cz/) and a member of IUCN Orchid Specialist Group.
+:::
+::::
+::::::
+
+
 ::: committee-list
 ##### Further members of the organising team
 
