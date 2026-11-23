@@ -155,17 +155,18 @@ keywords_of <- function(row) {
 
 # ── PROGRAMME TIMES ───────────────────────────────────────────────────────────
 
-#' Start time of each talk: session start + (position − 1) × slot length.
-add_talk_times <- function(orals, default_slot = 12) {
+#' Start time of each talk: Rising Stars open the session (20 min), followed by standard oral talks (12 min).
+add_talk_times <- function(orals, default_slot = 12, rising_star_slot = 20) {
   orals %>%
     group_by(Session_ID) %>%
-    arrange(Order, .by_group = TRUE) %>%
+    arrange(desc(Final_format == "Rising Star"), Order, .by_group = TRUE) %>%
     mutate(
-      slot = coalesce(Slot_minutes, default_slot),
+      slot = ifelse(Final_format == "Rising Star", rising_star_slot, coalesce(Slot_minutes, default_slot)),
+      offset_min = lag(cumsum(slot), default = 0),
       start = as.POSIXct(paste("2000-01-01", Start_time), format = "%Y-%m-%d %H:%M", tz = "UTC") +
-        (row_number() - 1) * slot * 60,
+        offset_min * 60,
       Time = format(start, "%H:%M")
     ) %>%
     ungroup() %>%
-    select(-slot, -start)
+    select(-slot, -offset_min, -start)
 }

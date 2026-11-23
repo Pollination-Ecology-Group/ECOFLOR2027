@@ -181,36 +181,49 @@ All ECOFLOR 2027 participants — whether presenting an oral talk or a poster �
 ::: programme-day
 #### Wednesday 3 February {.programme-title}
 
--   10:00 🔬 [**Workshops**](#workshops): ["Pollinators for Non-Entomologists"](#workshops) & ["Introduction to YOLO and Visual Tools"](#workshops)
--   📝 [**Registration**](#registration)
--   14:00 💼 [**Networking**](#networking): Mentoring and collaboration matching
--   17:00 🎤 [**Opening plenary talk**](#speakers)
--   🍻 **Meet & greet**
+-   09:30–10:00 📝 **Morning registration** *(for workshop participants)*
+-   10:00–13:00 🔬 [**Workshops**](#workshops): ["Pollinators for Non-Entomologists"](#workshops) & ["Introduction to YOLO and Visual Tools"](#workshops)
+-   13:00–14:00 🍲 **Lunch break** & 📝 [**Main registration**](#registration)
+-   14:00–16:30 💼 [**Networking**](#networking): Mentoring and collaboration matching
+-   16:30–17:00 🎉 **Opening ceremony & welcome**
+-   17:00–18:00 🎤 [**Opening plenary talk**](#speakers) ([**doc. Robert Tropek**](#robert_tropek))
+-   18:00–20:30 🍻 **Welcome meet & greet**
 :::
 
 ::: programme-day
 #### Thursday 4 February {.programme-title}
 
--   09:00–19:00 🗣 [**Oral presentations**](#oral-presentations)
--   🌼 [**Poster session**](#poster-presentations)
--   🎤 [**Plenary talk** (evening)](#speakers)
--   20:00 🍻 **Conference dinner** (after the programme; venue to be announced)
+-   08:30–09:00 📝 **Registration & poster mounting**
+-   09:00–10:15 🗣 [**Oral presentations – Session Slot 1**](#oral-presentations)
+-   10:15–10:45 ☕ **Morning coffee break & [**poster viewing**](#poster-presentations)** *(30 min)*
+-   10:45–12:15 🗣 [**Oral presentations – Session Slot 2**](#oral-presentations)
+-   12:15–14:00 🍲 [**Lunch break**](#where-to-eat-and-drink)
+-   14:00–15:30 🗣 [**Oral presentations – Session Slot 3**](#oral-presentations)
+-   15:30–16:30 ☕ **Afternoon coffee break & [**Poster Session I**](#poster-presentations)** *(60 min)*
+-   16:30–18:00 🗣 [**Oral presentations – Session Slot 4**](#oral-presentations)
+-   18:00–19:00 🎤 [**Evening plenary talk**](#speakers) ([**Dr Katherine Baldock**](#katherine_baldock))
+-   20:00 🍻 **Conference dinner** *(venue to be announced)*
 :::
 
 ::: programme-day
 #### Friday 5 February {.programme-title}
 
--   09:00–19:00 🗣 [**Oral presentations**](#oral-presentations)
--   🌼 [**Poster session**](#poster-presentations)
--   🎉 **Closing ceremony**
+-   09:00–10:15 🗣 [**Oral presentations – Session Slot 5**](#oral-presentations)
+-   10:15–10:45 ☕ **Morning coffee break & [**poster viewing**](#poster-presentations)** *(30 min)*
+-   10:45–12:15 🗣 [**Oral presentations – Session Slot 6**](#oral-presentations)
+-   12:15–14:00 🍲 [**Lunch break**](#where-to-eat-and-drink)
+-   14:00–15:30 🗣 [**Oral presentations – Session Slot 7**](#oral-presentations)
+-   15:30–16:30 ☕ **Afternoon coffee break & [**Poster Session II**](#poster-presentations)** *(60 min)*
+-   16:30–18:00 🗣 [**Oral presentations – Session Slot 8 / ECOFLOR General Assembly**](#oral-presentations)
+-   18:00–19:00 🏆 **Awards & closing ceremony**
 :::
 
 ::: programme-day
 #### Saturday 6 February {.programme-title}
 
 -   🦬 [**Excursions**](#excursion) — two options:
-    -   [**Milovice Nature Reserve**](#excursion-milovice) (European Bison & wild herbivores)
-    -   [**Prague**](#excursion-prague) (walk through the historical centre with a local guide)
+    -   08:30–16:30 [**Milovice Nature Reserve**](#excursion-milovice) (European Bison & wild herbivores)
+    -   10:00–14:00 [**Prague**](#excursion-prague) (walk through the historical centre with a local guide)
 -   Details to be announced
 :::
 :::::::

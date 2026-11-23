@@ -485,3 +485,154 @@ function columnLetter_(n) {
   while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = (n - m - 1) / 26; }
   return s;
 }
+
+// ── SCIENTIFIC COMMITTEE REVIEW WEB APP API ─────────────────────────────────
+// Deploy → New deployment → Type: Web app
+//   Execute as: Me
+//   Who has access: Anyone
+// Paste the resulting Web App URL into the Scientific Committee Review App.
+
+const INDIVIDUAL_REVIEWS_SHEET = 'Committee_Reviews';
+const INDIVIDUAL_REVIEWS_HEADERS = [
+  'Submission_ID', 'Reviewer', 'Vote', 'Suggested_format', 'Suggested_session', 'Score', 'Notes', 'Updated_at'
+];
+
+function getSpreadsheet_() {
+  const props = PropertiesService.getScriptProperties();
+  const id = props.getProperty('SHEET_ID') || '1Bteqfwar_brI1vX9S5TOdTiFa-sOn9uMuxG4dkG8Bco';
+  return SpreadsheetApp.openById(id);
+}
+
+function ensureReviewsSheet_(ss) {
+  let sh = ss.getSheetByName(INDIVIDUAL_REVIEWS_SHEET);
+  if (!sh) {
+    sh = ss.insertSheet(INDIVIDUAL_REVIEWS_SHEET);
+    sh.getRange(1, 1, 1, INDIVIDUAL_REVIEWS_HEADERS.length)
+      .setValues([INDIVIDUAL_REVIEWS_HEADERS])
+      .setFontWeight('bold').setBackground('#5B9E9E').setFontColor('white');
+    sh.setFrozenRows(1);
+  }
+  return sh;
+}
+
+function sheetToObjects_(sheet) {
+  if (!sheet || sheet.getLastRow() < 2) return [];
+  const values = sheet.getDataRange().getDisplayValues();
+  const headers = values[0];
+  return values.slice(1).filter(r => r.some(c => String(c).trim() !== '')).map(r => {
+    const obj = {};
+    headers.forEach((h, i) => { obj[h] = r[i]; });
+    return obj;
+  });
+}
+
+function jsonResponse_(payload) {
+  return ContentService.createTextOutput(JSON.stringify(payload))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet(e) {
+  try {
+    const ss = getSpreadsheet_();
+    const subSheet = ss.getSheetByName('Submissions');
+    const sessSheet = ss.getSheetByName('Sessions');
+    const revSheet = ensureReviewsSheet_(ss);
+    return jsonResponse_({
+      ok: true,
+      submissions: sheetToObjects_(subSheet),
+      sessions: sheetToObjects_(sessSheet),
+      reviews: sheetToObjects_(revSheet),
+      updatedAt: new Date().toISOString(),
+    });
+  } catch (err) {
+    return jsonResponse_({ ok: false, error: String(err) });
+  }
+}
+
+function doPost(e) {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(30000);
+  try {
+    const body = JSON.parse((e && e.postData && e.postData.contents) || '{}');
+    const ss = getSpreadsheet_();
+    const action = body.action || 'saveDecision';
+
+    if (action === 'saveDecision' || action === 'bulkSaveDecisions') {
+      const subSheet = ss.getSheetByName('Submissions');
+      const data = subSheet.getDataRange().getValues();
+      const headers = data[0].map(String);
+      const idIdx = headers.indexOf('Submission_ID');
+      const rowById = {};
+      for (let r = 1; r < data.length; r++) {
+        rowById[String(data[r][idIdx]).trim()] = r + 1;
+      }
+
+      const items = action === 'bulkSaveDecisions' ? (body.items || []) : [body];
+      const fields = ['Status', 'Final_format', 'Session_ID', 'Order', 'Reviewer', 'Review_notes'];
+      items.forEach(item => {
+        const rowNum = rowById[String(item.Submission_ID || '').trim()];
+        if (!rowNum) return;
+        fields.forEach(f => {
+          if (item[f] !== undefined) {
+            const colIdx = headers.indexOf(f);
+            if (colIdx >= 0) {
+              subSheet.getRange(rowNum, colIdx + 1).setValue(item[f]);
+            }
+          }
+        });
+      });
+      return jsonResponse_({ ok: true, updated: items.length });
+    }
+
+    if (action === 'saveReview') {
+      const revSheet = ensureReviewsSheet_(ss);
+      const data = revSheet.getDataRange().getValues();
+      const subId = String(body.Submission_ID || '').trim();
+      const reviewer = String(body.Reviewer || '').trim();
+      if (!subId || !reviewer) throw new Error('Submission_ID and Reviewer are required.');
+
+      let targetRow = -1;
+      for (let r = 1; r < data.length; r++) {
+        if (String(data[r][0]).trim() === subId &&
+            String(data[r][1]).trim().toLowerCase() === reviewer.toLowerCase()) {
+          targetRow = r + 1;
+          break;
+        }
+      }
+      if (targetRow < 0) targetRow = revSheet.getLastRow() + 1;
+
+      const rowValues = [
+        subId,
+        reviewer,
+        body.Vote || '',
+        body.Suggested_format || '',
+        body.Suggested_session || '',
+        body.Score !== undefined ? body.Score : '',
+        body.Notes || '',
+        new Date().toISOString(),
+      ];
+      revSheet.getRange(targetRow, 1, 1, rowValues.length).setValues([rowValues]);
+      return jsonResponse_({ ok: true });
+    }
+
+    if (action === 'saveSessions') {
+      const sessSheet = ss.getSheetByName('Sessions');
+      const sessions = body.sessions || [];
+      const lastRow = sessSheet.getLastRow();
+      if (lastRow > 1) {
+        sessSheet.getRange(2, 1, lastRow - 1, SESSION_HEADERS.length).clearContent();
+      }
+      if (sessions.length > 0) {
+        const rows = sessions.map(s => SESSION_HEADERS.map(h => s[h] !== undefined ? s[h] : ''));
+        sessSheet.getRange(2, 1, rows.length, SESSION_HEADERS.length).setValues(rows);
+      }
+      return jsonResponse_({ ok: true, count: sessions.length });
+    }
+
+    return jsonResponse_({ ok: false, error: 'Unknown action: ' + action });
+  } catch (err) {
+    return jsonResponse_({ ok: false, error: String(err) });
+  } finally {
+    lock.releaseLock();
+  }
+}

@@ -11,6 +11,7 @@ project:
     - "images/bluesky.svg"
     - "images/logos/jpe.png"
     - "documents"
+    - "review.html"
   post-render:
     - cp googleb16326ba55692535.html docs/googleb16326ba55692535.html
   

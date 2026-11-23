@@ -2,10 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-
 /.quarto/
-
 **/*.quarto_ipynb
-
 # Google auth token cache (R/ecoflor_submissions.R)
 .secrets/
+.secrets

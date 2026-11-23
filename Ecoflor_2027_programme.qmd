@@ -3,7 +3,7 @@ title: "ECOFLOR 2027: Programme"
 format:
   html:
     toc: true
-    theme: cosmo
+    theme: [cosmo, custom_theme.scss]
   pdf:
     toc: false
     number-sections: false
@@ -20,7 +20,7 @@ format:
         \subsectionfont{\color{ecoteal}\sffamily}
 execute:
   echo: false
-  warning: true
+  warning: false
 ---
 
 ```{r}
@@ -28,55 +28,105 @@ execute:
 #| include: false
 source("R/ecoflor_submissions.R")
 
-contributions <- read_contributions()
-sessions <- read_sessions()
-orals <- contributions %>% filter(Final_format %in% TALK_FORMATS) %>% add_talk_times()
-posters <- contributions %>% filter(Final_format == "Poster") %>%
-  mutate(Poster_no = row_number())
+sessions <- tryCatch(read_sessions(), error = function(e) tibble())
+contributions <- tryCatch({
+  subs <- read_tab("Submissions") %>%
+    mutate(across(everything(), ~ str_trim(replace_na(.x, ""))))
+  subs %>%
+    filter(Status == "Accepted", Final_format %in% c(TALK_FORMATS, "Poster")) %>%
+    mutate(
+      Session_ID = suppressWarnings(as.numeric(Session_ID)),
+      Order = suppressWarnings(as.numeric(Order)),
+      Presenter = str_squish(paste(First_name, Last_name)),
+      Student = Career_stage %in% c("Bachelor or Master student", "PhD student")
+    ) %>%
+    left_join(sessions, by = "Session_ID", suffix = c("", "_session")) %>%
+    arrange(Session_ID, Order)
+}, error = function(e) tibble())
 
-talk_table <- function(talks) {
-  rows <- paste0(
-    "| ", talks$Time,
-    " | **", md_escape(talks$Presenter, italics = FALSE), "**",
-    ifelse(talks$Student, " ^S^", ""),
-    " | ", ifelse(talks$Final_format == "Rising Star", "*Rising Stars talk:* ", ""),
-    md_escape(talks$Title), " |"
-  )
-  paste(c("| Time | Speaker | Title |", "|:--|:--|:------|", rows), collapse = "\n")
+orals <- if (nrow(contributions)) {
+  contributions %>% filter(Final_format %in% TALK_FORMATS) %>% add_talk_times()
+} else {
+  tibble()
 }
 
-poster_table <- function(p) {
-  rows <- paste0(
-    "| ", p$Poster_no,
-    " | **", md_escape(p$Presenter, italics = FALSE), "**",
-    ifelse(p$Student, " ^S^", ""),
-    " | ", md_escape(p$Title), " |"
-  )
-  paste(c("| No. | Presenter | Title |", "|:--|:--|:------|", rows), collapse = "\n")
+posters <- if (nrow(contributions)) {
+  contributions %>% filter(Final_format == "Poster") %>% mutate(Poster_no = row_number())
+} else {
+  tibble()
 }
-```
 
-**3–6 February 2027 · Faculty of Science, Charles University · Viničná 7, Prague**
-
-^S^ student presentation (eligible for the best student presentation award)
-
-```{r}
-#| results: asis
-for (day in unique(sessions$Day)) {
-  cat("\n## ", day, "\n\n", sep = "")
-  for (sid in sessions$Session_ID[sessions$Day == day]) {
-    s <- sessions %>% filter(Session_ID == sid)
-    chair <- if (s$Chair != "") paste0(" · Chair: ", s$Chair) else ""
-    cat("\n### ", s$Start_time, " · ", s$Session_Name, "\n\n", sep = "")
-    if (chair != "") cat("*", sub("^ · ", "", chair), "*\n\n", sep = "")
-
-    if (s$Type == "Poster") {
-      p <- posters %>% filter(Session_ID == sid)
-      if (nrow(p)) cat(poster_table(p), "\n\n")
-    } else {
-      t <- orals %>% filter(Session_ID == sid)
-      if (nrow(t)) cat(talk_table(t), "\n\n")
-    }
+render_session_slot <- function(day_name, start_time, fallback_label) {
+  s <- sessions %>% filter(Day == day_name, Start_time == start_time, Type != "Poster")
+  if (nrow(s) == 0) {
+    cat(sprintf("| **%s** | 🗣 **%s** *(session to be assigned)* |\n", start_time, fallback_label))
+    return(invisible(NULL))
   }
+  s <- s[1, ]
+  chair_txt <- if (!is.na(s$Chair) && s$Chair != "") paste0(" *(Chair: ", s$Chair, ")*") else ""
+  cat(sprintf("| **%s** | 🗣 **Session %s: %s**%s |\n", start_time, s$Session_ID, s$Session_Name, chair_txt))
 }
 ```
+
+**3–6 February 2027 · Faculty of Science, Charles University · Viničná 7, Prague (Velká zoologická posluchárna, 2nd floor)**
+
+::: {.callout-note}
+**Interactive Programme & Session Builder:** Scientific committee members can evaluate abstracts, assign Oral / Rising Star / Poster formats, and reorder the thematic sessions into any of the time slots below using the [**Scientific Committee Review & Programme Builder App**](review.html).
+:::
+
+---
+
+## Wednesday 3 February 2027
+
+| Time | Event |
+|:-----|:------|
+| **09:30–10:00** | 📝 **Morning Registration** *(for workshop participants)* |
+| **10:00–13:00** | 🔬 **Parallel Workshops** |
+| | • **Workshop 1:** *Pollinators for Non-Entomologists* (Leader: Tadeáš Ryšan, max. 25 participants) |
+| | • **Workshop 2:** *Basic Introduction to YOLO and Visual Analytical Tools* (Leader: Jakub Štenc, max. 15 participants) |
+| **13:00–14:00** | 🍲 **Lunch Break** & 📝 **Main Conference Registration** |
+| **14:00–16:30** | 💼 **Networking Session:** Mentoring and collaboration matching *(+ Registration & Poster mounting)* |
+| **16:30–17:00** | 🎉 **Opening Ceremony & Welcome Address** |
+| **17:00–18:00** | 🎤 **Opening Plenary Talk:** **doc. Robert Tropek** — *Geographic patterns in plant–pollinator interactions: from mountain slopes to the globe* |
+| **18:00–20:30** | 🍻 **Welcome Meet & Greet** |
+
+---
+
+## Thursday 4 February 2027
+
+| Time | Event |
+|:-----|:------|
+| **08:30–09:00** | 📝 **Registration & Poster Mounting** |
+| **09:00–10:15** | 🗣 **Oral Presentations — Slot 1** *(~6 talks × 12 min)* |
+| **10:15–10:45** | ☕ **Morning Coffee Break + Poster Session** *(30 min)* |
+| **10:45–12:15** | 🗣 **Oral Presentations — Slot 2** *(~7 talks × 12 min)* |
+| **12:15–14:00** | 🍲 **Lunch Break** |
+| **14:00–15:30** | 🗣 **Oral Presentations — Slot 3** *(~7 talks × 12 min)* |
+| **15:30–16:30** | ☕ **Afternoon Coffee Break + Poster Session I** *(60 min)* |
+| **16:30–18:00** | 🗣 **Oral Presentations — Slot 4** *(~7 talks × 12 min)* |
+| **18:00–19:00** | 🎤 **Evening Plenary Talk:** **Dr Katherine Baldock** — *Managing urban greenspaces for pollinators and people: a network approach* |
+| **20:00–late** | 🍻 **Conference Dinner** *(venue to be announced)* |
+
+---
+
+## Friday 5 February 2027
+
+| Time | Event |
+|:-----|:------|
+| **09:00–10:15** | 🗣 **Oral Presentations — Slot 5** *(~6 talks × 12 min)* |
+| **10:15–10:45** | ☕ **Morning Coffee Break + Poster Session** *(30 min)* |
+| **10:45–12:15** | 🗣 **Oral Presentations — Slot 6** *(~7 talks × 12 min)* |
+| **12:15–14:00** | 🍲 **Lunch Break** |
+| **14:00–15:30** | 🗣 **Oral Presentations — Slot 7** *(Rising Star opener + ~5–7 talks)* |
+| **15:30–16:30** | ☕ **Afternoon Coffee Break + Poster Session II** *(60 min)* |
+| **16:30–18:00** | 🗣 **Oral Presentations — Slot 8 / ECOFLOR Working Group Assembly** |
+| **18:00–19:00** | 🏆 **Best Student Oral & Poster Awards & Closing Ceremony** |
+
+---
+
+## Saturday 6 February 2027
+
+| Time | Event |
+|:-----|:------|
+| **08:30–16:30** | 🦬 **Excursion Option 1:** **Milovice Nature Reserve** — European Bison (*Bison bonasus*), Exmoor Ponies, and Tauros cattle in a rewilded Czech steppe *(capacity: 60 participants)* |
+| **10:00–14:00** | 🏰 **Excursion Option 2:** **Historical Prague Walking Tour** — guided tour through the historic centre of Prague |
