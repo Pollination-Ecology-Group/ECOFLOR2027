@@ -248,16 +248,124 @@
       inset: auto 0 0;
       border-block-end: 3px solid var(--accent);
     }
-    /* Do not put padding, borders, margins, or backgrounds on role="tabpanel" itself because hidden="until-found" hides contents only */
+    /* Ensure hidden tabpanels never overlay or intercept pointer events on the active tabpanel */
     .tabpanels-stack {
-      display: grid;
+      display: block;
     }
-    [role="tabpanel"] {
-      grid-area: 1 / 1;
+    [role="tabpanel"][hidden] {
+      display: none !important;
+      pointer-events: none !important;
     }
     .panel-inner {
       margin-top: 1rem;
       background: transparent;
+    }
+
+
+    /* Live Programme & Session Slot Progress Board */
+    .live-progress-board {
+      background: var(--surface);
+      border: 2px solid var(--teal-dark);
+      border-radius: var(--radius);
+      padding: 1rem 1.15rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+    }
+    .board-grid-2col {
+      display: grid;
+      grid-template-columns: 1.15fr 1.25fr;
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+    @media (max-width: 1100px) {
+      .board-grid-2col { grid-template-columns: 1fr; }
+    }
+    .prog-mini-day {
+      background: #F8FCFC;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 0.65rem;
+    }
+    .prog-mini-day-hdr {
+      background: var(--teal-dark);
+      color: #fff;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.45rem 0.75rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .prog-mini-row {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 0.5rem;
+      padding: 0.38rem 0.65rem;
+      border-bottom: 1px solid #E6F0F0;
+      font-size: 0.78rem;
+      align-items: center;
+    }
+    .prog-mini-row:last-child { border-bottom: none; }
+    .prog-mini-row.coffee { background: #FFFDF4; border-left: 3px solid var(--amber); }
+    .prog-mini-row.plenary { background: #F7F2FC; border-left: 3px solid var(--purple); }
+    .prog-mini-row.oral-slot { background: #FFFFFF; border-left: 3px solid var(--teal); }
+    .prog-mini-select {
+      width: 100%;
+      padding: 0.25rem 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--teal);
+      border-radius: 6px;
+      background: var(--teal-xlight);
+      color: var(--teal-deep);
+    }
+    .session-slots-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 0.65rem;
+      max-height: 540px;
+      overflow-y: auto;
+      padding-right: 0.25rem;
+    }
+    .sess-slot-box {
+      background: #FAFDFD;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--teal-dark);
+      border-radius: 8px;
+      padding: 0.55rem 0.65rem;
+      font-size: 0.76rem;
+    }
+    .sess-slot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.22rem;
+      margin-top: 0.4rem;
+    }
+    .talk-slot-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.35rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 5px;
+      font-size: 0.73rem;
+    }
+    .talk-slot-pill.empty {
+      border: 1px dashed #B8D0D0;
+      color: #7A9494;
+      background: #FFFFFF;
+    }
+    .talk-slot-pill.filled {
+      border: 1px solid #86CECE;
+      background: var(--teal-xlight);
+      color: var(--text);
+      font-weight: 600;
+    }
+    .talk-slot-pill.filled.rising {
+      border-color: #B99CE0;
+      background: var(--purple-light);
+      color: var(--purple-dark);
     }
 
     /* Filter Toolbar */
@@ -946,6 +1054,33 @@
             </div>
           </div>
 
+          <!-- LIVE PROGRAMME & SESSION SLOT PROGRESS BOARD -->
+          <details class="live-progress-board" open id="liveProgrammeBoardDetails">
+            <summary style="cursor:pointer; font-family:'Outfit',sans-serif; font-size:1.02rem; font-weight:700; color:var(--teal-deep); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+              <span>📊 Live Programme &amp; Session Slot Progress Board — <em>Starts with empty slots &amp; fills live as you assign Sessions &amp; Orders below</em></span>
+              <div style="display:flex; gap:0.4rem;" onclick="event.stopPropagation();">
+                <button type="button" class="btn btn-sm btn-outline" id="fillDefaultSlotOrderBtn">🗓️ Place Sessions S1–S7 into Programme Slots</button>
+                <button type="button" class="btn btn-sm btn-outline" id="clearSlotOrderBtn">🧹 Clear Programme Slots</button>
+              </div>
+            </summary>
+            <div class="board-grid-2col">
+              <!-- Left column: Conference Programme Timetable with Empty Oral Slots & Coffee Breaks -->
+              <div>
+                <div style="font-size:0.8rem; font-weight:700; color:var(--teal-deep); margin-bottom:0.4rem;">
+                  1️⃣ Conference Programme Timetable (Choose session order around coffee breaks &amp; plenaries):
+                </div>
+                <div id="liveMiniTimetable"></div>
+              </div>
+              <!-- Right column: The 7 Thematic Sessions with Empty Talk Slots (#1..#7) filling live -->
+              <div>
+                <div style="font-size:0.8rem; font-weight:700; color:var(--teal-deep); margin-bottom:0.4rem;">
+                  2️⃣ Session Talk Slots (Empty slots <code>#1</code>–<code>#7</code> fill as you assign Session &amp; Order on cards below):
+                </div>
+                <div id="liveMiniSessionSlots" class="session-slots-mini-grid"></div>
+              </div>
+            </div>
+          </details>
+
           <div id="cardsCountInfo" style="font-size:0.85rem; color:var(--muted); margin-bottom:0.65rem; font-weight:600;"></div>
           <div id="cardsContainer" class="cards-grid"></div>
         </div>
@@ -1084,22 +1219,22 @@
 
       // Thursday 4 February
       { slotId: "thu-reg", day: "Thursday 4 February", time: "08:30–09:00", start: "08:30", durationMin: 30, kind: "fixed", title: "📝 Registration & Poster Mounting" },
-      { slotId: "oral-slot-1", day: "Thursday 4 February", time: "09:00–10:15", start: "09:00", durationMin: 75, kind: "oral", slotNumber: 1, sessionId: "1" },
+      { slotId: "oral-slot-1", day: "Thursday 4 February", time: "09:00–10:15", start: "09:00", durationMin: 75, kind: "oral", slotNumber: 1, sessionId: "" },
       { slotId: "thu-coffee-am", day: "Thursday 4 February", time: "10:15–10:45", start: "10:15", durationMin: 30, kind: "coffee", title: "☕ Morning Coffee Break + Poster Viewing & Discussion (30 min)" },
-      { slotId: "oral-slot-2", day: "Thursday 4 February", time: "10:45–12:15", start: "10:45", durationMin: 90, kind: "oral", slotNumber: 2, sessionId: "2" },
+      { slotId: "oral-slot-2", day: "Thursday 4 February", time: "10:45–12:15", start: "10:45", durationMin: 90, kind: "oral", slotNumber: 2, sessionId: "" },
       { slotId: "thu-lunch", day: "Thursday 4 February", time: "12:15–14:00", start: "12:15", durationMin: 105, kind: "fixed", title: "🍲 Lunch Break (1h 45m)" },
-      { slotId: "oral-slot-3", day: "Thursday 4 February", time: "14:00–15:30", start: "14:00", durationMin: 90, kind: "oral", slotNumber: 3, sessionId: "3" },
+      { slotId: "oral-slot-3", day: "Thursday 4 February", time: "14:00–15:30", start: "14:00", durationMin: 90, kind: "oral", slotNumber: 3, sessionId: "" },
       { slotId: "thu-coffee-pm", day: "Thursday 4 February", time: "15:30–16:30", start: "15:30", durationMin: 60, kind: "coffee", title: "☕ Afternoon Coffee Break + Poster Session I (60 min)", posterSessionId: "8" },
-      { slotId: "oral-slot-4", day: "Thursday 4 February", time: "16:30–18:00", start: "16:30", durationMin: 90, kind: "oral", slotNumber: 4, sessionId: "4" },
+      { slotId: "oral-slot-4", day: "Thursday 4 February", time: "16:30–18:00", start: "16:30", durationMin: 90, kind: "oral", slotNumber: 4, sessionId: "" },
       { slotId: "thu-plen2", day: "Thursday 4 February", time: "18:00–19:00", start: "18:00", durationMin: 60, kind: "plenary", title: "🎤 Evening Plenary Talk: Dr Katherine Baldock — Managing urban greenspaces for pollinators and people: a network approach" },
       { slotId: "thu-dinner", day: "Thursday 4 February", time: "20:00–23:00", start: "20:00", durationMin: 180, kind: "fixed", title: "🍻 Conference Dinner (94 registered participants)" },
 
       // Friday 5 February
-      { slotId: "oral-slot-5", day: "Friday 5 February", time: "09:00–10:15", start: "09:00", durationMin: 75, kind: "oral", slotNumber: 5, sessionId: "5" },
+      { slotId: "oral-slot-5", day: "Friday 5 February", time: "09:00–10:15", start: "09:00", durationMin: 75, kind: "oral", slotNumber: 5, sessionId: "" },
       { slotId: "fri-coffee-am", day: "Friday 5 February", time: "10:15–10:45", start: "10:15", durationMin: 30, kind: "coffee", title: "☕ Morning Coffee Break + Poster Viewing & Discussion (30 min)" },
-      { slotId: "oral-slot-6", day: "Friday 5 February", time: "10:45–12:15", start: "10:45", durationMin: 90, kind: "oral", slotNumber: 6, sessionId: "6" },
+      { slotId: "oral-slot-6", day: "Friday 5 February", time: "10:45–12:15", start: "10:45", durationMin: 90, kind: "oral", slotNumber: 6, sessionId: "" },
       { slotId: "fri-lunch", day: "Friday 5 February", time: "12:15–14:00", start: "12:15", durationMin: 105, kind: "fixed", title: "🍲 Lunch Break (1h 45m)" },
-      { slotId: "oral-slot-7", day: "Friday 5 February", time: "14:00–15:30", start: "14:00", durationMin: 90, kind: "oral", slotNumber: 7, sessionId: "7" },
+      { slotId: "oral-slot-7", day: "Friday 5 February", time: "14:00–15:30", start: "14:00", durationMin: 90, kind: "oral", slotNumber: 7, sessionId: "" },
       { slotId: "fri-coffee-pm", day: "Friday 5 February", time: "15:30–16:30", start: "15:30", durationMin: 60, kind: "coffee", title: "☕ Afternoon Coffee Break + Poster Session II (60 min)", posterSessionId: "9" },
       { slotId: "oral-slot-8", day: "Friday 5 February", time: "16:30–18:00", start: "16:30", durationMin: 90, kind: "oral", slotNumber: 8, sessionId: "" },
       { slotId: "fri-close", day: "Friday 5 February", time: "18:00–19:00", start: "18:00", durationMin: 60, kind: "fixed", title: "🏆 Best Student Oral & Poster Awards, ECOFLOR Assembly & Closing Ceremony" },
@@ -1109,7 +1244,7 @@
       { slotId: "sat-exc2", day: "Saturday 6 February", time: "10:00–14:00", start: "10:00", durationMin: 240, kind: "fixed", title: "🏰 Excursion Option 2: Historical Prague Guided Walking Tour" }
     ];
 
-    const STORAGE_KEY = "ecoflor2027_committee_state_v4";
+    const STORAGE_KEY = "ecoflor2027_committee_state_v5";
 
     let state = loadState();
 
@@ -1177,6 +1312,12 @@
     }
 
     function syncSessionTimesFromSlots() {
+      state.sessions.forEach(s => {
+        if (s.Type !== "Poster") {
+          s.Day = "";
+          s.Start_time = "";
+        }
+      });
       state.slots.forEach(slot => {
         if (slot.kind === "oral" && slot.sessionId) {
           const s = getSessionById(slot.sessionId);
@@ -1613,7 +1754,136 @@
       }).join("");
     }
 
+
+    function getNextOrderInSession(sessionId, isRisingStar) {
+      if (!sessionId) return "";
+      const peers = state.submissions.filter(
+        s => s.Status === "Accepted" && String(s.Session_ID) === String(sessionId) && (s.Final_format === "Oral" || s.Final_format === "Rising Star")
+      );
+      if (isRisingStar) return "1";
+      const usedOrders = new Set(peers.map(p => parseInt(p.Order, 10)).filter(n => !isNaN(n)));
+      for (let i = 1; i <= 25; i++) {
+        if (!usedOrders.has(i)) return String(i);
+      }
+      return String(peers.length + 1);
+    }
+
+    function renderLiveProgressBoard() {
+      syncSessionTimesFromSlots();
+      const ttEl = document.getElementById("liveMiniTimetable");
+      const ssEl = document.getElementById("liveMiniSessionSlots");
+      if (!ttEl || !ssEl) return;
+
+      const oralSessions = state.sessions.filter(s => s.Type !== "Poster");
+      const mainDays = ["Thursday 4 February", "Friday 5 February"];
+
+      ttEl.innerHTML = mainDays.map(dayName => {
+        const daySlots = state.slots.filter(sl => sl.day === dayName);
+        return `
+          <div class="prog-mini-day">
+            <div class="prog-mini-day-hdr">
+              <span>📅 ${escapeHtml(dayName)}</span>
+              <span>09:00–19:00</span>
+            </div>
+            ${daySlots.map(slot => {
+              if (slot.kind !== "oral") {
+                const cls = slot.kind === "coffee" ? "coffee" : (slot.kind === "plenary" ? "plenary" : "");
+                return `
+                  <div class="prog-mini-row ${cls}">
+                    <strong style="color:var(--teal-deep);">${escapeHtml(slot.time)}</strong>
+                    <span>${escapeHtml(slot.title)}</span>
+                  </div>
+                `;
+              }
+              const sec = getSessionById(slot.sessionId);
+              const talks = state.submissions
+                .filter(s => s.Status === "Accepted" && (s.Final_format === "Oral" || s.Final_format === "Rising Star") && String(s.Session_ID) === String(slot.sessionId) && slot.sessionId !== "")
+                .sort((a, b) => ((b.Final_format === "Rising Star" ? 1 : 0) - (a.Final_format === "Rising Star" ? 1 : 0)) || (parseInt(a.Order || "999", 10) - parseInt(b.Order || "999", 10)) || a.Submission_ID.localeCompare(b.Submission_ID));
+              let usedMin = 0;
+              const talkLines = talks.map(t => {
+                const st = addMinutesToTime(slot.start, usedMin);
+                usedMin += (t.Final_format === "Rising Star" ? 20 : 12);
+                return `<span style="display:inline-block; background:#EBF9F9; border:1px solid #B6E3E3; border-radius:4px; padding:1px 5px; margin:2px 3px 0 0; font-size:0.71rem;"><strong>${st}</strong> ${escapeHtml(t.Last_name)}</span>`;
+              }).join("");
+
+              return `
+                <div class="prog-mini-row oral-slot">
+                  <div>
+                    <strong style="color:var(--teal-deep);">${escapeHtml(slot.time)}</strong>
+                    <div style="font-size:0.68rem; color:var(--muted);">Slot ${slot.slotNumber} (${usedMin}/${slot.durationMin}m)</div>
+                  </div>
+                  <div>
+                    <select class="prog-mini-select" data-mini-slot-id="${escapeHtml(slot.slotId)}" aria-label="Choose session for Slot ${slot.slotNumber}">
+                      <option value="">— [ Empty Slot ${slot.slotNumber}: Choose Session ] —</option>
+                      ${oralSessions.map(os => `<option value="${escapeHtml(os.Session_ID)}" ${String(os.Session_ID) === String(slot.sessionId) ? "selected" : ""}>S${escapeHtml(os.Session_ID)}: ${escapeHtml(os.Session_Name)}</option>`).join("")}
+                    </select>
+                    ${sec ? (talks.length > 0 ? `<div style="margin-top:2px;">${talkLines}</div>` : `<div style="font-size:0.7rem; color:var(--muted); font-style:italic; margin-top:2px;">Session assigned — 0 talks placed yet</div>`) : ""}
+                  </div>
+                </div>
+              `;
+            }).join("")}
+          </div>
+        `;
+      }).join("");
+
+      ssEl.innerHTML = oralSessions.map(sec => {
+        const talks = state.submissions
+          .filter(s => s.Status === "Accepted" && (s.Final_format === "Oral" || s.Final_format === "Rising Star") && String(s.Session_ID) === String(sec.Session_ID))
+          .sort((a, b) => ((b.Final_format === "Rising Star" ? 1 : 0) - (a.Final_format === "Rising Star" ? 1 : 0)) || (parseInt(a.Order || "999", 10) - parseInt(b.Order || "999", 10)) || a.Submission_ID.localeCompare(b.Submission_ID));
+        const maxSlots = Math.max(7, talks.length);
+        const byOrder = {};
+        talks.forEach((t, idx) => {
+          const ord = parseInt(t.Order, 10);
+          if (!isNaN(ord) && ord >= 1 && ord <= 20 && !byOrder[ord]) {
+            byOrder[ord] = t;
+          } else {
+            // Find first free slot
+            for (let k = 1; k <= 25; k++) {
+              if (!byOrder[k]) { byOrder[k] = t; break; }
+            }
+          }
+        });
+
+        let slotsHtml = "";
+        for (let slotNum = 1; slotNum <= maxSlots; slotNum++) {
+          const t = byOrder[slotNum];
+          if (t) {
+            const isRS = t.Final_format === "Rising Star";
+            const timeStr = sec.Start_time ? addMinutesToTime(sec.Start_time, (slotNum - 1) * 12 + (slotNum > 1 && byOrder[1] && byOrder[1].Final_format === "Rising Star" ? 8 : 0)) : `#${slotNum}`;
+            slotsHtml += `
+              <div class="talk-slot-pill filled ${isRS ? "rising" : ""}" title="${escapeHtml(t.Title)}">
+                <span><strong>#${slotNum}</strong> (${escapeHtml(timeStr)}) ${isRS ? "🌟 " : ""}${escapeHtml(t.First_name)} ${escapeHtml(t.Last_name)}</span>
+                <span style="font-family:monospace; font-size:0.68rem;">${escapeHtml(t.Submission_ID)}</span>
+              </div>
+            `;
+          } else {
+            slotsHtml += `
+              <div class="talk-slot-pill empty">
+                <span>#${slotNum} · <em>${slotNum === 1 ? "Empty slot (Rising Star / Talk 1)" : "Empty talk slot"}</em></span>
+                <span>—</span>
+              </div>
+            `;
+          }
+        }
+
+        const postersCount = state.submissions.filter(s => s.Status === "Accepted" && s.Final_format === "Poster" && String(s.Session_ID) === String(sec.Session_ID)).length;
+        return `
+          <div class="sess-slot-box">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:0.3rem;">
+              <strong style="color:var(--teal-deep);">S${escapeHtml(sec.Session_ID)}: ${escapeHtml(sec.Session_Name)}</strong>
+              <span class="badge badge-id" style="font-size:0.68rem;">${talks.length}/7 talks${postersCount ? ` · ${postersCount}P` : ""}</span>
+            </div>
+            <div style="font-size:0.69rem; color:var(--muted); margin-top:0.1rem;">
+              ${sec.Day && sec.Start_time ? `📅 ${escapeHtml(sec.Day)} · ${escapeHtml(sec.Start_time)}` : "<em>Not placed in timetable yet (pick a slot on left)</em>"}
+            </div>
+            <div class="sess-slot-list">${slotsHtml}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
     function renderAll() {
+      renderLiveProgressBoard();
       updateKPIs();
       populateSessionFilterDropdown();
       renderAbstractCards();
@@ -1633,9 +1903,6 @@
       if (btn.dataset.action === "set-format") {
         sub.Final_format = btn.dataset.format;
         sub.Status = "Accepted";
-        if (sub.Final_format === "Rising Star") {
-          sub.Order = "1";
-        }
         if (!sub.Session_ID) {
           if (sub.Final_format === "Poster") {
             sub.Session_ID = sub.Suggested_Session_ID || "8";
@@ -1643,12 +1910,20 @@
             sub.Session_ID = sub.Suggested_Session_ID || "1";
           }
         }
+        if (sub.Final_format === "Rising Star") {
+          sub.Order = "1";
+        } else if (!sub.Order && sub.Final_format === "Oral") {
+          sub.Order = getNextOrderInSession(sub.Session_ID, false);
+        }
         saveState();
         renderAll();
       } else if (btn.dataset.action === "apply-suggestion") {
         sub.Status = "Accepted";
         sub.Final_format = sub.Suggested_Format || "Oral";
         sub.Session_ID = sub.Suggested_Session_ID || "1";
+        if (!sub.Order && (sub.Final_format === "Oral" || sub.Final_format === "Rising Star")) {
+          sub.Order = getNextOrderInSession(sub.Session_ID, sub.Final_format === "Rising Star");
+        }
         saveState();
         renderAll();
       }
@@ -1665,6 +1940,12 @@
         sub[el.dataset.field] = el.value;
         if ((el.dataset.field === "Session_ID" || el.dataset.field === "Order") && el.value && sub.Status === "Pending") {
           sub.Status = "Accepted";
+        }
+        if (el.dataset.field === "Session_ID" && el.value) {
+          if (!sub.Final_format) sub.Final_format = sub.Suggested_Format || "Oral";
+          if (!sub.Order && (sub.Final_format === "Oral" || sub.Final_format === "Rising Star")) {
+            sub.Order = getNextOrderInSession(el.value, sub.Final_format === "Rising Star");
+          }
         }
         saveState();
         renderAll();
@@ -1798,6 +2079,41 @@
         items.forEach((t, i) => { t.Order = String(i + 1); });
       });
       saveState("🔢 Numbered talk orders within each session");
+      renderAll();
+    });
+
+
+    document.getElementById("liveMiniTimetable").addEventListener("change", (e) => {
+      const sel = e.target.closest("select[data-mini-slot-id]");
+      if (!sel) return;
+      const slotId = sel.dataset.miniSlotId;
+      const newSessionId = sel.value;
+      const targetSlot = state.slots.find(s => s.slotId === slotId);
+      if (!targetSlot) return;
+      if (newSessionId) {
+        const otherSlot = state.slots.find(s => s.kind === "oral" && s.slotId !== slotId && String(s.sessionId) === String(newSessionId));
+        if (otherSlot) otherSlot.sessionId = targetSlot.sessionId;
+      }
+      targetSlot.sessionId = newSessionId;
+      syncSessionTimesFromSlots();
+      saveState();
+      renderAll();
+    });
+
+    document.getElementById("fillDefaultSlotOrderBtn").addEventListener("click", () => {
+      const oralSlots = state.slots.filter(s => s.kind === "oral");
+      oralSlots.forEach((sl, idx) => {
+        sl.sessionId = idx < 7 ? String(idx + 1) : "";
+      });
+      syncSessionTimesFromSlots();
+      saveState("🗓️ Placed Sessions S1–S7 into Programme Slots 1–7");
+      renderAll();
+    });
+
+    document.getElementById("clearSlotOrderBtn").addEventListener("click", () => {
+      state.slots.filter(s => s.kind === "oral").forEach(sl => { sl.sessionId = ""; });
+      syncSessionTimesFromSlots();
+      saveState("🧹 Cleared programme slots to empty");
       renderAll();
     });
 
