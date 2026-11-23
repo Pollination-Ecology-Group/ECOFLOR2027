@@ -901,7 +901,7 @@
             <option value="Anna E-Vojtkó">Anna E-Vojtkó (Batch 4 · 20 abstracts)</option>
           </select>
         </div>
-        <span id="syncBadge" class="sync-status">💾 Saved locally (ready to sync)</span>
+        <span id="syncBadge" class="sync-status" style="background:rgba(30,130,76,0.85); font-weight:700;">⏳ Loading app...</span>
         <button type="button" class="btn btn-outline" id="copyShareLinkBtn" style="color:#fff; border-color:rgba(255,255,255,0.45);">📋 Copy Shareable Link</button>
         <button type="button" class="btn btn-amber" id="openSyncDialogBtn">🔗 Google Sheet Sync & Export</button>
       </div>
@@ -1244,7 +1244,7 @@
       { slotId: "sat-exc2", day: "Saturday 6 February", time: "10:00–14:00", start: "10:00", durationMin: 240, kind: "fixed", title: "🏰 Excursion Option 2: Historical Prague Guided Walking Tour" }
     ];
 
-    const STORAGE_KEY = "ecoflor2027_committee_state_v6";
+    const STORAGE_KEY = "ecoflor2027_committee_state_v7";
 
     let state = loadState();
 
@@ -1256,8 +1256,8 @@
           if (parsed && Array.isArray(parsed.submissions) && parsed.submissions.length > 0) {
             return {
               submissions: parsed.submissions,
-              sessions: parsed.sessions || structuredClone(INITIAL_SESSIONS),
-              slots: parsed.slots || structuredClone(INITIAL_SLOTS),
+              sessions: parsed.sessions || JSON.parse(JSON.stringify(INITIAL_SESSIONS)),
+              slots: parsed.slots || JSON.parse(JSON.stringify(INITIAL_SLOTS)),
               reviews: parsed.reviews || [],
               gasUrl: parsed.gasUrl || "",
               activeReviewer: parsed.activeReviewer || "Jakub Štenc",
@@ -1269,9 +1269,9 @@
         console.warn("Failed to load saved state:", e);
       }
       return {
-        submissions: structuredClone(INITIAL_SUBMISSIONS),
-        sessions: structuredClone(INITIAL_SESSIONS),
-        slots: structuredClone(INITIAL_SLOTS),
+        submissions: JSON.parse(JSON.stringify(INITIAL_SUBMISSIONS)),
+        sessions: JSON.parse(JSON.stringify(INITIAL_SESSIONS)),
+        slots: JSON.parse(JSON.stringify(INITIAL_SLOTS)),
         reviews: [],
         gasUrl: "",
         activeReviewer: "Jakub Štenc",
@@ -1280,11 +1280,15 @@
     }
 
     function saveState(msg) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        console.warn("localStorage save warning:", e);
+      }
       const badge = document.getElementById("syncBadge");
       if (badge) {
         const now = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-        badge.textContent = msg || ("💾 Saved locally at " + now);
+        badge.textContent = msg || ("🟢 v7 Ready · Saved at " + now);
       }
     }
 
@@ -1471,7 +1475,7 @@
                 ${s.Word_count ? `<span class="badge badge-career">${escapeHtml(s.Word_count)} words</span>` : ""}
               </div>
               <div>
-                <button type="button" class="btn btn-sm btn-outline" data-action="apply-suggestion" data-id="${escapeHtml(s.Submission_ID)}">
+                <button type="button" class="btn btn-sm btn-outline" data-action="apply-suggestion" data-id="${escapeHtml(s.Submission_ID)}" onclick="window.applyCardSuggestion('${escapeHtml(s.Submission_ID)}'); return false;">
                   ✨ Apply Suggested (${escapeHtml(s.Suggested_Format || "Oral")} · ${escapeHtml(sugSessLabel)})
                 </button>
               </div>
@@ -1508,9 +1512,9 @@
                     </select>
 
                     <div class="format-pills" role="group" aria-label="Assign Final Format">
-                      <button type="button" class="${s.Final_format === "Oral" ? "active-oral" : ""}" data-action="set-format" data-format="Oral" data-id="${escapeHtml(s.Submission_ID)}">🗣 Oral (12m)</button>
-                      <button type="button" class="${s.Final_format === "Rising Star" ? "active-rising" : ""}" data-action="set-format" data-format="Rising Star" data-id="${escapeHtml(s.Submission_ID)}">🌟 Rising Star (20m)</button>
-                      <button type="button" class="${s.Final_format === "Poster" ? "active-poster" : ""}" data-action="set-format" data-format="Poster" data-id="${escapeHtml(s.Submission_ID)}">🖼️ Poster</button>
+                      <button type="button" class="${s.Final_format === "Oral" ? "active-oral" : ""}" data-action="set-format" data-format="Oral" data-id="${escapeHtml(s.Submission_ID)}" onclick="window.setCardFormat('${escapeHtml(s.Submission_ID)}', 'Oral'); return false;">🗣 Oral (12m)</button>
+                      <button type="button" class="${s.Final_format === "Rising Star" ? "active-rising" : ""}" data-action="set-format" data-format="Rising Star" data-id="${escapeHtml(s.Submission_ID)}" onclick="window.setCardFormat('${escapeHtml(s.Submission_ID)}', 'Rising Star'); return false;">🌟 Rising Star (20m)</button>
+                      <button type="button" class="${s.Final_format === "Poster" ? "active-poster" : ""}" data-action="set-format" data-format="Poster" data-id="${escapeHtml(s.Submission_ID)}" onclick="window.setCardFormat('${escapeHtml(s.Submission_ID)}', 'Poster'); return false;">🖼️ Poster</button>
                     </div>
 
                     <select data-field="Session_ID" data-id="${escapeHtml(s.Submission_ID)}" aria-label="Assign Thematic Session" style="flex:1; min-width:210px;">
@@ -1982,9 +1986,45 @@
       renderFullTable();
     }
 
+    function closestEl(target, selector) {
+      const el = (target && target.nodeType === 1) ? target : (target && target.parentElement);
+      return el && el.closest ? el.closest(selector) : null;
+    }
+
+    // Global direct action helpers for buttons & inputs on cards
+    window.setCardFormat = function(sid, fmt) {
+      const sub = state.submissions.find(x => x.Submission_ID === sid);
+      if (!sub) return;
+      sub.Final_format = fmt;
+      sub.Status = "Accepted";
+      if (!sub.Session_ID) {
+        sub.Session_ID = (fmt === "Poster") ? (sub.Suggested_Session_ID || "8") : (sub.Suggested_Session_ID || "1");
+      }
+      if (fmt === "Rising Star") {
+        sub.Order = "1";
+      } else if (!sub.Order && fmt === "Oral") {
+        sub.Order = getNextOrderInSession(sub.Session_ID, false);
+      }
+      saveState(`✅ ${sid} set to ${fmt} (Session S${sub.Session_ID})`);
+      renderAll();
+    };
+
+    window.applyCardSuggestion = function(sid) {
+      const sub = state.submissions.find(x => x.Submission_ID === sid);
+      if (!sub) return;
+      sub.Status = "Accepted";
+      sub.Final_format = sub.Suggested_Format || "Oral";
+      sub.Session_ID = sub.Suggested_Session_ID || "1";
+      if (!sub.Order && (sub.Final_format === "Oral" || sub.Final_format === "Rising Star")) {
+        sub.Order = getNextOrderInSession(sub.Session_ID, sub.Final_format === "Rising Star");
+      }
+      saveState(`✨ Applied suggestion for ${sid}: ${sub.Final_format} in S${sub.Session_ID}`);
+      renderAll();
+    };
+
     // Event delegation for Tab 1 (Abstract cards)
     document.getElementById("cardsContainer").addEventListener("click", (e) => {
-      const btn = e.target.closest("button[data-action]");
+      const btn = closestEl(e.target, "button[data-action]");
       if (!btn) return;
       const sid = btn.dataset.id;
       const sub = state.submissions.find(x => x.Submission_ID === sid);
@@ -2052,9 +2092,37 @@
       }
     });
 
+
+    document.getElementById("cardsContainer").addEventListener("input", (e) => {
+      const el = e.target;
+      if (!el || el.tagName !== "INPUT") return;
+      const sid = el.dataset.id;
+      if (!sid) return;
+      const sub = state.submissions.find(x => x.Submission_ID === sid);
+      if (!sub) return;
+      if (el.dataset.field) {
+        sub[el.dataset.field] = el.value;
+        if (el.dataset.field === "Order" && el.value && sub.Status === "Pending") {
+          sub.Status = "Accepted";
+        }
+        saveState();
+        renderLiveProgressBoard();
+        updateKPIs();
+      } else if (el.dataset.revField) {
+        const reviewer = state.activeReviewer;
+        let rev = state.reviews.find(r => r.Submission_ID === sid && r.Reviewer === reviewer);
+        if (!rev) {
+          rev = { Submission_ID: sid, Reviewer: reviewer, Vote: "", Score: "", Notes: "" };
+          state.reviews.push(rev);
+        }
+        rev[el.dataset.revField] = el.value;
+        saveState();
+      }
+    });
+
     // Event delegation for Tab 2 (Programme Builder)
     document.getElementById("scheduleDaysContainer").addEventListener("change", (e) => {
-      const sel = e.target.closest("select.slot-session-select");
+      const sel = closestEl(e.target, "select.slot-session-select");
       if (!sel) return;
       const slotId = sel.dataset.slotId;
       const newSessionId = sel.value;
@@ -2075,7 +2143,7 @@
     });
 
     document.getElementById("scheduleDaysContainer").addEventListener("click", (e) => {
-      const btn = e.target.closest("button[data-action]");
+      const btn = closestEl(e.target, "button[data-action]");
       if (!btn) return;
 
       if (btn.dataset.action === "swap-slot") {
@@ -2112,7 +2180,7 @@
     });
 
     document.getElementById("sessionEditorList").addEventListener("input", (e) => {
-      const inp = e.target.closest("input[data-sess-edit]");
+      const inp = closestEl(e.target, "input[data-sess-edit]");
       if (!inp) return;
       const sec = getSessionById(inp.dataset.sid);
       if (!sec) return;
@@ -2174,7 +2242,7 @@
 
 
     document.getElementById("liveMiniTimetable").addEventListener("change", (e) => {
-      const sel = e.target.closest("select[data-mini-slot-id]");
+      const sel = closestEl(e.target, "select[data-mini-slot-id]");
       if (!sel) return;
       const slotId = sel.dataset.miniSlotId;
       const newSessionId = sel.value;
