@@ -195,11 +195,11 @@ All ECOFLOR 2027 participants — whether presenting an oral talk or a poster �
 
 -   08:30–09:00 📝 **Registration & poster mounting**
 -   09:00–10:15 🗣 [**Oral presentations – Session Slot 1**](#oral-presentations)
--   10:15–10:45 ☕ **Morning coffee break & [**poster viewing**](#poster-presentations)** *(30 min)*
+-   10:15–10:45 ☕ **Morning coffee break & [**Poster Session**](#poster-presentations)** *(30 min)*
 -   10:45–12:15 🗣 [**Oral presentations – Session Slot 2**](#oral-presentations)
 -   12:15–14:00 🍲 [**Lunch break**](#where-to-eat-and-drink)
 -   14:00–15:30 🗣 [**Oral presentations – Session Slot 3**](#oral-presentations)
--   15:30–16:30 ☕ **Afternoon coffee break & [**Poster Session I**](#poster-presentations)** *(60 min)*
+-   15:30–16:30 ☕ **Afternoon coffee break & [**Poster Session**](#poster-presentations)** *(60 min)*
 -   16:30–18:00 🗣 [**Oral presentations – Session Slot 4**](#oral-presentations)
 -   18:00–19:00 🎤 [**Evening plenary talk**](#speakers) ([**Dr Katherine Baldock**](#katherine_baldock))
 -   20:00 🍻 **Conference dinner** *(venue to be announced)*
@@ -209,11 +209,11 @@ All ECOFLOR 2027 participants — whether presenting an oral talk or a poster �
 #### Friday 5 February {.programme-title}
 
 -   09:00–10:15 🗣 [**Oral presentations – Session Slot 5**](#oral-presentations)
--   10:15–10:45 ☕ **Morning coffee break & [**poster viewing**](#poster-presentations)** *(30 min)*
+-   10:15–10:45 ☕ **Morning coffee break & [**Poster Session**](#poster-presentations)** *(30 min)*
 -   10:45–12:15 🗣 [**Oral presentations – Session Slot 6**](#oral-presentations)
 -   12:15–14:00 🍲 [**Lunch break**](#where-to-eat-and-drink)
 -   14:00–15:30 🗣 [**Oral presentations – Session Slot 7**](#oral-presentations)
--   15:30–16:30 ☕ **Afternoon coffee break & [**Poster Session II**](#poster-presentations)** *(60 min)*
+-   15:30–16:30 ☕ **Afternoon coffee break & [**Poster Session**](#poster-presentations)** *(60 min)*
 -   16:30–18:00 🗣 [**Oral presentations – Session Slot 8 / ECOFLOR General Assembly**](#oral-presentations)
 -   18:00–19:00 🏆 **Awards & closing ceremony**
 :::

@@ -98,11 +98,11 @@ render_session_slot <- function(day_name, start_time, fallback_label) {
 |:-----|:------|
 | **08:30–09:00** | 📝 **Registration & Poster Mounting** |
 | **09:00–10:15** | 🗣 **Oral Presentations — Slot 1** *(~6 talks × 12 min)* |
-| **10:15–10:45** | ☕ **Morning Coffee Break + Poster Session** *(30 min)* |
+| **10:15–10:45** | ☕ **Morning Coffee Break + Poster Session** *(30 min — all posters presented together)* |
 | **10:45–12:15** | 🗣 **Oral Presentations — Slot 2** *(~7 talks × 12 min)* |
 | **12:15–14:00** | 🍲 **Lunch Break** |
 | **14:00–15:30** | 🗣 **Oral Presentations — Slot 3** *(~7 talks × 12 min)* |
-| **15:30–16:30** | ☕ **Afternoon Coffee Break + Poster Session I** *(60 min)* |
+| **15:30–16:30** | ☕ **Afternoon Coffee Break + Poster Session** *(60 min — all posters presented together)* |
 | **16:30–18:00** | 🗣 **Oral Presentations — Slot 4** *(~7 talks × 12 min)* |
 | **18:00–19:00** | 🎤 **Evening Plenary Talk:** **Dr Katherine Baldock** — *Managing urban greenspaces for pollinators and people: a network approach* |
 | **20:00–late** | 🍻 **Conference Dinner** *(venue to be announced)* |
@@ -114,11 +114,11 @@ render_session_slot <- function(day_name, start_time, fallback_label) {
 | Time | Event |
 |:-----|:------|
 | **09:00–10:15** | 🗣 **Oral Presentations — Slot 5** *(~6 talks × 12 min)* |
-| **10:15–10:45** | ☕ **Morning Coffee Break + Poster Session** *(30 min)* |
+| **10:15–10:45** | ☕ **Morning Coffee Break + Poster Session** *(30 min — all posters presented together)* |
 | **10:45–12:15** | 🗣 **Oral Presentations — Slot 6** *(~7 talks × 12 min)* |
 | **12:15–14:00** | 🍲 **Lunch Break** |
 | **14:00–15:30** | 🗣 **Oral Presentations — Slot 7** *(Rising Star opener + ~5–7 talks)* |
-| **15:30–16:30** | ☕ **Afternoon Coffee Break + Poster Session II** *(60 min)* |
+| **15:30–16:30** | ☕ **Afternoon Coffee Break + Poster Session** *(60 min — all posters presented together)* |
 | **16:30–18:00** | 🗣 **Oral Presentations — Slot 8 / ECOFLOR Working Group Assembly** |
 | **18:00–19:00** | 🏆 **Best Student Oral & Poster Awards & Closing Ceremony** |
 
