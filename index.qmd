@@ -57,7 +57,7 @@ All contributions should be in **English** to promote discussion and interaction
 
 📖 [Publication](#publish-in-jpe) – participants are invited to submit their work to the [**Journal of Pollination Ecology**](https://www.pollinationecology.org/index.php/jpe/index) (Diamond Open Access)
 
-✉️ [Registration](#registration) – **open from 20 October 2026!** Deadline **20 November 2026** (notification of acceptance by **15 December 2026**)
+✉️ [Registration](#registration) – **now closed** (deadline was **20 November 2026**; notification of acceptance by **15 December 2026**)
 
 📞 [Contact](#contact) via [Discord](https://discord.gg/YCXbyRmUX5), [WhatsApp group chat](https://chat.whatsapp.com/KCycNVzqLEm1orgBQGjrQ2?mode=ems_copy_t) or [email](mailto:ecoflor2027@googlegroups.com)
 :::
@@ -84,15 +84,11 @@ The ECOFLOR 2027 logo weaves together Central European botany, Prague’s iconic
 
 :::::: registration-cta
 ::: cta-title
-✨ Registration is Now Open! ✨
+🔒 Registration is Now Closed
 :::
 
 ::: cta-subtitle
-Attendance at ECOFLOR 2027 is **free**, but registration is **mandatory** for logistical reasons.<br> Submissions open: **20 October 2026**  \|  Deadline: **20 November 2026**  \|  Notification of acceptance: **15 December 2026**
-:::
-
-::: cta-button-wrap
-<a href="https://forms.gle/HFG9EKboVBc1kqF76" target="_blank" rel="noopener noreferrer" class="btn-register"> <i class="bi bi-pencil-square"></i> Register for ECOFLOR 2027 <i class="bi bi-arrow-right-short"></i> </a>
+Attendance at ECOFLOR 2027 is **free**, and registration was mandatory for logistical reasons.<br> Submissions opened: **20 October 2026**  \|  Deadline: **20 November 2026 (closed)**  \|  Notification of acceptance: **15 December 2026**
 :::
 ::::::
 
@@ -101,7 +97,7 @@ Attendance at ECOFLOR 2027 is **free**, but registration is **mandatory** for lo
 #### Registration and Contributions
 :::
 
-Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Please fill out the [**registration form**](https://forms.gle/HFG9EKboVBc1kqF76) if you plan to attend. Registration and abstract submission open on **20 October 2026**, and the deadline is **20 November 2026**.
+Attendance at the meeting is **free**, but registration is **mandatory** for logistical reasons. Registration and abstract submission were open from **20 October 2026** to **20 November 2026** and are now closed. If you have any questions regarding your submitted registration, please contact us at [**ecoflor2027\@googlegroups.com**](mailto:ecoflor2027@googlegroups.com).
 
 The meeting will take place **in person**. While presentations will be given on site, we would like to record talks and share the recordings with the community after the conference (only where permitted by the speakers).
 
@@ -164,10 +160,6 @@ All ECOFLOR 2027 participants — whether presenting an oral talk or a poster �
 ::::
 :::
 ::::
-
-::: {style="text-align: center; margin: 2.5rem 0 1.5rem 0;"}
-<a href="https://forms.gle/HFG9EKboVBc1kqF76" target="_blank" rel="noopener noreferrer" class="btn-register"> <i class="bi bi-pencil-square"></i> Register for ECOFLOR 2027 <i class="bi bi-arrow-right-short"></i> </a>
-:::
 :::::::::
 
 ::::::::: {#programme}
