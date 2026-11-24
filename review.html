@@ -1828,7 +1828,7 @@
                   const pPills = pList.map((p, idx) => `<span style="display:inline-block; background:#FBF0D0; border:1px solid #E8A830; border-radius:4px; padding:1px 5px; margin:2px 3px 0 0; font-size:0.7rem; color:#5C3D00;"><strong>P${idx+1}</strong> ${escapeHtml(p.Last_name)}</span>`).join("");
                   posterInfoHtml = `
                     <div style="font-size:0.72rem; color:#7D5208; margin-top:2px;">
-                      🌼 <strong>${pSec ? escapeHtml(pSec.Session_Name) : "Poster Session"}</strong> — <strong>${pList.length} poster${pList.length === 1 ? "" : "s"} assigned</strong>
+                      🌼 <strong>${pList.length} poster${pList.length === 1 ? "" : "s"} assigned</strong> (all posters presented together)
                       ${pList.length > 0 && slot.start === "15:30" ? `<div style="margin-top:2px;">${pPills}</div>` : ""}
                     </div>
                   `;
